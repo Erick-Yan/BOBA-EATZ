@@ -1,0 +1,31 @@
+.carouselBox {
+    background-size: cover;
+    background-position: center;
+    will-change: opacity;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.awardInfo {
+    position: absolute;
+    bottom: 0;
+    padding: 20px;
+    width: 100%;
+    background-image: linear-gradient(
+        to top,
+        rgb(255, 255, 255) 0%,
+        rgba(255, 255, 255, 0.95) 10%,
+        rgba(255, 255, 255, 0.75) 70%,
+        rgba(255, 255, 255, 0) 100%
+    );
+}
+
+.awardName {
+
+}
+
+.nominee {
+}
+
+.restaurantName {
+}
