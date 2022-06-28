@@ -9,7 +9,11 @@ import "./Carousel.css";
 
 const Carousel = props => {
     const [position, setPosition] = useState(0);
-    const [activeDot, setActiveDot] = useState(0);
+    const [activeDot, setActiveDot] = useState({
+        left: true,
+        middle: false,
+        right: false
+    });
 
     const awards = [
         {
@@ -34,15 +38,27 @@ const Carousel = props => {
 
     const Left = () => {
         setPosition(0);
-        setActiveDot(0);
+        setActiveDot({
+            left: true,
+            middle: false,
+            right: false
+        });
     }
     const Middle = () => {
         setPosition(1);
-        setActiveDot(1);
+        setActiveDot({
+            left: false,
+            middle: true,
+            right: false
+        });
     }
     const Right = () => {
         setPosition(2);
-        setActiveDot(2);
+        setActiveDot({
+            left: false,
+            middle: false,
+            right: true
+        });
     }
 
     useEffect(() => {
@@ -56,11 +72,21 @@ const Carousel = props => {
                 currentPosition = 0;
                 return 0;
             });
-            setActiveDot(currentPosition);
-            console.log(currentPosition);
-        }, 2000);
+            setActiveDot(() => {
+                Object.keys(activeDot).forEach((key, index) => {
+                    if (index === currentPosition) {
+                        activeDot[key] = true;
+                    } else {
+                        activeDot[key] = false;
+                    }
+                });
+                console.log(currentPosition);
+                console.log(activeDot);
+                return activeDot;
+            });
+        }, 4000);
         return () => clearInterval(intervalId);
-    }, [activeDot]);
+    }, []);
 
     return (
         <React.Fragment>
@@ -93,9 +119,9 @@ const Carousel = props => {
                     ))}
                 </div>
                 <div className='dots'>
-                    <button className={"dot"+(activeDot === 0 ? '-active' : '')} onClick={Left}></button>
-                    <button className={"dot"+(activeDot === 1 ? '-active' : '')} onClick={Middle}></button>
-                    <button className={"dot"+(activeDot === 2 ? '-active' : '')} onClick={Right}></button>
+                    <button className={"dot"+(activeDot.left ? '-active' : '')} onClick={Left}></button>
+                    <button className={"dot"+(activeDot.middle ? '-active' : '')} onClick={Middle}></button>
+                    <button className={"dot"+(activeDot.right ? '-active' : '')} onClick={Right}></button>
                 </div>
             </div>
         </React.Fragment>
