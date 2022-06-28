@@ -5,7 +5,7 @@ import {BrowserRouter as Router, Route} from 'react-router-dom';
 import LandingPage from './components/Pages/LandingPage';
 import MainHeader from './components/Common/MainHeader';
 import ShopOverview from './components/Pages/ShopOverview';
-
+import SearchResults from './components/Pages/SearchResults';
 function App() {
   return (
     <Router>
@@ -15,6 +15,13 @@ function App() {
         <Route path="/" exact>
           <LandingPage />
         </Route>
+        <Route
+            exact
+            path="/search-results/:searchInput"
+            render={({ match }) => (
+              <SearchResults searchInput={match.params.searchInput} />
+            )}
+          />
         <Route path="/shop">
           <ShopOverview />
         </Route>
