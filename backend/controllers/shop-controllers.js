@@ -28,8 +28,11 @@ const getShopById = async (req, res, next) => {
 
     let shop;
     try {
-        shop = await Shop.findById(shopId).populate('drinks');
+        shop = await Shop.findById(shopId);
         console.log(shop);
+        if (shop.drinks.length > 0) {
+            shop = await shop.populate('drinks');
+        }
     } catch (err) {
         const error = new HttpError(
             'Something went wrong with finding a shop with this id.',
