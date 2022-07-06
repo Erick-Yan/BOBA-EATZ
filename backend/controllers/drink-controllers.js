@@ -7,7 +7,7 @@ const getDrinks = async (req, res, next) => {
     let drinks;
     try {
         drinks = await Drink.find({});
-        console.log(drinks);
+        // console.log(drinks);
     } catch (err) {
         const error = new HttpError(
             'Something went wrong with finding drinks.',
@@ -31,7 +31,7 @@ const getDrinkById = async (req, res, next) => {
     let drink;
     try {
         drink = await Drink.findById(drinkId);
-        console.log(drink.reviews);
+        // console.log(drink.reviews);
         if (drink.reviews.length > 0) {
             drink = await drink.populate('reviews');
         }
@@ -76,12 +76,12 @@ const createDrink = async (req, res, next) => {
     }
 
     try {
-        console.log(createdDrink);
+        // console.log(createdDrink);
         await createdDrink.save();
         shop.drinks.push(createdDrink);
         await shop.save();
     } catch (err) {
-        console.log(shop);
+        // console.log(shop);
         const error = new HttpError(
             'Failed to create drink, please try again!',
             500
@@ -108,12 +108,12 @@ const createReview = async (req, res, next) => {
         drinkId
     });
 
-    console.log(createdReview);
+    // console.log(createdReview);
 
     let drink;
     try {
         drink = await Drink.findById(drinkId);
-        console.log(drink);
+        // console.log(drink);
     } catch (err) {
         const error = new HttpError(
             'Something went wrong with finding the drink.',
