@@ -29,7 +29,7 @@ const getShopById = async (req, res, next) => {
     let shop;
     try {
         shop = await Shop.findById(shopId);
-        console.log(shop);
+        // console.log(shop);
         if (shop.drinks.length > 0) {
             shop = await shop.populate('drinks');
         }
@@ -62,7 +62,7 @@ const createShop = async (req, res, next) => {
     });
 
     try {
-        console.log(createdShop);
+        // console.log(createdShop);
         await createdShop.save();
     } catch (err) {
         const error = new HttpError(
