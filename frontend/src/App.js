@@ -4,8 +4,12 @@ import React from 'react';
 import {BrowserRouter as Router, Route} from 'react-router-dom';
 import LandingPage from './components/Pages/LandingPage';
 import MainHeader from './components/Common/MainHeader';
-import ShopOverview from './components/Pages/ShopOverview';
 import SearchResults from './components/Pages/SearchResults';
+import DrinkOverview from './components/Pages/DrinkOverview';
+import ShopOverview from './components/Pages/ShopOverview';
+import AllDrinks from './components/Pages/AllDrinks';
+import AllShops from './components/Pages/AllShops';
+
 function App() {
   return (
     <Router>
@@ -22,9 +26,26 @@ function App() {
               <SearchResults searchInput={match.params.searchInput} />
             )}
           />
-        <Route path="/shop">
-          <ShopOverview />
+        <Route path="/all-drinks" exact>
+          <AllDrinks />
         </Route>
+        <Route path="/all-shops" exact>
+          <AllShops />
+        </Route>
+        <Route
+          exact
+          path="/shop/:shopName"
+          render={({ match }) => (
+            <ShopOverview shopName={match.params.shopName} />
+          )}
+        />
+        <Route
+          exact
+          path="/drink/:drinkName"
+          render={({ match }) => (
+            <DrinkOverview drinkName={match.params.drinkName} />
+          )}
+        />
       </main>
     </Router>
   );

@@ -6,19 +6,10 @@ import './NavLinks.css';
 const NavLinks = props => {
     return <ul className="nav-links">
         <li>
-            <NavLink to='/search-results' exact>SEARCH</NavLink>
+            <NavLink to='/all-drinks'>ALL DRINKS</NavLink>
         </li>
         <li>
-            <NavLink to='/recommender'>RECOMMENDER</NavLink>
-        </li>
-        <li>
-            <NavLink to='/bucketlist'>MY BUCKETLIST</NavLink>
-        </li>
-        <li>
-            <NavLink to='/authenticate'>AUTHENTICATE</NavLink>
-        </li>
-        <li>
-            <NavLink to='/shop'>SHOP</NavLink>
+            <NavLink to='/all-shops'>ALL SHOPS</NavLink>
         </li>
     </ul>
 }
