@@ -6,7 +6,7 @@ const PageHeader = props => {
     return (
         <div>
             <div className='headerColor'>
-                <h1 className='text'>The Alley</h1>
+                <h1 className='text'>{props.header}</h1>
             </div>
             <div className='headerLine'>
                 <div className='logoCircle'></div>
