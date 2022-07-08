@@ -1,13 +1,13 @@
 import { useState, useCallback, useRef, useEffect } from 'react';
 
 export const useHttpClient = () => {
-  const [isLoading, setIsLoading] = useState(false);
+  // const [isLoading, setIsLoading] = useState(false);
 
   const activeHttpRequests = useRef([]);
 
   const sendRequest = useCallback(
     async (url, method = 'GET', body = null, headers = {}) => {
-      setIsLoading(true);
+      // setIsLoading(true);
       const httpAbortCtrl = new AbortController(); 
       activeHttpRequests.current.push(httpAbortCtrl);
 
@@ -29,11 +29,11 @@ export const useHttpClient = () => {
           throw new Error(responseData.message);
         }
 
-        setIsLoading(false); 
+        // setIsLoading(false); 
         return responseData; 
       } catch (err) {
         setError(err.message);
-        setIsLoading(false);
+        // setIsLoading(false);
         throw err;
       }
     },
