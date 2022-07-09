@@ -1,50 +1,50 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Box, Container, Typography, List, ListItemButton } from '@mui/material';
 import StarRatings from 'react-star-ratings';
 import PageHeader from '../Shared/PageHeader';
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import './Overview.css';
 import boba from '../../assets/boba-eats.png';
+import { useHttpClient } from '../../hooks/http-hook';
 
-const ShopOverview = ({ shopName }) => {
+const ShopOverview = ({ shopId }) => {
 
-  const history = useHistory();
+  const [loadedShop, setLoadedShop] = useState();
+  const {sendRequest} = useHttpClient();
 
-  const sampleList = [
-      { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-      { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-      { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-      { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-      { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-      { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-      { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-      { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-    ];
-
-  const handleClick = (event) => {
-    history.push(`/drink/${event}`);
-  }
+  useEffect(() => {
+    const fetchShops = async () => {
+      try {
+        const responseData = await sendRequest(`http://localhost:5000/api/shops/${shopId}`);
+        setLoadedShop(responseData.shop);
+      } catch (err) {}
+    }
+    fetchShops();
+  }, [sendRequest, shopId]);
   
   return (
-    <Box>
-      <PageHeader header={shopName}/>
-      <Container style={styles.container}>
-        <Typography variant='h4' sx={{paddinLeft: 10, paddingTop: 2}}>Drinks</Typography>
-        <List style={styles.list} class='scrollbar-hidden'>
-          {sampleList.map((item, index) => (
-            <ListItemButton key={index} sx={{backgroundImage: `url(${item.image})`}} style={styles.itemButton} onClick={() => handleClick(item.drinkName)}>
-                <Box style={styles.textBackground}>
-                  <Box style={{paddingLeft: 10, paddingBottom: 10, display: 'flex', flexDirection: 'column'}}>
-                    <Typography variant='h10' style={styles.typography}>{item.drinkName}</Typography>
-                    <Typography variant='h11' style={styles.typography}>{item.shopName}</Typography>
-                    <StarRatings numberOfStars={5} rating={item.rating} starDimension='20px' starSpacing='1px' />
+    <React.Fragment>
+      {loadedShop && (<Box>
+        <PageHeader header={loadedShop.shopName}/>
+        <Container style={styles.container}>
+          <Typography variant='h4' sx={{paddinLeft: 10, paddingTop: 2}}>Menu</Typography>
+          <List style={styles.list} class='scrollbar-hidden'>
+            {loadedShop.drinks.map((item, index) => (
+              <Link to={`/drink/${item.id}`}>
+                <ListItemButton key={index} sx={{backgroundImage: `url(${item.drinkImage})`}} style={styles.itemButton}>
+                  <Box style={styles.textBackground}>
+                      <Box style={{paddingLeft: 10, paddingBottom: 10, display: 'flex', flexDirection: 'column'}}>
+                        <Typography variant='h10' style={styles.typography}>{item.drinkName}</Typography>
+                        <StarRatings numberOfStars={5} rating={item.avgRating} starDimension='20px' starSpacing='1px' />
+                      </Box>
                   </Box>
-                </Box>
-            </ListItemButton>
-        ))}
-        </List>
-    </Container>
-    </Box>
+                </ListItemButton>
+              </Link>
+          ))}
+          </List>
+      </Container>
+      </Box>)}
+    </ React.Fragment>
   )
 }
 

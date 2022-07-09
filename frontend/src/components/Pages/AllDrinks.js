@@ -1,44 +1,41 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Box, List, ListItemButton, ListItemAvatar, ListItemText, Avatar, Typography, Container } from '@mui/material';
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import StarRatings from 'react-star-ratings';
 import boba from '../../assets/boba-eats.png';
+import {useHttpClient} from '../../hooks/http-hook';
 
 function AllDrinks() {
 
-  const history = useHistory();
+  const [loadedDrinks, setLoadedDrinks] = useState();
+  const {sendRequest} = useHttpClient();
   
-  const sampleList = [
-    { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-    { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-    { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-    { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-    { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-    { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-    { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-    { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-  ];
-
-  const handleClick = async (event) => {
-    history.push(`/drink/${event}`);
-  }
+  useEffect(() => {
+    const fetchShops = async () => {
+      try {
+        const responseData = await sendRequest("http://localhost:5000/api/drinks");
+        setLoadedDrinks(responseData.drinks);
+      } catch (err) {}
+    }
+    fetchShops();
+  }, [sendRequest]);
 
   return (
     <Box style={styles.box}>
       <Typography variant='h2' style={styles.searchResultText}>All Boba Drinks</Typography>
       <Container style={styles.container}>
         <List style={styles.list}>
-          {sampleList.map((item, index) => (
-            <ListItemButton key={index} onClick={() => handleClick(item.drinkName)}>
+          {loadedDrinks && loadedDrinks.map((item, index) => (
+            <Link key={index} to={`/drink/${item.id}`}>
               <ListItemAvatar sx={{paddingRight: 5}}>
-                <Avatar src={item.image} alt='' sx={{ width: 150, height: 150 }}/>
+                <Avatar src={item.drinkImage} alt='' sx={{ width: 150, height: 150 }}/>
               </ListItemAvatar>
               <ListItemText>
                   <Typography variant='h5' style={styles.itemText}>{item.drinkName}</Typography>
-                  <Typography variant='h6' style={styles.itemText} sx={{position: 'relative'}}>{item.shopName}</Typography>
-                  <StarRatings numberOfStars={5} rating={item.rating} starDimension='20px' starSpacing='1px' />
+                  <Typography variant='h6' style={styles.itemText} sx={{position: 'relative'}}>{item.shopId.shopName}</Typography>
+                  <StarRatings numberOfStars={5} rating={item.avgRating} starDimension='20px' starSpacing='1px' />
               </ListItemText>
-            </ListItemButton>
+            </Link>
           ))}
         </List>
       </Container>

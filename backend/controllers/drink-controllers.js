@@ -6,8 +6,7 @@ const Review = require('../models/review');
 const getDrinks = async (req, res, next) => {
     let drinks;
     try {
-        drinks = await Drink.find({});
-        // console.log(drinks);
+        drinks = await Drink.find({}).populate("shopId");
     } catch (err) {
         const error = new HttpError(
             'Something went wrong with finding drinks.',
