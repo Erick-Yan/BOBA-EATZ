@@ -34,16 +34,16 @@ function App() {
         </Route>
         <Route
           exact
-          path="/shop/:shopName"
+          path="/shop/:shopId"
           render={({ match }) => (
-            <ShopOverview shopName={match.params.shopName} />
+            <ShopOverview shopId={match.params.shopId} />
           )}
         />
         <Route
           exact
-          path="/drink/:drinkName"
+          path="/drink/:drinkId"
           render={({ match }) => (
-            <DrinkOverview drinkName={match.params.drinkName} />
+            <DrinkOverview drinkId={match.params.drinkId} />
           )}
         />
       </main>

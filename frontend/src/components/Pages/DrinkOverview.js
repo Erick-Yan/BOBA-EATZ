@@ -1,42 +1,51 @@
-import React from 'react';
+import React, {useState, useEffect} from 'react';
 import { Box, Container, Typography, List, ListItemButton } from '@mui/material';
 import StarRatings from 'react-star-ratings';
+import {useHttpClient} from '../../hooks/http-hook';
 import PageHeader from '../Shared/PageHeader';
 import './Overview.css';
 import boba from '../../assets/boba-eats.png';
 
-const DrinkOverview = ({ drinkName }) => {
-    const sampleList = [
-        { review: 'it was gud. Not bahd.', user: 'David', rating: 4, image: boba },
-        { review: 'it was gud. Not bahd.', user: 'David', rating: 4, image: boba },
-        { review: 'it was gud. Not bahd.', user: 'David', rating: 4, image: boba },
-        { review: 'it was gud. Not bahd.', user: 'David', rating: 4, image: boba },
-        { review: 'it was gud. Not bahd.', user: 'David', rating: 4, image: boba },
-        { review: 'it was gud. Not bahd.', user: 'David', rating: 4, image: boba },
-        { review: 'it was gud. Not bahd.', user: 'David', rating: 4, image: boba },
-      ];
-    return (
-      <Box>
-        <PageHeader header={drinkName}/>
-        <Container style={styles.container}>
-          <Typography variant='h4' sx={{paddinLeft: 10, paddingTop: 2}}>Reviews</Typography>
-          <List style={styles.list} class='scrollbar-hidden'>
-            {sampleList.map((item, index) => (
-              <ListItemButton key={index} style={styles.itemButton}>
-                <img src={item.image} alt='' style={{ height: '110%', marginLeft: -16}}/>
-                <Box style={styles.textBox}>
-                  <Typography variant='h6'>"{item.review}"</Typography>
-                  <Typography variant='h11' sx={{marginBottom: 1}}>
-                    - {item.user}
-                  </Typography>
-                  <StarRatings numberOfStars={5} rating={item.rating} starDimension='20px' starSpacing='1px' />
-                </Box>
-              </ListItemButton>
-            ))}
-          </List>
-      </Container>
-      </Box>
-    )
+const DrinkOverview = ({ drinkId }) => {
+  const [loadedDrink, setLoadedDrink] = useState();
+  const {sendRequest} = useHttpClient();
+  
+  useEffect(() => {
+    const fetchDrinks = async () => {
+      try {
+        const responseData = await sendRequest(`http://localhost:5000/api/drinks/${drinkId}`);
+        setLoadedDrink(responseData.drink);
+      } catch (err) {}
+    }
+    fetchDrinks();
+  }, [sendRequest]);
+  
+  return (
+    <React.Fragment>
+      {loadedDrink && (
+        <Box>
+          <PageHeader header={loadedDrink.drinkName}/>
+          <Container style={styles.container}>
+            <Typography variant='h4' sx={{paddinLeft: 10, paddingTop: 2}}>Reviews</Typography>
+            <List style={styles.list} class='scrollbar-hidden'>
+              {loadedDrink.reviews.map((item, index) => (
+                <ListItemButton key={index} style={styles.itemButton}>
+                  <Box style={styles.textBox}>
+                    <Typography variant='h6'>"{item.reviewMessage}"</Typography>
+                    <Typography variant='h11' sx={{marginBottom: 1}}>
+                      - {item.reviewerName}
+                    </Typography>
+                    <Typography variant='h11' sx={{marginBottom: 1}}>{item.reviewDate}</Typography>
+                    <StarRatings numberOfStars={5} rating={item.reviewRating} starDimension='20px' starSpacing='1px' />
+                  </Box>
+                </ListItemButton>
+              ))}
+            </List>
+        </Container>
+        </Box>
+      )}
+    </React.Fragment>
+  )
 }
 
 export default DrinkOverview;

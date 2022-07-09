@@ -1,43 +1,41 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import { Box, List, ListItemButton, ListItemAvatar, ListItemText, Avatar, Typography, Container } from '@mui/material';
-import { useHistory } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 import StarRatings from 'react-star-ratings';
 import boba from '../../assets/boba-eats.png';
+import { useHttpClient } from '../../hooks/http-hook';
 
 function AllShops() {
 
-  const history = useHistory();
-  
-  const sampleList = [
-    { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-    { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-    { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-    { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-    { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-    { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-    { drinkName: 'Brown Sugar Milk', shopName: 'The Alley', rating: 4, image: boba },
-    { drinkName: 'Brown Sugar Milk Tea', shopName: 'Coco', rating: 3.5, image: boba },
-  ];
+  const {sendRequest} = useHttpClient();
 
-  const handleClick = async (event) => {
-    history.push(`/shop/${event}`);
-  }
+  const [loadedShops, setLoadedShops] = useState();
+
+  useEffect(() => {
+    const fetchShops = async () => {
+      try {
+        const responseData = await sendRequest("http://localhost:5000/api/shops");
+        setLoadedShops(responseData.shops);
+      } catch (err) {}
+    }
+    fetchShops();
+  }, [sendRequest]);
 
   return (
     <Box style={styles.box}>
       <Typography variant='h2' style={styles.searchResultText}>All Boba Shops</Typography>
       <Container style={styles.container}>
         <List style={styles.list}>
-          {sampleList.map((item, index) => (
-            <ListItemButton key={index} onClick={() => handleClick(item.shopName)}>
+          {loadedShops && loadedShops.map((item, index) => (
+            <Link key={index} to={`/shop/${item.id}`}>
               <ListItemAvatar sx={{paddingRight: 5}}>
-                <Avatar src={item.image} alt='' sx={{ width: 150, height: 150 }}/>
+                <Avatar src={item.shopImage} alt='' sx={{ width: 150, height: 150 }}/>
               </ListItemAvatar>
               <ListItemText>
                   <Typography variant='h5' style={styles.itemText}>{item.shopName}</Typography>
-                  <StarRatings numberOfStars={5} rating={item.rating} starDimension='20px' starSpacing='1px' />
+                  <StarRatings numberOfStars={5} rating={item.avgRating} starDimension='20px' starSpacing='1px' />
               </ListItemText>
-            </ListItemButton>
+            </Link>
           ))}
         </List>
       </Container>
