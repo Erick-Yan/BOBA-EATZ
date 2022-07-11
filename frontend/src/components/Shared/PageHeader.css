@@ -4,6 +4,15 @@
     height: 175px;
     background-color: aliceblue;
     flex-direction: column-reverse;
+    padding-bottom: 5px;
+}
+
+.text {
+    margin-left: 30px;
+}
+
+.rating {
+    margin-left: 30px;
 }
 
 .headerLine {
@@ -21,13 +30,8 @@
     font-weight: 50;
 }
 
-.text {
-    margin-left: 30px;
-}
-
 
 .logoCircle {
-    background-image: url("../../assets/boba-eats.png");
     background-size: cover;
     background-position: center;
     will-change: opacity;

@@ -28,13 +28,15 @@ function AllShops() {
         <List style={styles.list}>
           {loadedShops && loadedShops.map((item, index) => (
             <Link key={index} to={`/shop/${item.id}`}>
-              <ListItemAvatar sx={{paddingRight: 5}}>
-                <Avatar src={item.shopImage} alt='' sx={{ width: 150, height: 150 }}/>
-              </ListItemAvatar>
-              <ListItemText>
-                  <Typography variant='h5' style={styles.itemText}>{item.shopName}</Typography>
-                  <StarRatings numberOfStars={5} rating={item.avgRating} starDimension='20px' starSpacing='1px' />
-              </ListItemText>
+              <ListItemButton>
+                <ListItemAvatar sx={{paddingRight: 5}}>
+                  <Avatar src={item.shopImage} alt='' sx={{ width: 150, height: 150 }}/>
+                </ListItemAvatar>
+                <ListItemText>
+                    <Typography variant='h5' style={styles.itemText}>{item.shopName}</Typography>
+                    <StarRatings numberOfStars={5} rating={item.avgRating} starDimension='20px' starSpacing='1px' />
+                </ListItemText>
+              </ListItemButton>              
             </Link>
           ))}
         </List>

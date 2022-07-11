@@ -2,6 +2,7 @@ const HttpError = require('../models/http-error');
 const Drink = require('../models/drink');
 const Shop = require('../models/shop');
 const Review = require('../models/review');
+const { default: mongoose } = require('mongoose');
 
 const getDrinks = async (req, res, next) => {
     let drinks;
@@ -50,6 +51,88 @@ const getDrinkById = async (req, res, next) => {
 
     res.json({drink: drink.toObject({getters: true})});
 };
+
+const getDrinkBySearchQuery = async (req, res, next) => {
+    const {db} = mongoose.connection;
+    const collection = await db.collection("drinks");
+    collection.createIndex(
+        {
+            drinkName: "text"
+        },
+        {
+            weights: {
+                drinkName: 10
+            }
+        }
+    )
+
+    const searchQuery = req.params.searchquery;
+
+    let drinks;
+    try {
+        drinks = await collection.find(
+            { $text: {$search: searchQuery} },
+        ).sort({ score: { $meta: "textScore" } }).project({score: { $meta: "textScore" }}).toArray();
+    } catch (err) {
+        const error = new HttpError(
+            'Something went wrong with searching this drink.',
+            500
+        );
+        return next(error);
+    }
+
+    if (drinks.length === 0) {
+        try {
+            drinks = await collection.find({drinkName: {"$regex": searchQuery, "$options": `i`}}).toArray();
+        } catch (err) {
+            const error = new HttpError(
+                'Something went wrong with searching this drink.',
+                500
+            );
+            return next(error);
+        }
+    }
+
+    if (drinks.length === 0) {
+        return next(new HttpError(
+            'Could not find any drinks under this id.'
+        ));
+    }
+
+    res.json(drinks);
+}
+
+const getDrinkAwards = async (req, res, next) => {
+    const {db} = mongoose.connection;
+    const collection = await db.collection("drinks");
+    collection.aggregate([
+        {$unwind: "#reviews"},
+        {$group: {_id: "$_id", reviews: {$push:"$reviews"}, size: {$sum:1}}}
+    ])
+    collection.createIndex(
+        {
+            avgRating: 1,
+            size: 1
+        }
+    )
+
+    let highestRatedDrink;
+    let mostPopularDrink;
+    try {
+        highestRatedDrink = await collection.find().sort({ avgRating: -1 }).toArray();
+        highestRatedDrink = highestRatedDrink[0];
+        mostPopularDrink = await collection.find().sort({ size: -1 }).toArray();
+        mostPopularDrink = mostPopularDrink[0];
+    } catch (err) {
+        const error = new HttpError(
+            'Something went wrong with searching this drink.',
+            500
+        );
+        return next(error);
+    }
+
+    res.json({highestRatedDrink, mostPopularDrink});
+}
 
 const createDrink = async (req, res, next) => {
     const {drinkName, avgRating, drinkImage, shopId} = req.body;
@@ -138,5 +221,7 @@ const createReview = async (req, res, next) => {
 
 exports.getDrinks = getDrinks;
 exports.getDrinkById = getDrinkById;
+exports.getDrinkBySearchQuery = getDrinkBySearchQuery;
+exports.getDrinkAwards = getDrinkAwards;
 exports.createDrink = createDrink;
 exports.createReview = createReview;

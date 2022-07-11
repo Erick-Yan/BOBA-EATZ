@@ -1,6 +1,6 @@
 .carouselBox {
-    background-size: cover;
-    background-position: center;
+    background-size:contain;
+    background-position: right;
     will-change: opacity;
     background-repeat: no-repeat;
     position: relative;
