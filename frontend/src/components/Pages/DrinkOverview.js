@@ -24,14 +24,14 @@ const DrinkOverview = ({ drinkId }) => {
     <React.Fragment>
       {loadedDrink && (
         <Box>
-          <PageHeader header={loadedDrink.drinkName}/>
+          <PageHeader header={loadedDrink.drinkName} image={loadedDrink.drinkImage} rating={loadedDrink.avgRating} />
           <Container style={styles.container}>
             <Typography variant='h4' sx={{paddinLeft: 10, paddingTop: 2}}>Reviews</Typography>
-            <List style={styles.list} class='scrollbar-hidden'>
+            <List style={styles.list} className='scrollbar-hidden'>
               {loadedDrink.reviews.map((item, index) => (
                 <ListItemButton key={index} style={styles.itemButton}>
                   <Box style={styles.textBox}>
-                    <Typography variant='h6'>"{item.reviewMessage}"</Typography>
+                    <Typography style={styles.reviewMessage} className='scrollbar-hidden' variant='h6'>"{item.reviewMessage}"</Typography>
                     <Typography variant='h11' sx={{marginBottom: 1}}>
                       - {item.reviewerName}
                     </Typography>
@@ -69,13 +69,19 @@ const styles = {
     flex: '0 0 auto',
     flexDirection: 'row',
     width: 400,
-    height: 200,
+    height: 420,
     marginRight: 10,
     marginBottom: 25,
   },
   textBox: {
     display:'flex',
-    padding: 10,
-    flexDirection: 'column'
+    paddingTop: 20,
+    paddingBottom: 20,
+    flexDirection: 'column',
+    height: 400,
+    overflow: 'hidden',
+  },
+  reviewMessage: {
+    overflow: 'scroll',
   }
 };

@@ -4,7 +4,6 @@ import StarRatings from 'react-star-ratings';
 import PageHeader from '../Shared/PageHeader';
 import { Link } from 'react-router-dom';
 import './Overview.css';
-import boba from '../../assets/boba-eats.png';
 import { useHttpClient } from '../../hooks/http-hook';
 
 const ShopOverview = ({ shopId }) => {
@@ -25,7 +24,7 @@ const ShopOverview = ({ shopId }) => {
   return (
     <React.Fragment>
       {loadedShop && (<Box>
-        <PageHeader header={loadedShop.shopName}/>
+        <PageHeader header={loadedShop.shopName} image={loadedShop.shopImage} rating={loadedShop.avgRating} />
         <Container style={styles.container}>
           <Typography variant='h4' sx={{paddinLeft: 10, paddingTop: 2}}>Menu</Typography>
           <List style={styles.list} class='scrollbar-hidden'>

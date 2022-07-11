@@ -11,6 +11,10 @@ router.post('/:drinkid', drinkControllers.createReview);
 
 router.get('/', drinkControllers.getDrinks);
 
+router.get('/awards', drinkControllers.getDrinkAwards);
+
+router.get('/search/:searchquery', drinkControllers.getDrinkBySearchQuery);
+
 router.get('/:drinkid', drinkControllers.getDrinkById);
 
 module.exports = router;

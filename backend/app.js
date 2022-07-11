@@ -45,7 +45,7 @@ app.use((error, req, res, next) => {
 
 // Connect to MongDB database and start backend.
 mongoose
-    .connect('mongodb+srv://David:Mybutt123@cluster0.hvenj.mongodb.net/boba?retryWrites=true&w=majority')
+    .connect('mongodb+srv://Erick:2w4r6y8i@cluster0.hvenj.mongodb.net/boba?retryWrites=true&w=majority')
     .then(() => {
         console.log("Connected!")
         // If connection is made to MongoDB database, start the backend server.

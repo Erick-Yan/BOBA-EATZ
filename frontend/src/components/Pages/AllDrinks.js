@@ -27,14 +27,16 @@ function AllDrinks() {
         <List style={styles.list}>
           {loadedDrinks && loadedDrinks.map((item, index) => (
             <Link key={index} to={`/drink/${item.id}`}>
-              <ListItemAvatar sx={{paddingRight: 5}}>
-                <Avatar src={item.drinkImage} alt='' sx={{ width: 150, height: 150 }}/>
-              </ListItemAvatar>
-              <ListItemText>
-                  <Typography variant='h5' style={styles.itemText}>{item.drinkName}</Typography>
-                  <Typography variant='h6' style={styles.itemText} sx={{position: 'relative'}}>{item.shopId.shopName}</Typography>
-                  <StarRatings numberOfStars={5} rating={item.avgRating} starDimension='20px' starSpacing='1px' />
-              </ListItemText>
+              <ListItemButton>
+                <ListItemAvatar sx={{paddingRight: 5}}>
+                  <Avatar src={item.drinkImage} alt='' sx={{ width: 150, height: 150 }}/>
+                </ListItemAvatar>
+                <ListItemText>
+                    <Typography variant='h5' style={styles.itemText}>{item.drinkName}</Typography>
+                    <Typography variant='h6' style={styles.itemText} sx={{position: 'relative'}}>{item.shopId.shopName}</Typography>
+                    <StarRatings numberOfStars={5} rating={item.avgRating} starDimension='20px' starSpacing='1px' />
+                </ListItemText>
+              </ListItemButton>              
             </Link>
           ))}
         </List>

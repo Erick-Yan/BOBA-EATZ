@@ -1,9 +1,11 @@
-import React, {useState} from 'react';
+import React, {useEffect, useState} from 'react';
 import NavLinks from './NavLinks';
 import SideDrawer from './SideDrawer';
 import Backdrop from './Backdrop';
 import { Link, useHistory } from 'react-router-dom';
 import { TextField, styled } from '@mui/material';
+import Menu from '@mui/material/Menu';
+import MenuItem from '@mui/material/MenuItem';
 
 import './MainHeader.css';
 
@@ -26,6 +28,15 @@ const SearchTextField = styled((props) => (
 
 const MainHeader = props => {
     const [drawerIsOpen, setDrawerIsOpen] = useState(false);
+    const [searchOption, setSearchOption] = useState("DRINKS");
+    const [anchor, setAnchor] = useState(null);
+    const open = Boolean(anchor);
+    const handleClick = (event) => {
+      setAnchor(event.currentTarget);
+    }
+    const handleClose = () => {
+      setAnchor(null);
+    }
     const history = useHistory();
 
     const openDrawerHandler = () => {
@@ -38,7 +49,9 @@ const MainHeader = props => {
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
-          history.push(`/search-results/${event.target.value}`);
+          console.log(searchOption.toLowerCase());
+          history.push(`/search-results/${searchOption.toLowerCase()}:${event.target.value}`);
+          history.go();
         }
       }
 
@@ -58,7 +71,7 @@ const MainHeader = props => {
                 </button>
                 <h1 className='title'><Link to="/">MY BOBA.</Link></h1>
                 <SearchTextField
-                    label="SEARCH"
+                    label={`SEARCH ${searchOption}`}
                     id="search-input"
                     variant="filled"
                     sx={{
@@ -66,8 +79,21 @@ const MainHeader = props => {
                         marginRight: 7,
                         width: 300
                     }}
+                    onClick={handleClick}
                     onKeyPress={(e) => {handleKeyDown(e)}}
                 />
+                <Menu
+                  id="basic-menu"
+                  anchorEl={anchor}
+                  open={open}
+                  onClose={handleClose}
+                  MenuListProps={{
+                    'aria-labelledby': "basic-button",
+                  }}
+                >
+                  <MenuItem onClick={() => {handleClose(); setSearchOption("DRINKS");}}>Drink</MenuItem>
+                  <MenuItem onClick={() => {handleClose(); setSearchOption("SHOPS");}}>Shop</MenuItem>
+                </Menu>
             </div>
         </React.Fragment>
     )
