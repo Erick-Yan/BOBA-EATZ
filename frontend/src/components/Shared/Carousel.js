@@ -102,7 +102,7 @@ const Carousel = props => {
         const intervalId = setInterval(() => {
             let currentPosition;
             setPosition((index) => {
-                if (index+1 <= awards.length-1) {
+                if (index+1 <= newAwards.length-1) {
                     currentPosition = (index + 1) % 3;
                     return (index + 1) % 3;
                 }

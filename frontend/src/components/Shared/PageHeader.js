@@ -9,7 +9,7 @@ const PageHeader = props => {
         <div>
             <div className='headerColor'>
                 <div className='rating' >
-                    <StarRatings numberOfStars={5} rating={props.rating} starDimension='40px' starSpacing='1px' />
+                    <StarRatings numberOfStars={5} rating={props.rating} starDimension='2vw' starSpacing='1px' />
                 </div>
                 <h1 className='text'>{props.header}</h1>
             </div>
