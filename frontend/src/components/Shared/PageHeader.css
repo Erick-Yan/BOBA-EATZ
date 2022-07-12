@@ -1,0 +1,49 @@
+.headerColor {
+    display: flex;
+    width: 100%;
+    height: 175px;
+    background-color: aliceblue;
+    flex-direction: column-reverse;
+    padding-bottom: 5px;
+}
+
+.text {
+    margin-left: 30px;
+    font-size: 2vw;
+}
+
+.rating {
+    margin-left: 30px;
+}
+
+.headerLine {
+    width: 100%;
+    height: 3px;
+    background-color: hotpink;
+    position: relative;
+}
+
+.headerLine h1 {
+    position: absolute;
+    top: 110px;
+    text-align: center;
+    width: 100%;
+    font-weight: 50;
+}
+
+
+.logoCircle {
+    background-size: cover;
+    background-position: center;
+    will-change: opacity;
+    background-repeat: no-repeat;
+    display: inline-block;
+    width: 200px;
+    height: 200px;
+    border: solid 3px hotpink;
+    border-radius: 50%;
+    top: -110px;
+    position: absolute;
+    left: 50%;
+    margin-left: -120px;
+}

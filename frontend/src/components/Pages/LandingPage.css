@@ -1,0 +1,95 @@
+.landingPage {
+    overflow-x: hidden;
+}
+
+.whatWeDo {
+    width: 80%;
+    margin: auto;
+    padding-top: 25px;
+}
+
+.ourTeam {
+    width: 80%;
+    padding-top: 25px;
+    margin: auto;
+}
+
+.ourTeam h1 {
+    text-align: center;
+}
+
+.memberProfile1 {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2rem;
+    background-color: aliceblue;
+}
+
+.memberProfile1 .memberProfileRight {
+    padding: 1vw;
+}
+
+.memberProfile1 .memberProfileLeft{
+    text-align: center;
+    padding: 1vw;
+    margin-top: 0;
+    align-items: center;
+}
+
+.memberProfile1 .memberProfileLeft p{
+    margin-top:-20px;
+}
+
+.memberProfile1 .memberProfileLeft img {
+    width: 240px;
+    height: 240px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.contactButtons {
+    display:flex;
+    justify-content: center;
+}
+
+.contactButton {
+    height: auto;
+    width: auto;
+    margin: 5px;
+    border-radius: 50%;
+}
+
+.memberProfile2 {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    padding: 10px;
+    border-radius: 2rem;
+    background-color: aliceblue;
+}
+
+.memberProfile2 .memberProfileRight {
+    text-align: center;
+    padding: 1vw;
+    align-items: center;
+}
+
+.memberProfile2 .memberProfileRight img {
+    width: 240px;
+    height: 240px;
+    border-radius: 2rem;
+    text-align: center;
+}
+
+.memberProfile2 .memberProfileRight p {
+    margin-top:-20px;
+    text-align: center;
+}
+
+.memberProfile2 .memberProfileLeft {
+    padding: 1vw;
+}

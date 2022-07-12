@@ -1,0 +1,59 @@
+.carousel {
+    width: 100%;
+    height: 92vh;
+    overflow: hidden;
+    padding: 0px;
+    margin: 0px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: aliceblue;
+}
+
+.row {
+    position: relative;
+}
+
+.container {
+    position: absolute;
+    width: 80vw;
+    height: 70vh;
+    overflow: hidden;
+    background: white;
+    border-radius: 30px;
+    top: -37vh;
+}
+  
+.carouselBox {
+    height: 100%;
+    width: 100%;
+}
+
+.dots {
+    position: absolute;
+    width: 99%;
+    top: 90vh;
+    text-align: center;
+    background-color: aliceblue;
+    padding-top: 0;
+}
+
+.dot {
+    height: 15px;
+    width: 15px;
+    background-color: aliceblue;
+    border-radius: 50%;
+    border-color: black;
+    display: inline-block;
+    margin: 5px;
+}
+
+.dot-active {
+    height: 15px;
+    width: 15px;
+    background-color: black;
+    border-radius: 50%;
+    border-color: black;
+    display: inline-block;
+    margin: 5px;
+}
