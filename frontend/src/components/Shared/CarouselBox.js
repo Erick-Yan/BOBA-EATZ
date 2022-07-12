@@ -9,7 +9,7 @@ const CarouselBox = props => {
             <div className='awardInfo'>
                 <h1 className='awardName'>{awardName}</h1>
                 <h2 className='nominee'>{nominee}</h2>
-                {(restaurantName ? <h3 className='restaurantName'>{restaurantName}</h3> : <h3></h3>)}
+                {(restaurantName ? <h4 className='restaurantName'>From {restaurantName}</h4> : <h3></h3>)}
             </div>
         </div>
     )
