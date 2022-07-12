@@ -67,18 +67,17 @@ const LandingPage = props => {
                     </div>
                     <div className='memberProfile2'>
                     <div className='memberProfileLeft'>
-                            <h2>What is Boba?</h2>
+                            <h2>Our Choice Today is Our Life Tomorrow...</h2>
                             <p>
-                                Pellentesque habitant morbi tristique senectus et netus et 
-                                malesuada fames ac turpis egestas. Vestibulum tortor quam, 
-                                feugiat vitae, ultricies eget, tempor sit amet, ante. 
-                                Donec eu libero sit amet quam egestas semper. Aenean ultricies 
-                                mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi 
-                                tristique senectus et netus et 
-                                malesuada fames ac turpis egestas. Vestibulum tortor quam, 
-                                feugiat vitae, ultricies eget, tempor sit amet, ante. 
-                                Donec eu libero sit amet quam egestas semper. Aenean ultricies 
-                                mi vitae est. Mauris placerat eleifend leo.
+                                Now the quote above might be an exaggeration, but when it comes to which boba drink you get, 
+                                it CAN be a make or break your day type of situation. Although I am no boba connoisseur like 
+                                my colleague above, I am your average foodie and constantly need validation from my fellow 
+                                foodies on whether my next meal is good one or not. As a 2nd year Systems 
+                                Design Engineering student at the University of Waterloo, MY BOBA came to fruition from both 
+                                my passion for food and application development experience. As David and I
+                                continue on our learning journey, we are excited to bring new features and updates to the site. 
+                                In fact, we already have a list of things we'd like to implement right away. Have any ideas yourself? 
+                                Feel free to reach out to any one of us and we'll gladly consider any recommendations!
                             </p>
                         </div>
                         <div className='memberProfileRight'>
@@ -87,7 +86,7 @@ const LandingPage = props => {
                             <p>Co-Founder, Software Engineer</p>
                             <div className='contactButtons'>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="mail" iconColor="black" size="35" url="https://www.youtube.com/channel/UC8qwhJMsUPR1s34QI3a7sFQ"/>
+                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="mail" iconColor="black" size="35" url="mailto:e5yan@uwaterloo.ca"/>
                                 </div>
                                 <div className="contactButton" >
                                 <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="github" iconColor="black" size="35" url="https://github.com/Erick-Yan"/>
