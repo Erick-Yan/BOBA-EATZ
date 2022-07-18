@@ -52,16 +52,10 @@ const LandingPage = props => {
                         <div className='memberProfileRight'>
                             <h2>I love Boba, and so should you!</h2>
                             <p>
-                                Pellentesque habitant morbi tristique senectus et netus et 
-                                malesuada fames ac turpis egestas. Vestibulum tortor quam, 
-                                feugiat vitae, ultricies eget, tempor sit amet, ante. 
-                                Donec eu libero sit amet quam egestas semper. Aenean ultricies 
-                                mi vitae est. Mauris placerat eleifend leo. Pellentesque habitant morbi 
-                                tristique senectus et netus et 
-                                malesuada fames ac turpis egestas. Vestibulum tortor quam, 
-                                feugiat vitae, ultricies eget, tempor sit amet, ante. 
-                                Donec eu libero sit amet quam egestas semper. Aenean ultricies 
-                                mi vitae est. Mauris placerat eleifend leo.
+                                I am a boba connoisseur. Born in Taiwan, the land of the bobas, I was destined for boba greatness. 
+                                Jokes aside, I am kind of addicted to bubble tea and always love trying new boba drinks. However, I struggled
+                                find a comprehensive guide on seeing how individual drinks from different shops stack up 
+                                against each other. Since Erick and I were looking to do a project together, MY BOBA was born.
                             </p>
                         </div>
                     </div>
