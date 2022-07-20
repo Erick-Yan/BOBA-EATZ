@@ -21,7 +21,7 @@ Data used for this site was all [web scraped](https://github.com/Erick-Yan/BOBA-
 - Run Backend
   - Run ```cd backend```
   - Run ```npm start```
-- Official Deployed Site Coming Soon...
+- Official Hosted Site Coming Soon...
 
 
 ## Inspiration
@@ -52,7 +52,7 @@ If we click on a menu item, we open up the drink review page, which contains ano
 
 Determining which Python library to scrape proved to be the first difficult task we had to face. We had the option of the popular BeautifulSoup parser, but due to the amount of JavaScript from the modals on Yelp, the data we could scrape was limited to what the static HTML content had. To overcome this roadblock, we opted to use Selenium, which would open the hidden JavaScript components by mimicing the user flow.
 
-Leveraging Selenium, I was able to open each drink modal under a Yelp shop review, expand each review message, and extract the content using XML. We created 3 sets of buckets (which would represent the different MongoDB collections required) to fill with the scraped data. 
+Leveraging Selenium, I was able to open each drink modal under a Yelp shop review, expand each review message, and extract the content using x-paths. We created 3 sets of buckets (which would represent the different MongoDB collections required) to fill with the scraped data. 
 
   1. Review Collection.
   2. Drink Collection.
