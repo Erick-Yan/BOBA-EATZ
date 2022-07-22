@@ -17,7 +17,7 @@ function SearchResults({ searchInput }) {
     const fetchResults = async () => {
       try {
         const responseData = await sendRequest(
-          `http://localhost:5000/api/${searchType}/search/${searchQuery}`
+          `${process.env.REACT_APP_BACKEND}/api/${searchType}/search/${searchQuery}`
         );
         console.log(responseData);
         setLoadedResults(responseData);

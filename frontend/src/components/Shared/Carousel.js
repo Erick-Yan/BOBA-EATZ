@@ -69,7 +69,7 @@ const Carousel = props => {
     useEffect(() => {
         const fetchAwards = async () => {
           try {
-            const drinkData = await sendRequest("http://localhost:5000/api/drinks/awards");
+            const drinkData = await sendRequest(`${process.env.REACT_APP_BACKEND}/api/drinks/awards`);
             let highestRatedDrink = drinkData.highestRatedDrink
             highestRatedDrink.image = highestRatedDrink.drinkImage;
             highestRatedDrink.awardName = "Highest Rated Drink";
@@ -84,7 +84,7 @@ const Carousel = props => {
             mostPopularDrink.restaurantName = mostPopularDrink.shopName;
             newAwards.push(mostPopularDrink);
 
-            const shopData = await sendRequest("http://localhost:5000/api/shops/awards");
+            const shopData = await sendRequest(`${process.env.REACT_APP_BACKEND}/api/shops/awards`);
             let highestRatedShop = shopData.highestRatedShop
             highestRatedShop.image = highestRatedShop.shopImage;
             highestRatedShop.awardName = "Highest Rated Shop";

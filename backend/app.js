@@ -49,7 +49,7 @@ mongoose
     .then(() => {
         console.log("Connected!")
         // If connection is made to MongoDB database, start the backend server.
-        app.listen(5000);
+        app.listen(5001);
     })
     .catch(err => {
         console.log(err);

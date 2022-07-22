@@ -13,7 +13,7 @@ const DrinkOverview = ({ drinkId }) => {
   useEffect(() => {
     const fetchDrinks = async () => {
       try {
-        const responseData = await sendRequest(`http://localhost:5000/api/drinks/${drinkId}`);
+        const responseData = await sendRequest(`${process.env.REACT_APP_BACKEND}/api/drinks/${drinkId}`);
         setLoadedDrink(responseData.drink);
       } catch (err) {}
     }
