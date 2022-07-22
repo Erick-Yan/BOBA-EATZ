@@ -102,30 +102,36 @@ const getShopBySearchQuery = async (req, res, next) => {
 }
 
 const getShopAwards = async (req, res, next) => {
-    const {db} = mongoose.connection;
-    const collection = await db.collection("shops");
-    collection.aggregate([
-        {$unwind: "#drinks"},
-        {$group: {_id: "$_id", reviews: {$push:"$drinks"}, size: {$sum:1}}}
-    ])
-    collection.createIndex(
+    // W = (Average Rating * Number of Votes / Number of Votes + Weight)
+    let newFields = await Shop.aggregate([
         {
-            avgRating: 1,
-            drinks: 1
-        }
-    )
+            $group: {
+              _id: '$_id',
+              avgRating: {$sum:'$avgRating'},
+              numberOfDrinks: { $sum: { $size:"$drinks" } },
+              shopName: {$first: '$shopName'},
+              shopImage: {$first: '$shopImage'}
+            }
+        },
+        {
+            $project: {
+                numerator: {$multiply: ['$avgRating', '$numberOfDrinks']},
+                denominator: { $sum: ['$avgRating', 3] },
+                numberOfDrinks: '$numberOfDrinks',
+                shopName: '$shopName',
+                shopImage: '$shopImage'
+            }
+        },
+        {
+            $addFields: {
+                weightedScore: {$divide: ['$numerator', '$denominator']}
+            }
+        },
+        { $sort: { weightedScore: -1 } },
+        { $limit: 1}
+    ]);
 
-    let highestRatedShop;
-    try {
-        highestRatedShop = await collection.find().sort({ avgRating: -1 }).toArray();
-        highestRatedShop = highestRatedShop[0];
-    } catch (err) {
-        const error = new HttpError(
-            'Something went wrong with searching this drink.',
-            500
-        );
-        return next(error);
-    }
+    let highestRatedShop = newFields[0];
 
     res.json({highestRatedShop});
 }
