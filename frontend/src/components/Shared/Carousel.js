@@ -79,7 +79,7 @@ const Carousel = props => {
 
             let mostPopularDrink = drinkData.mostPopularDrink
             mostPopularDrink.image = mostPopularDrink.drinkImage;
-            mostPopularDrink.awardName = "Highest Rated Drink";
+            mostPopularDrink.awardName = "Most Popular Drink";
             mostPopularDrink.nominee = mostPopularDrink.drinkName;
             mostPopularDrink.restaurantName = mostPopularDrink.shopName;
             newAwards.push(mostPopularDrink);

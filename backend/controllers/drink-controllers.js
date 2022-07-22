@@ -103,35 +103,41 @@ const getDrinkBySearchQuery = async (req, res, next) => {
 }
 
 const getDrinkAwards = async (req, res, next) => {
-    const {db} = mongoose.connection;
-    const collection = await db.collection("drinks");
-    collection.aggregate([
-        {$unwind: "#reviews"},
-        {$group: {_id: "$_id", reviews: {$push:"$reviews"}, size: {$sum:1}}}
-    ])
-    collection.createIndex(
+    // W = (Average Rating * Number of Votes / Number of Votes + Weight)
+    let newFields = await Drink.aggregate([
         {
-            avgRating: 1,
-            size: 1
-        }
-    )
+            $group: {
+              _id: '$_id',
+              avgRating: {$sum:'$avgRating'},
+              numberOfReviews: { $sum: { $size:"$reviews" } },
+              drinkName: {$first: '$drinkName'},
+              shopName: {$first: '$shopName'},
+              drinkImage: {$first: '$drinkImage'}
+            }
+        },
+        {
+            $project: {
+                numerator: {$multiply: ['$avgRating', '$numberOfReviews']},
+                denominator: { $sum: ['$avgRating', 3] },
+                numberOfReviews: '$numberOfReviews',
+                drinkName: '$drinkName',
+                shopName: '$shopName',
+                drinkImage: '$drinkImage'
+            }
+        },
+        {
+            $addFields: {
+                weightedScore: {$divide: ['$numerator', '$denominator']}
+            }
+        },
+        { $sort: { weightedScore: -1, numberOfReviews: -1 } },
+        { $limit: 2}
+    ]);
 
-    let highestRatedDrink;
-    let mostPopularDrink;
-    try {
-        highestRatedDrink = await collection.find().sort({ avgRating: -1 }).toArray();
-        highestRatedDrink = highestRatedDrink[0];
-        mostPopularDrink = await collection.find().sort({ size: -1 }).toArray();
-        mostPopularDrink = mostPopularDrink[0];
-    } catch (err) {
-        const error = new HttpError(
-            'Something went wrong with searching this drink.',
-            500
-        );
-        return next(error);
-    }
+    let highestRatedDrink = newFields[0];
+    let mostPopularDrink = newFields[1];
 
-    res.json({highestRatedDrink, mostPopularDrink});
+    res.json({highestRatedDrink: highestRatedDrink, mostPopularDrink: mostPopularDrink});
 }
 
 const createDrink = async (req, res, next) => {

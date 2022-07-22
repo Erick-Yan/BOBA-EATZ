@@ -48,6 +48,12 @@ If we click on a menu item, we open up the drink review page, which contains ano
 
 ![search results](/images/drink-review.png)
 
+## Features
+
+### The Drink Awards
+
+We've dedicated the landing page carousel to display the drinks and shops most deserving of an award based on popularity and ratings. For popularity, we performed a sorted query to rank drinks based on the number of reviews under each drink. For the highest rated award, we took inspiration from the [Bayesian Estimator Ranking Methodology](https://en.wikipedia.org/wiki/Bayes_estimator#Practical_example_of_Bayes_estimators). Essentially, we leveraged mongoose's `aggregate()` query and calculated each drink/shop's weighted rating using the existing schema fields while following the following Bayesian estimator equation: `weightedRating = (avgRating x numberOfReviews) / (numberOfReviews + constant)`. Surprisingly enough, the awards were all sweeped by "The Alley".
+
 ## Creating a Web-Scraping Pipeline
 
 Determining which Python library to scrape proved to be the first difficult task we had to face. We had the option of the popular BeautifulSoup parser, but due to the amount of JavaScript from the modals on Yelp, the data we could scrape was limited to what the static HTML content had. To overcome this roadblock, we opted to use Selenium, which would open the hidden JavaScript components by mimicing the user flow.
@@ -110,7 +116,7 @@ Working with the `aggregate()` method in MongoDB is a challenge we are still fac
 
 1. Hosting (In-progress).
 
-2. Create a robust ranking system for the Highest Rated Drink using the Bayesian Estimator (In-progress).
+2. Create a robust ranking system for the Highest Rated Drink using the Bayesian Estimator (Completed).
 
 3. Integrate Google Reviews under each respective Shop and Drink (In-progress).
 
