@@ -57,7 +57,7 @@ app.get("*", (req, res) => {
 
 // Connect to MongDB database and start backend.
 mongoose
-    .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
+    .connect(process.env.MONGODB_URI || "mongodb+srv://Erick:2w4r6y8i@cluster0.hvenj.mongodb.net/boba?retryWrites=true&w=majority", { useNewUrlParser: true })
     .then(() => {
         console.log("Connected!")
         // If connection is made to MongoDB database, start the backend server.
