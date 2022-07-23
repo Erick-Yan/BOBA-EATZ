@@ -14,7 +14,7 @@ function AllShops() {
   useEffect(() => {
     const fetchShops = async () => {
       try {
-        const responseData = await sendRequest(`${process.env.REACT_APP_BACKEND}/api/shops`);
+        const responseData = await sendRequest(`${process.env.PORT || process.env.REACT_APP_BACKEND}/api/shops`);
         setLoadedShops(responseData.shops);
       } catch (err) {}
     }

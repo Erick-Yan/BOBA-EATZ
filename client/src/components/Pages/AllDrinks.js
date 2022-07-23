@@ -13,7 +13,7 @@ function AllDrinks() {
   useEffect(() => {
     const fetchShops = async () => {
       try {
-        const responseData = await sendRequest(`${process.env.REACT_APP_BACKEND}/api/drinks`);
+        const responseData = await sendRequest(`${process.env.PORT || process.env.REACT_APP_BACKEND}/api/drinks`);
         setLoadedDrinks(responseData.drinks);
       } catch (err) {}
     }

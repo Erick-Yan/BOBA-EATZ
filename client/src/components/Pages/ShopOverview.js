@@ -14,7 +14,7 @@ const ShopOverview = ({ shopId }) => {
   useEffect(() => {
     const fetchShops = async () => {
       try {
-        const responseData = await sendRequest(`${process.env.REACT_APP_BACKEND}/api/shops/${shopId}`);
+        const responseData = await sendRequest(`${process.env.PORT || process.env.REACT_APP_BACKEND}/api/shops/${shopId}`);
         setLoadedShop(responseData.shop);
       } catch (err) {}
     }
