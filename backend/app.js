@@ -9,6 +9,8 @@ const drinksRoutes = require("./routes/drinks-routes");
 
 const app = express();
 
+const PORT = process.env.PORT || 5001
+
 // Parse incoming request as JSON data.
 app.use(bodyParser.json());
 
@@ -49,7 +51,7 @@ mongoose
     .then(() => {
         console.log("Connected!")
         // If connection is made to MongoDB database, start the backend server.
-        app.listen(5001);
+        app.listen(PORT);
     })
     .catch(err => {
         console.log(err);
