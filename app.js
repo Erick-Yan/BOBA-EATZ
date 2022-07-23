@@ -28,24 +28,6 @@ app.use((req, res, next) => {
 app.use('/api/shops', shopsRoutes);
 app.use('/api/drinks', drinksRoutes);
 
-// Below middleware function will handle requests that weren't handled 
-// by the middleware above (better error handling in Postman).
-app.use((req, res, next) => {
-    const error = new HttpError('Could not find this route.', 404);
-    throw error;
-});
-
-// Below middleware function will execute if any middlewares above it 
-// result in an error.
-app.use((error, req, res, next) => {
-    if(res.headerSent) {
-        return next(error);
-    }
-    // Set the status. If an error code exists, set it to that or 500.
-    res.status(error.code || 500);
-    res.json({message: error.message || "An unknown error occurred."});
-});
-
 // ... other app.use middleware 
 app.use(express.static(path.join(__dirname, "client", "build")))
 
