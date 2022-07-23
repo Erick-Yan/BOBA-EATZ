@@ -2,6 +2,7 @@ const express = require("express");
 const bodyParser = require("body-parser");
 const HttpError = require("./models/http-error");
 const mongoose = require("mongoose");
+const path = require("path")
 
 // Import the routes.
 const shopsRoutes = require("./routes/shops-routes");
@@ -45,9 +46,18 @@ app.use((error, req, res, next) => {
     res.json({message: error.message || "An unknown error occurred."});
 });
 
+// ... other app.use middleware 
+app.use(express.static(path.join(__dirname, "client", "build")))
+
+// ...
+// Right before your app.listen(), add this:
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, "client", "build", "index.html"));
+});
+
 // Connect to MongDB database and start backend.
 mongoose
-    .connect('mongodb+srv://Erick:2w4r6y8i@cluster0.hvenj.mongodb.net/boba?retryWrites=true&w=majority')
+    .connect(process.env.MONGODB_URI, { useNewUrlParser: true })
     .then(() => {
         console.log("Connected!")
         // If connection is made to MongoDB database, start the backend server.
