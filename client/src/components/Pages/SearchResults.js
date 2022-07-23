@@ -17,7 +17,7 @@ function SearchResults({ searchInput }) {
     const fetchResults = async () => {
       try {
         const responseData = await sendRequest(
-          `${process.env.PORT || process.env.REACT_APP_BACKEND}/api/${searchType}/search/${searchQuery}`
+          `${process.env.REACT_APP_BACKEND}/api/${searchType}/search/${searchQuery}`
         );
         console.log(responseData);
         setLoadedResults(responseData);
