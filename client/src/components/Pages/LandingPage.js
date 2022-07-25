@@ -39,13 +39,13 @@ const LandingPage = props => {
                             <p>Co-Founder, Software Engineer</p>
                             <div className='contactButtons'>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="mail" iconColor="black" size="35" url="https://www.youtube.com/channel/UC8qwhJMsUPR1s34QI3a7sFQ"/>
+                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="mail" iconColor="black" size="35" url="https://www.youtube.com/channel/UCHR57pt-a6vkwON3vTROsWw/"/>
                                 </div>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="github" iconColor="black" size="35" url="https://github.com/Erick-Yan"/>
+                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="github" iconColor="black" size="35" url="https://github.com/changoug"/>
                                 </div>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="linkedin" iconColor="black" size="35" url="https://www.linkedin.com/in/erick-yan/"/>
+                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="linkedin" iconColor="black" size="35" url="https://www.linkedin.com/in/changoug/"/>
                                 </div>
                             </div>
                         </div>
