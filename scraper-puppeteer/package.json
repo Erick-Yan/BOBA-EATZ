@@ -1,0 +1,22 @@
+{
+  "name": "scraper-puppeteer",
+  "version": "1.0.0",
+  "description": "puppeteer testing and development project for Google Reviews scraping",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Erick-Yan/BOBA-EATZ.git"
+  },
+  "author": "David Chang; Erick Yan",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Erick-Yan/BOBA-EATZ/issues"
+  },
+  "homepage": "https://github.com/Erick-Yan/BOBA-EATZ#readme",
+  "dependencies": {
+    "puppeteer": "^15.5.0"
+  }
+}
