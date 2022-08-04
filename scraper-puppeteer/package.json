@@ -18,6 +18,8 @@
   },
   "homepage": "https://github.com/Erick-Yan/BOBA-EATZ#readme",
   "dependencies": {
-    "puppeteer": "^15.5.0"
+    "puppeteer": "^15.5.0",
+    "puppeteer-extra": "^3.3.4",
+    "puppeteer-extra-plugin-stealth": "^2.11.0"
   }
 }
