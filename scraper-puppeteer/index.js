@@ -1,8 +1,10 @@
 const getReviews = require('./getReviews');
 
 async function main() {
+  const shops = ['CoCo Fresh Tea & Juice'];
+  const drinks = ['3 Guys'];
   try {
-      const data = await getReviews("https://www.google.com/maps/search/CoCo+Fresh+Tea+%26+Juice/@43.6645497,-79.4804115,13z");
+      const data = await getReviews('https://www.google.com/maps/', shops, drinks);
       console.log(JSON.stringify(data));
   } catch(e) {
       console.log(e);

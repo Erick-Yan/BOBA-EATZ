@@ -3,27 +3,47 @@ const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 
 puppeteer.use(StealthPlugin());
 
-const getReviews = async (url) => {
-  const browser = await puppeteer.launch({headless: true, args: ['--disabled-setuid-sandbox', '--no-sandbox']});
+const getReviews = async (url, shops, drinks) => {
+  const browser = await puppeteer.launch({headless: false, args: ['--disabled-setuid-sandbox', '--no-sandbox']});
   const page = await browser.newPage();
   await page.goto(url);
+  const data = [];
+  for (let i = 0; i < shops.length; i++) {
+    await searchShop 
+  }
+}
+
+const searchShop = async (url, shops, drinks) => {
+
+}
+
+const test = async (url, shops, drinks) => {
+  const browser = await puppeteer.launch({headless: false, args: ['--disabled-setuid-sandbox', '--no-sandbox']});
+  const page = await browser.newPage();
+  await page.goto(url);
+
+  await page.waitForSelector('#searchboxinput');
+  await page.click('#searchboxinput');
+  await page.$eval('#searchboxinput', (el, shops) => { el.value = shops[0] }, shops);
+  await page.keyboard.press('Enter');
+
   await page.waitForSelector('.qBF1Pd');
   
   // click on first item
-  await page.click('#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(3) > div > a');
+  await page.click('.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(5)');
 
-  await page.waitForSelector('.q8YqMd');
+  await page.waitForSelector('.pV4rW.q8YqMd');
 
   //click on search button
-  await page.click('#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.Pf6ghf.KoSBEe.ecceSd.tLjsW > div.i7mKJb.fontBodyMedium > div.m3rned > div.pV4rW.q8YqMd > div > button');
+  await page.click('.pV4rW.q8YqMd');
 
   // search input
-   await page.$eval('#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.Pf6ghf.KoSBEe.ecceSd.tLjsW > div.i7mKJb.fontBodyMedium.zzWGUd > div.MrFZRe.g8q29e > div > input', el => el.value = '3 Guys');
+   await page.$eval('div.MrFZRe.g8q29e > div > input', (el, drinks) => { el.value = drinks[0] }, drinks);
    await page.keyboard.press('Enter');
    await page.waitForTimeout(1000);
-   await page.click('#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.BHymgf.eiJcBe > div > div > div.hWERUb > span > button');
+   await page.click('.hWERUb');
    await page.waitForTimeout(1000);
-   await page.click('#omnibox-singlebox > div.NaMBUd.omnibox-active > div.fKm1Mb > button');
+   await page.click('.fKm1Mb');
    console.log('gud stuff');
 
 
