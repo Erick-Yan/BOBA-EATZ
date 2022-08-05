@@ -3,29 +3,31 @@ const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 
 puppeteer.use(StealthPlugin());
 
-const drinkName = ['3 Guys'];
-
 const getReviews = async (url) => {
-  const browser = await puppeteer.launch({args: ['--disabled-setuid-sandbox', '--no-sandbox']});
+  const browser = await puppeteer.launch({headless: true, args: ['--disabled-setuid-sandbox', '--no-sandbox']});
   const page = await browser.newPage();
-  const navigationPromise = page.waitForNavigation({waitUntil: "domcontentloaded"});
   await page.goto(url);
-  await navigationPromise;
-  await page.waitForSelector(".qBF1Pd");
-  console.log('this worked');
+  await page.waitForSelector('.qBF1Pd');
   
   // click on first item
-  await page.$x('//*[@id="QA0Szd"]/div/div/div[1]/div[2]/div/div[1]/div/div/div[2]/div[1]/div[3]/div/a').then( (elements) =>
-  { elements[0].click() } );
+  await page.click('#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(3) > div > a');
+
+  await page.waitForSelector('.q8YqMd');
 
   //click on search button
-  await page.$x('//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]/div[39]/div[1]/div[1]/div[2]/div/button/span').then( (elements) =>
-  { elements[0].click() } );
+  await page.click('#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.Pf6ghf.KoSBEe.ecceSd.tLjsW > div.i7mKJb.fontBodyMedium > div.m3rned > div.pV4rW.q8YqMd > div > button');
 
   // search input
-  await page.$eval('//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]/div[39]/div[1]/div[2]/div/input', el => el.value = drinkName[0]);
-  await page.keyboard.press('Enter');
-  await page.waitForXPath('//*[@id="QA0Szd"]/div/div/div[1]/div[3]/div/div[1]/div/div/div[2]/div[9]/div[1]/div/div[3]/div[4]/jsl/button');
+   await page.$eval('#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.m6QErb.Pf6ghf.KoSBEe.ecceSd.tLjsW > div.i7mKJb.fontBodyMedium.zzWGUd > div.MrFZRe.g8q29e > div > input', el => el.value = '3 Guys');
+   await page.keyboard.press('Enter');
+   await page.waitForTimeout(1000);
+   await page.click('#QA0Szd > div > div > div.w6VYqd > div.bJzME.tTVLSc > div > div.e07Vkf.kA9KIf > div > div > div.BHymgf.eiJcBe > div > div > div.hWERUb > span > button');
+   await page.waitForTimeout(1000);
+   await page.click('#omnibox-singlebox > div.NaMBUd.omnibox-active > div.fKm1Mb > button');
+   console.log('gud stuff');
+
+
+//   await page.waitForSelector();
 
   // const data = await page.evaluate(() => {
   //     let reviewAuthorNamesClasses = document.getElementsByClassName('section-review-title');
@@ -37,7 +39,7 @@ const getReviews = async (url) => {
   //         reviewAuthorNames
   //     }
   // })
-  browser.close();
+  // browser.close();
   // return new Promise((resolve, reject) => {
   //     resolve(data);
   //     if(reject) {
