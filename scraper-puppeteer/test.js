@@ -3,7 +3,7 @@ const StealthPlugin = require("puppeteer-extra-plugin-stealth");
 
 puppeteer.use(StealthPlugin());
 
-const placeUrl = 'https://www.google.com/maps/place/Eiffel+Tower/@48.8583701,2.2901039,16z/data=!4m5!3m4!1s0x47e66e2964e34e2d:0x8ddca9ee380ef7e0!8m2!3d48.8583701!4d2.2944813'
+const placeUrl = 'https://www.google.com/maps/place/The+Alley/@43.5829699,-81.7470919,8z/data=!3m1!5s0x882b34b40fdfad6b:0x7cf5144b2a8e8b40!4m5!3m4!1s0x882b34b3d27c6bd1:0xbb48d009cd2be35b!8m2!3d43.6658!4d-79.3855494'
 
 async function scrollPage(page, scrollContainer) {
   let lastHeight = await page.evaluate(`document.querySelector("${scrollContainer}").scrollHeight`);
@@ -61,18 +61,13 @@ async function fillPlaceInfo(page) {
 
 async function getLocalPlaceReviews() {
   const browser = await puppeteer.launch({
-    headless: true,
+    headless: false,
     args: ["--no-sandbox", "--disable-setuid-sandbox"],
   });
 
   const page = await browser.newPage();
 
   await page.setDefaultNavigationTimeout(60000);
-  await page.goto(placeUrl, {
-        waitUntil: 'load',
-        // Remove the timeout
-        timeout: 0
-    });
   await page.waitForSelector(".DUwDvf");
 
   const placeInfo = await fillPlaceInfo(page);
@@ -81,7 +76,7 @@ async function getLocalPlaceReviews() {
   await page.waitForTimeout(2000);
   await page.waitForSelector(".jftiEf");
 
-  await scrollPage(page, '.DxyBCb');
+  // await scrollPage(page, '.DxyBCb');
 
   const reviews = await getReviewsFromPage(page);
 
