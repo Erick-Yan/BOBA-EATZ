@@ -70,7 +70,7 @@ const PageHeader = props => {
                     <h1 className='text'>{props.header}</h1>
                 </div>
                 <div className='sentimentScores'>
-                    <Bar options={options} data={data} />
+                    {props.isDrink && (<Bar options={options} data={data} />)}
                 </div>
             </div>
             <div className='headerLine'>

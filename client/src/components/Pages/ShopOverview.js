@@ -24,7 +24,12 @@ const ShopOverview = ({ shopId }) => {
   return (
     <React.Fragment>
       {loadedShop && (<Box>
-        <PageHeader header={loadedShop.shopName} image={loadedShop.shopImage} rating={loadedShop.avgRating} />
+        <PageHeader 
+          header={loadedShop.shopName} 
+          image={loadedShop.shopImage} 
+          rating={loadedShop.avgRating} 
+          isDrink={false}
+        />
         <Container style={styles.container}>
           <Typography variant='h4' sx={{paddinLeft: 10, paddingTop: 2}}>Menu</Typography>
           <List style={styles.list} class='scrollbar-hidden'>

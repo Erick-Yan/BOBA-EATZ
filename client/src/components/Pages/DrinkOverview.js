@@ -41,6 +41,7 @@ const DrinkOverview = ({ drinkId }) => {
             header={loadedDrink.drinkName} 
             image={loadedDrink.drinkImage} 
             rating={loadedDrink.avgRating} 
+            isDrink={true}
             happyScore={loadedDrink.happyScore}
             surprisedScore={loadedDrink.surprisedScore}
             sadScore={loadedDrink.sadScore}
