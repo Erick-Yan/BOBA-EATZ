@@ -19,14 +19,11 @@ function SearchResults({ searchInput }) {
         const responseData = await sendRequest(
           `${process.env.REACT_APP_BACKEND}/api/${searchType}/search/${searchQuery}`
         );
-        console.log(responseData);
         setLoadedResults(responseData);
       } catch (err) {}
     }
     fetchResults();
   }, [sendRequest]);
-
-  console.log(loadedResults);
 
   return (
     <Box style={styles.box}>
