@@ -1,0 +1,25 @@
+.Filter-Button {
+    border-radius: 0.25vw;
+    margin: 5px;
+    border: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 15px;
+    font-weight: 20;
+    transition:ease-in-out 0.25s;
+}
+
+.Filter-Button:hover {
+    background-color: aquamarine;
+}
+
+.Filter-Button:focus {
+    background-color: aquamarine;
+}
+
+.Positive-Sent, .Positive-Word {
+    background-color: rgba(53, 162, 235, 0.5);
+}
+
+.Negative-Sent, .Negative-Word {
+    background-color: rgba(255, 99, 132, 0.5);
+}

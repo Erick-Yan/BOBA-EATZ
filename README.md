@@ -15,13 +15,14 @@ Data used for this site was all [web scraped](https://github.com/Erick-Yan/BOBA-
 ## Quickstart
 
 - Clone repo
-- Run Frontend
-  - Run ```cd frontend```
-  - Run ```npm start```
 - Run Backend
-  - Run ```cd backend```
+  - Run ```npm install```
   - Run ```npm start```
-- Official Hosted Site Coming Soon...
+Run Frontend
+  - Run ```cd client```
+  - Run ```npm install```
+  - Run ```npm start```
+- Official Hosted Site: https://boba-eatz.herokuapp.com/
 
 
 ## Inspiration
@@ -33,26 +34,62 @@ As people who always needs to check multiple sources on whether I'm making the r
 The application design is still in progress. With what we have now, we can start with the landing page, which contains a carousel highlighting the highest rated boba drink, most popular boba drink, and the highest rated shop (determined using MongoDB queries in the backend).
 
 ![landing page](/images/landing-page.png)
+> Developer Credits: [Erick Yan](https://github.com/Erick-Yan)
 
 The user has the option to filter their search for either a drink or shop using the search bar. In the search results, the user will be provided with options that contain the name being search for.
 
 ![search bar](/images/search-bar.png)
+> Developer Credits: [Erick Yan](https://github.com/Erick-Yan), [David Chang](https://github.com/changoug)
 
 ![search results](/images/search-results.png)
+> Developer Credits: [David Chang](https://github.com/changoug)
 
 If we click on a shop option, we open up the shop review page containing a scrollable carousel of its menu items and respective ratings.
 
 ![search results](/images/shop-review.png)
+> Developer Credits: [David Chang](https://github.com/changoug)
 
-If we click on a menu item, we open up the drink review page, which contains another scrollable carousel of all the reviews relevant to that drink name.
+If we click on a menu item, we open up the drink review page, which contains another scrollable carousel of all the reviews relevant to that drink name. We also added a sentiment scores to the drink as well as review filters that highlight the most relevant comments on the drink itself (Please refer to [Categorical Sentiment Score Chart](#categorical-sentiment-score-chart) and [Review Filter Words & Phrases](#review-filter-words--phrases) sections below). Users are able to click on any filter text to filter for reviews that contain that specific piece of text.
 
 ![search results](/images/drink-review.png)
+> Developer Credits: [Erick Yan](https://github.com/Erick-Yan), [David Chang](https://github.com/changoug)
 
 ## Features
 
+### Review Filter Words & Phrases
+Sometimes, the number of reviews under a drink can be overwhelming for a user to read through. With that in mind, we thought that having review filters would allow users to read reviews they were interested in based on the review filter text. There were 2 categories of analysis we performed:
+
+#### 1. Most Emotionally Charged Phrases
+We first separated the reviews into positive and negative buckets based on the current ratings given. The first challenge we ran into was that the review text wasn't always about the drink itself. It could sometimes be about the shop's ambience, the customer service, etc. Since this page's purpose is to provide an overview for just the drink, we needed to filter for comments within each review that were directly related to the drink. This is where we took advantage of Spacy's `PhraseMatcher()`, a rule-based matching engine. We set up engine rules to extract sentences that contained the drink name or the words `drink`. After retrieving those sentences, we then leveraged `Text2Emotion` Processor to calculate each sentence's emotion. For each sentence from the positive review bucket, we calculated the amount of "happiness" the text expressed. For each sentence from the negative review bucket, we calculated the amount of "sadness" and "anger" detected. We then pushed the sentences into a Max Heap to rank the sentences with the most emotional vigor from each bucket.
+
+#### 2. Word Frequency Analysis
+Using the drink-specific sentences extracted above, we performed some preprocessing on the sentences. We tokenized each word and filtered out stopwords and punctuation. We then used NLTK's `FreqDist()` method to extract the most frequently used words from the positive and negative review buckets. After the first test, we noticed that there were some words wouldn't be useful to the users to see (ex. "drink", "taste", "shop"). We then went back to the preprocessing stage and filtered those words out as well.
+
+We updated the drink Mongoose schema to contain the following additional categories generated from the above:
+- mostPositiveSents
+- mostNegativeSents
+- mostPositiveWords
+- mostNegativeWords
+
+After some additional styling and JavaScript coding on the React frontend, users are now able to filter for specific reviews.
+
+> Developer Credits: [Erick Yan](https://github.com/Erick-Yan)
+
+### Categorical Sentiment Score Chart
+Using the sentiment scores calculated above, we averaged the "happiness", "sadness", "anger", and "surprised" category scores for each drink. We hen added the following categories to the drink Mongoose Schema:
+- positiveScore (from "happiness")
+- negativeScore (from "sad" and "anger")
+- surprisedScore (from "surprised")
+
+We used `Chart.js` to create a horizontal bar chart. This way, we can provide a quick overview on the general review sentiment towards the drink for rushed users.
+
+> Developer Credits: [Erick Yan](https://github.com/Erick-Yan)
+
 ### The Drink Awards
 
-We've dedicated the landing page carousel to display the drinks and shops most deserving of an award based on popularity and ratings. For popularity, we performed a sorted query to rank drinks based on the number of reviews under each drink. For the highest rated award, we took inspiration from the [Bayesian Estimator Ranking Methodology](https://en.wikipedia.org/wiki/Bayes_estimator#Practical_example_of_Bayes_estimators). Essentially, we leveraged mongoose's `aggregate()` query and calculated each drink/shop's weighted rating using the existing schema fields while following the following Bayesian estimator equation: `weightedRating = (avgRating x numberOfReviews) / (numberOfReviews + constant)`. Surprisingly enough, the awards were all sweeped by "The Alley".
+We've dedicated the landing page carousel to display the drinks and shops most deserving of an award based on popularity and ratings. For popularity, we performed a sorted query to rank drinks based on the number of reviews under each drink. For the highest rated award, we took inspiration from the [Bayesian Estimator Ranking Methodology](https://en.wikipedia.org/wiki/Bayes_estimator#Practical_example_of_Bayes_estimators). Essentially, we leveraged Mongoose's `aggregate()` query and calculated each drink/shop's weighted rating using the existing schema fields while following the following Bayesian estimator equation: `weightedRating = (avgRating x numberOfReviews) / (numberOfReviews + constant)`. Surprisingly enough, the awards were all sweeped by "The Alley".
+
+> Developer Credits: [Erick Yan](https://github.com/Erick-Yan)
 
 ## Creating a Web-Scraping Pipeline
 
@@ -96,6 +133,8 @@ Scraping all this content luckily only took ~10 minutes, but we strictly limited
 
 To load the JSON data into MongoDB, I read through the the PyMongo API and found that it was the ideal (and likely only) option. We created an automated script that would clear the existing collection and update it with the scraped data from the respective bucket.
 
+> Developer Credits: [Erick Yan](https://github.com/Erick-Yan)
+
 ## Working with MERN
 
 We began to project with sights on using React.js, Node.js, and Express.js, but the big question was which database to use. A relational database like PostgreSQL would've been a great option, but with the number of relationships between each bucket, the query complexity would eventually become overwhelming.
@@ -114,12 +153,16 @@ Working with the `aggregate()` method in MongoDB is a challenge we are still fac
 
 ## Upcoming Updates
 
-1. Hosting (In-progress).
+1. Hosting (Completed).
 
 2. Create a robust ranking system for the Highest Rated Drink using the Bayesian Estimator (Completed).
 
 3. Integrate Google Reviews under each respective Shop and Drink (In-progress).
 
-4. Include a Most Frequently Used Words section for each drink review page (In-progress). 
+4. Include a Most Frequently Used Words section for each drink review page (Completed). 
+    
+    a. Improvements
+      - There are still some phrases are still not very useful to reviewers (ex. I ordered the Matcha Latte Drink).
+      - Even after several testing iterations, there were still words that belong to the wrong bucket (ex. "Love" in the mostNegativeWords category), but this will likely improve as we add more reviews to the database.
 
 5. Drink recommendation engine using Machine Learning and NLP.

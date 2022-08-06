@@ -49,7 +49,6 @@ const MainHeader = props => {
 
     const handleKeyDown = (event) => {
         if (event.key === 'Enter') {
-          console.log(searchOption.toLowerCase());
           history.push(`/search-results/${searchOption.toLowerCase()}:${event.target.value}`);
           history.go();
         }
