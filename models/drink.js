@@ -9,14 +9,14 @@ const drinkSchema = new Schema({
     reviews: [{type: mongoose.Types.ObjectId, required: true, ref: 'Review'}],
     shopId: {type: mongoose.Types.ObjectId, required: true, ref: 'Shop'},
     shopName: {type: String, required: true},
-    positiveSents: [{type: String, required: false}],
-    negativeSents: [{type: String, required: false}],
+    positiveSents: [{type: String, required: true}],
+    negativeSents: [{type: String, required: true}],
     happyScore: {type: Number, required: false},
     surprisedScore: {type: Number, required: false},
     sadScore: {type: Number, required: false},
     angryScore: {type: Number, required: false},
-    positiveWords: [{type: String, required: false}],
-    negativeWords: [{type: Number, required: false}],
+    positiveWords: [{type: String, required: true}],
+    negativeWords: [{type: String, required: true}],
 });
 
 module.exports = mongoose.model('Drink', drinkSchema);
