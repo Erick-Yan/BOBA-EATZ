@@ -32,7 +32,7 @@ const DrinkOverview = ({ drinkId }) => {
     setLoadedReviews(filteredReviews);
     return;
   }
-  
+    
   return (
     <React.Fragment>
       {loadedDrink && (
