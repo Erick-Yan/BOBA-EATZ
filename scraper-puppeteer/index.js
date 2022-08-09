@@ -4,7 +4,7 @@ async function main() {
   const shops = [
     {
       name: 'CoCo Fresh Tea & Juice',
-      drinks: ['3 Guys']
+      drinks: ['3 Guys', 'Pearl Milk Tea', '2 Ladies', 'Red Bean Matcha Milk Tea', 'Sago Taro Milk Tea']
     }
   ];
   try {
