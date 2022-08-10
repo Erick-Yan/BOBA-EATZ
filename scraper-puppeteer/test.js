@@ -68,6 +68,7 @@ async function getLocalPlaceReviews() {
   const page = await browser.newPage();
 
   await page.setDefaultNavigationTimeout(60000);
+  await page.goto(placeUrl);
   await page.waitForSelector(".DUwDvf");
 
   const placeInfo = await fillPlaceInfo(page);

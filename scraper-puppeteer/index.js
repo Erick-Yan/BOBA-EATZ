@@ -1,4 +1,4 @@
-const getReviews = require('./getReviews');
+const getShopDict = require('./getShopDict');
 
 async function main() {
   const shops = [
@@ -8,8 +8,8 @@ async function main() {
     }
   ];
   try {
-      const data = await getReviews('https://www.google.com/maps/@43.6764672,-79.3935872,12z', shops);
-      // console.log(JSON.stringify(data));
+      const data = await getShopDict('https://www.google.com/maps/@43.6764672,-79.3935872,12z', shops);
+      console.log(JSON.stringify(data));
   } catch(e) {
       console.log(e);
   }
