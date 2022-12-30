@@ -25,6 +25,10 @@ Data used for this site was all [web scraped](https://github.com/Erick-Yan/BOBA-
   - Run ```npm start```
 - Official Hosted Site: https://boba-eatz.herokuapp.com/
 
+***Update: Hosted Site is unavailable due to Heroku's new Eco subscription cost plans
+  - https://stackoverflow.com/questions/41804507/h14-error-in-heroku-no-web-processes-running
+  - https://blog.heroku.com/new-low-cost-plans
+
 
 ## Inspiration
 
