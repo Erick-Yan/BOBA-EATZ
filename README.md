@@ -18,7 +18,8 @@ Data used for this site was all [web scraped](https://github.com/Erick-Yan/BOBA-
 - Run Backend
   - Run ```npm install```
   - Run ```npm start```
-Run Frontend
+
+- Run Frontend
   - Run ```cd client```
   - Run ```npm install```
   - Run ```npm start```
