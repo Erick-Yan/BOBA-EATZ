@@ -1,20 +1,31 @@
 const puppeteer = require('puppeteer-extra');
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
+const locateChrome = require("locate-chrome");
+const AsyncLock = require("./asyncLock");
 
 puppeteer.use(StealthPlugin());
 
 const getShopDict = async (url, shops) => {
-  const browser = await puppeteer.launch({headless: false, args: ['--disabled-setuid-sandbox', '--no-sandbox', '--window-size=1200,900', '--disable-dev-shm-usage', '--shm-size=3gb']});
+  const executablePath = await new Promise(resolve => locateChrome(arg => resolve(arg)));
+  const browser = await puppeteer.launch({
+    headless: false, 
+    args: ['--disable-setuid-sandbox', 
+            '--no-sandbox', 
+            '--window-size=1200,900'
+          ],
+    executablePath: executablePath
+    }
+  );
   const page = await browser.newPage();
   await page.goto(url);
-  const shopDict = {}
+  let shopDict = {}
   await Promise.all(
     shops.map( async (shop) => {
       shopDict[shop.name] = {};
       await searchShop(page, shop, shopDict);
     })
   );
-  await browser.close();
+  // await browser.close();
   return shopDict;
 };
 
@@ -31,31 +42,51 @@ const searchShop = async (page, shop, shopDict) => {
   for (let i = 0; i < numberOfBranches; i++) {
     await searchBranch(page, shop, i * 2 + 3, shopDict);
   }
+
+  return shopDict;
 };
 
 const searchBranch = async (page, shop,  branchIndex, shopDict) => {
   await page.waitForSelector(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
   await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
   //click on search button
-  await page.waitForSelector('.pV4rW.q8YqMd > div > button');
-  await nativeClick(page, '.pV4rW.q8YqMd > div > button');
-  await Promise.all(
-    shop.drinks.map( async (drink) => {
-      if ( !(drink in shopDict) ) {
-        shopDict[shop.name][drink] = []
-      }
-      const addToDrinks = shopDict[shop.name][drink];
-      const reviews = await getDrinkReviews(page, drink)
-      addToDrinks.push.apply(reviews);
-    })
-  );
+  await page.waitForSelector('.Io6YTe');
+  await scrollPage(page, '.Io6YTe');
+  // await page.waitForSelector('.pV4rW.q8YqMd > div > button');
+  // await nativeClick(page, '.pV4rW.q8YqMd > div > button');
+  for (let i = 0; i < shop.drinks.length; i++) {
+    if (!(shop.drinks[i] in shopDict[shop.name])) {
+      shopDict[shop.name][shop.drinks[i]] = []
+    }
+    const retrieved_reviews = await getDrinkReviews(page, shop.drinks[i]);
+    Array.prototype.push.apply(shopDict[shop.name][shop.drinks[i]], retrieved_reviews);
+    console.log(shopDict[shop.name][shop.drinks[i]].length);
+  }
+  // await Promise.all(
+  //   shop.drinks.map( async (drink) => {
+  //     if (!(drink in shopDict[shop.name])) {
+  //       shopDict[shop.name][drink] = []
+  //     }
+  //     const retrieved_reviews = await getDrinkReviews(page, drink);
+  //     console.log(drink);
+  //     console.log(shopDict[shop.name][drink].length);
+  //     Array.prototype.push.apply(shopDict[shop.name][drink], retrieved_reviews);
+  //     console.log(shopDict[shop.name][drink].length);
+  //   })
+  // );
+  return shopDict;
 };
 
 const getDrinkReviews = async (page, drink) => {
+  console.log(drink);
+  await page.waitForSelector('.pV4rW.q8YqMd > div > button');
+  await nativeClick(page, '.pV4rW.q8YqMd > div > button');
   await page.waitForSelector('div.MrFZRe.g8q29e > div > input');
   await page.$eval('div.MrFZRe.g8q29e > div > input', (el, drink) => { el.value = drink }, drink);
   await page.keyboard.press('Enter');
   await page.waitForSelector('.BHymgf.eiJcBe > div > div > div:nth-child(1) > span > button');
+  await page.waitForTimeout(2000);
+  await page.evaluate(() => !document.querySelectorAll('.IXJj5c', {display: true}));
   const reviews = await page.evaluate( async () => {
     return Array.from(document.querySelectorAll('.jftiEf')).map((el) => {
       return {
@@ -66,6 +97,7 @@ const getDrinkReviews = async (page, drink) => {
       };
     });
   });
+  console.log(reviews.length);
   return reviews;
 };
 
