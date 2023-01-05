@@ -1,0 +1,3810 @@
+[
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "b50ef315009611ed9159d0ab"
+            }
+        },
+        "drinkName": "Roasted Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/HrWnzPo2Xu2cZdxJDV2NRA\/o.jpg",
+        "avgRating": 3.6,
+        "reviews": [
+            {
+                "$oid": "b5e3d071009611eda2b8d0ab"
+            },
+            {
+                "$oid": "b62c97e1009611ed8cf0d0ab"
+            },
+            {
+                "$oid": "b6711d81009611eda9b4d0ab"
+            },
+            {
+                "$oid": "b6ba5f5b009611edb50cd0ab"
+            },
+            {
+                "$oid": "b7148cf4009611ed9677d0ab"
+            },
+            {
+                "$oid": "b76482d0009611eda7d0d0ab"
+            },
+            {
+                "$oid": "b79b714a009611edaae2d0ab"
+            },
+            {
+                "$oid": "b7d59418009611eda6b0d0ab"
+            },
+            {
+                "$oid": "b80cd099009611edb7dfd0ab"
+            },
+            {
+                "$oid": "b84bd46a009611eda64dd0ab"
+            },
+            {
+                "$oid": "b89fc9bc009611edac3bd0ab"
+            },
+            {
+                "$oid": "b8e907eb009611ed882cd0ab"
+            },
+            {
+                "$oid": "b9355327009611edac06d0ab"
+            },
+            {
+                "$oid": "b964a19a009611ed82ded0ab"
+            },
+            {
+                "$oid": "b99414c8009611ed80a7d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "10 points = 1 free regular drink. :-)",
+            "It's the best milk tea I've tasted around although some might argue with me.",
+            "My go-to is usually the Chatime roasted milk tea, but I tried the roasted tea latte this time around as it was a cold day."
+        ],
+        "negativeSents": [
+            "but now i have less confidence with their drinks as their drink does not taste like tea but just watered down milk.",
+            "I purchased the new Marble Roasted Milk tea drink.",
+            "I used to come to chatime before their quality went down.. used to love their roasted milk tea with grass jelly"
+        ],
+        "happyScore": 0.4777931034,
+        "surprisedScore": 0.3310344828,
+        "sadScore": 0.1911724138,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "addicted",
+            "think",
+            "customize",
+            "followed",
+            "especially"
+        ],
+        "negativeWords": [
+            "flavour",
+            "confidence",
+            "purchased",
+            "marble",
+            "love"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "b9c251dd009611eda86dd0ab"
+            }
+        },
+        "drinkName": "Brown Sugar Pearl Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/dYm7xxpDErm0gerJkKXtVg\/o.jpg",
+        "avgRating": 4.1538461538,
+        "reviews": [
+            {
+                "$oid": "ba600469009611edad9ad0ab"
+            },
+            {
+                "$oid": "ba8b238b009611edad5fd0ab"
+            },
+            {
+                "$oid": "bab87f37009611eda4a2d0ab"
+            },
+            {
+                "$oid": "bae73043009611edb2d1d0ab"
+            },
+            {
+                "$oid": "bb14d001009611ed8745d0ab"
+            },
+            {
+                "$oid": "bb4908b5009611ed8f6ed0ab"
+            },
+            {
+                "$oid": "bb8352a3009611edac2ed0ab"
+            },
+            {
+                "$oid": "bbb51b8c009611eda2abd0ab"
+            },
+            {
+                "$oid": "bbe438d4009611edaf0dd0ab"
+            },
+            {
+                "$oid": "bc0e7d1c009611edba00d0ab"
+            },
+            {
+                "$oid": "bc3b0b65009611edaea2d0ab"
+            },
+            {
+                "$oid": "bc685d17009611ed865cd0ab"
+            },
+            {
+                "$oid": "bc94eb37009611ed88e4d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "Also, get a Vicinity points card and you can get a free birthday regular drink.",
+            "Who needs a drink that cold?",
+            "The cafe itself is always crowded, lacking space for customers to sit down and enjoy the drink."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.464516129,
+        "surprisedScore": 0.535483871,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "crowded",
+            "minutes",
+            "fairy",
+            "compromising",
+            "wait"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "bcbfc7dc009611edba90d0ab"
+            }
+        },
+        "drinkName": "Matcha Tea Latte",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/_DxKWsZOqvc7HOseS0dPxg\/o.jpg",
+        "avgRating": 4.6666666667,
+        "reviews": [
+            {
+                "$oid": "bd4491d3009611ed90e4d0ab"
+            },
+            {
+                "$oid": "bd74a846009611edbfa8d0ab"
+            },
+            {
+                "$oid": "bdaa840d009611eda80ed0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "You receive one point for every drink, and after 10 points, you get a free regular tea.",
+            "I'm sure I will return because I like the fact that they give you the option to choose how much ice and sugar you want in your drink, and the Roasted Milk Tea is pretty good.",
+            "(I will just go to Starbucks if I ever want a green tea latte...)"
+        ],
+        "negativeSents": [],
+        "happyScore": 0.4345549738,
+        "surprisedScore": 0.5654450262,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "served",
+            "option",
+            "4.70",
+            "return",
+            "pretty"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "bddd2ccd009611ed9fb7d0ab"
+            }
+        },
+        "drinkName": "Hazelnut Chocolate Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/VynawKeM8V9kOklGUevkog\/o.jpg",
+        "avgRating": 4.5,
+        "reviews": [
+            {
+                "$oid": "be72e370009611edad53d0ab"
+            },
+            {
+                "$oid": "bea05ee2009611edbb1dd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "- Hazelnut chocolate milk tea with pudding ($4.20 for regular + $0.50 for pudding).",
+            "Definitely on the sweeter side but the pudding was interesting option to add to my friend's drink.",
+            "There was a lineup, but that's how you know it's good lol ;) They have a bunch of flavours (I tried hazelnut chocolate milk tea - like nutella!) and give you options to change the amount of ice and\/or sugar to suit it to your taste."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.4285714286,
+        "surprisedScore": 0.5714285714,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "lineup",
+            "option",
+            "suit",
+            "interesting",
+            "4.20"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "becb682e009611edb267d0ab"
+            }
+        },
+        "drinkName": "Caramel Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/T1bj_W7jL86GFgb8njk6mA\/o.jpg",
+        "avgRating": 4.2,
+        "reviews": [
+            {
+                "$oid": "bf4f76f9009611edb909d0ab"
+            },
+            {
+                "$oid": "bf7d90bf009611ed8ed7d0ab"
+            },
+            {
+                "$oid": "bfaa730b009611ed9945d0ab"
+            },
+            {
+                "$oid": "bfd93ca2009611edb913d0ab"
+            },
+            {
+                "$oid": "c0090fa5009611ed8751d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "Caramel milk tea was AMAZING.",
+            "My favourites are mango green tea and caramel milk tea.",
+            "The lines are always long around meal time and post-meal time but I never had to wait for too long to get my drink."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.6666666667,
+        "surprisedScore": 0.3333333333,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "packed",
+            "wait",
+            "expensive",
+            "frequent",
+            "lines"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "c0370803009611ed8572d0ab"
+            }
+        },
+        "drinkName": "Peach Green Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/JzipsYu2YrgLMLAKyPT7lw\/o.jpg",
+        "avgRating": 3.5,
+        "reviews": [
+            {
+                "$oid": "c0da4783009611edafa3d0ab"
+            },
+            {
+                "$oid": "c10f82a7009611ed9d30d0ab"
+            },
+            {
+                "$oid": "c141b664009611ed8af9d0ab"
+            },
+            {
+                "$oid": "c1809415009611ed9585d0ab"
+            },
+            {
+                "$oid": "c1b3cf02009611edad47d0ab"
+            },
+            {
+                "$oid": "c1e69ebf009611edacd6d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "First off the girl entered in regular size for the peach green tea",
+            "A single drink will cost in total at least $5, which sounds a lot for bubble tea... or about on par with a typical Starbucks drink.",
+            "Out of curiosity, I bought two drinks, the peach green tea as well as the matcha mouse, both with less ice."
+        ],
+        "negativeSents": [
+            " I've come here 5 times, and 4 times they got my drink wrong.",
+            "All I ask for is a Peach green tea with tapioca and they never get it right."
+        ],
+        "happyScore": 0.0,
+        "surprisedScore": 1.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "accordingly",
+            "sounds",
+            "4.70",
+            "daunting",
+            "customize"
+        ],
+        "negativeWords": [
+            "got",
+            "wrong",
+            "come",
+            "times",
+            "tapioca"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "c2121bcb009611ed98b0d0ab"
+            }
+        },
+        "drinkName": "Mango Green Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/2GR7Qq6c2NiIbgf_6NNKBg\/o.jpg",
+        "avgRating": 3.8,
+        "reviews": [
+            {
+                "$oid": "c2ac06a7009611ed93a4d0ab"
+            },
+            {
+                "$oid": "c2db05f4009611edb90bd0ab"
+            },
+            {
+                "$oid": "c308595b009611eda87ad0ab"
+            },
+            {
+                "$oid": "c337ff53009611ed8555d0ab"
+            },
+            {
+                "$oid": "c3679ae8009611edb1eed0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "I ordered the mango green tea with boba and it was pretty lit.",
+            "My favourites are mango green tea and caramel milk tea.",
+            "And Cha time does this standard drink well."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "bother",
+            "think",
+            "customize",
+            "rainbow",
+            "pretty"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "c394154c009611edbccfd0ab"
+            }
+        },
+        "drinkName": "Matcha Green Tea Mousse",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/9aNuMYx7_D_xms0oopzd9g\/o.jpg",
+        "avgRating": 4.25,
+        "reviews": [
+            {
+                "$oid": "c41b985e009611ed8155d0ab"
+            },
+            {
+                "$oid": "c44bd002009611eda656d0ab"
+            },
+            {
+                "$oid": "c479b9f3009611ed8a71d0ab"
+            },
+            {
+                "$oid": "c4a9ea37009611ed9704d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "The cafe itself is always crowded, lacking space for customers to sit down and enjoy the drink.",
+            "And Cha time does this standard drink well.",
+            "And I like how they have a variety of drink additions aside from tapioca pearls (i.e. rainbow jelly, coconut jelly)"
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "bother",
+            "sit",
+            "think",
+            "customize",
+            "rainbow"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "c4da324f009611ed8772d0ab"
+            }
+        },
+        "drinkName": "Coconut Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/1TV9QbelAGzjKvwBTOeHrQ\/o.jpg",
+        "avgRating": 4.3333333333,
+        "reviews": [
+            {
+                "$oid": "c55c3e01009611edb068d0ab"
+            },
+            {
+                "$oid": "c5896855009611edb697d0ab"
+            },
+            {
+                "$oid": "c5b52496009611edb008d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "Also, their roasted milk tea kind of reminds me of Japanese Kirin-brand Afternoon Milk Tea, which I love and never buy in Canada because it's expensive.",
+            "*taro milk tea (I love all things taro, but I love the roasted milk tea more so I have it more) *red bean milk tea (not my thing but very good according to red bean fans)",
+            "If you love matcha and if you love red bean, you will love this drink."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.7217391304,
+        "surprisedScore": 0.2782608696,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "stores",
+            "drinking",
+            "restaurant",
+            "poor",
+            "half"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "c5dfffd5009611ed8e5dd0ab"
+            }
+        },
+        "drinkName": "Crass Jelly Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/tOhMNauuibdvrzP0PX1CIw\/o.jpg",
+        "avgRating": 3.0,
+        "reviews": [
+            {
+                "$oid": "c6864ed5009611ed8fb6d0ab"
+            },
+            {
+                "$oid": "c6cd9102009611eda7bad0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "b07d5cb4009611edbd66d0ab"
+        },
+        "shopName": "Chatime - Dundas",
+        "positiveSents": [
+            "My fave is grass jelly milk tea and peach green tea with aloe, both half sugar and less ice"
+        ],
+        "negativeSents": [
+            "I tried the roasted grass jelly milk tea with 30% sweetener-"
+        ],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "half",
+            "ice",
+            "fave"
+        ],
+        "negativeWords": [
+            "sweetener-",
+            "tried"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "cb5bacc9009611ed9f07d0ab"
+            }
+        },
+        "drinkName": "Iron Goddess Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/LSZdkkC1gOI0Fl1M83I10g\/o.jpg",
+        "avgRating": 4.4,
+        "reviews": [
+            {
+                "$oid": "cc3d5a08009611edac37d0ab"
+            },
+            {
+                "$oid": "cc9d2d73009611ed9348d0ab"
+            },
+            {
+                "$oid": "cd01bb65009611ed8ab1d0ab"
+            },
+            {
+                "$oid": "cd4ea310009611ed9ee4d0ab"
+            },
+            {
+                "$oid": "cda85be4009611edaa91d0ab"
+            },
+            {
+                "$oid": "cde0349f009611eda8b9d0ab"
+            },
+            {
+                "$oid": "ce1dd9c2009611eda75dd0ab"
+            },
+            {
+                "$oid": "ce4f9838009611ed8e60d0ab"
+            },
+            {
+                "$oid": "ce7dd553009611ed98a9d0ab"
+            },
+            {
+                "$oid": "ceadc0f5009611ed8c1ad0ab"
+            },
+            {
+                "$oid": "cee77744009611ed86d1d0ab"
+            },
+            {
+                "$oid": "cf236eb4009611ed8327d0ab"
+            },
+            {
+                "$oid": "cf57ed4f009611edb76bd0ab"
+            },
+            {
+                "$oid": "cf85d9f6009611ed8728d0ab"
+            },
+            {
+                "$oid": "cfbad56f009611ed81b9d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "Got the iron goddess milk tea, deerioca matcha and jasmine milk tea.",
+            "The tapioca was overly sweet compared to the overall drink and is the chewy kind with semihard centers.",
+            "My friend ordered the Iron Goddess milk tea which had much more of a traditional bubble tea taste so if that's your jam I would recommend ordering from that part of the menu."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.53200883,
+        "surprisedScore": 0.46799117,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "acquired",
+            "light",
+            "app",
+            "chinese",
+            "seating"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "cfe4765f009611edaf23d0ab"
+            }
+        },
+        "drinkName": "Royal No.9 Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/1n6DRfV_EU8slAT4B8NvFQ\/o.jpg",
+        "avgRating": 4.4666666667,
+        "reviews": [
+            {
+                "$oid": "d07a633f009611eda94bd0ab"
+            },
+            {
+                "$oid": "d0af2efa009611edb867d0ab"
+            },
+            {
+                "$oid": "d0dad3d4009611ed803cd0ab"
+            },
+            {
+                "$oid": "d10b0a49009611ed96e7d0ab"
+            },
+            {
+                "$oid": "d143588d009611ed9564d0ab"
+            },
+            {
+                "$oid": "d1854351009611edbfc2d0ab"
+            },
+            {
+                "$oid": "d1e034a4009611edb903d0ab"
+            },
+            {
+                "$oid": "d245d495009611ed8d0dd0ab"
+            },
+            {
+                "$oid": "d28b41e7009611ed845ad0ab"
+            },
+            {
+                "$oid": "d2c7570d009611edb598d0ab"
+            },
+            {
+                "$oid": "d30a538d009611ed9645d0ab"
+            },
+            {
+                "$oid": "d349585f009611ed90a8d0ab"
+            },
+            {
+                "$oid": "d383cd4a009611edb3f9d0ab"
+            },
+            {
+                "$oid": "d3b44464009611edaebbd0ab"
+            },
+            {
+                "$oid": "d3f65695009611edaff9d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "However, I can imagine fans of blueberry loving this drink.",
+            "I really enjoyed the drink and its unique taste.",
+            "Still, I wouldn't call it a truly unique drink, although I certainly enjoyed it."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.6852551985,
+        "surprisedScore": 0.3147448015,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "fond",
+            "chinese",
+            "tasted",
+            "mama",
+            "regular"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "d4614d97009611ed8ed2d0ab"
+            }
+        },
+        "drinkName": "Alley Trio Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/hDLrfKiezr9OxlI1jwKAFA\/o.jpg",
+        "avgRating": 4.4666666667,
+        "reviews": [
+            {
+                "$oid": "d5124dca009611edad62d0ab"
+            },
+            {
+                "$oid": "d54cbec4009611eda04bd0ab"
+            },
+            {
+                "$oid": "d5829be9009611edad9cd0ab"
+            },
+            {
+                "$oid": "d5b803b2009611ed8cffd0ab"
+            },
+            {
+                "$oid": "d5ef70d5009611ed83efd0ab"
+            },
+            {
+                "$oid": "d6267346009611edad45d0ab"
+            },
+            {
+                "$oid": "d661c3fd009611edbc80d0ab"
+            },
+            {
+                "$oid": "d695acae009611ed90e4d0ab"
+            },
+            {
+                "$oid": "d6c2d73a009611eda7a3d0ab"
+            },
+            {
+                "$oid": "d6f45298009611ed9311d0ab"
+            },
+            {
+                "$oid": "d721a55a009611ed9954d0ab"
+            },
+            {
+                "$oid": "d74f4183009611ed91c2d0ab"
+            },
+            {
+                "$oid": "d781c051009611edb3cfd0ab"
+            },
+            {
+                "$oid": "d7b27c89009611ed9055d0ab"
+            },
+            {
+                "$oid": "d7dfe733009611edba52d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "Every drink gets you a point.",
+            "Honestly, when I visited The Alley in markham a couple months ago, I did not enjoy it (maybe because of the drink I ordered: Trio milk tea).",
+            "Friendly staff and a reasonable price, I would expect 5.5-6.0 per drink which is standard."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.7142857143,
+        "surprisedScore": 0.2857142857,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "rainbow",
+            "come",
+            "honestly",
+            "menu",
+            "content"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "d80b4384009611edba0ad0ab"
+            }
+        },
+        "drinkName": "Brown Sugar Deerioca",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/0_g60WZfB5ALhX8XEm5UNQ\/o.jpg",
+        "avgRating": 4.3076923077,
+        "reviews": [
+            {
+                "$oid": "d89431e1009611edaf28d0ab"
+            },
+            {
+                "$oid": "d8c505d6009611edb56fd0ab"
+            },
+            {
+                "$oid": "d8ff019a009611eda089d0ab"
+            },
+            {
+                "$oid": "d9311b6d009611ed9d64d0ab"
+            },
+            {
+                "$oid": "d95fb3ff009611ed96e1d0ab"
+            },
+            {
+                "$oid": "d98cece3009611eda94ad0ab"
+            },
+            {
+                "$oid": "d9b946ac009611edb169d0ab"
+            },
+            {
+                "$oid": "d9e499c7009611edbaaed0ab"
+            },
+            {
+                "$oid": "da0fd5ce009611edb97dd0ab"
+            },
+            {
+                "$oid": "da3e86d4009611ed9564d0ab"
+            },
+            {
+                "$oid": "da698f94009611edb914d0ab"
+            },
+            {
+                "$oid": "da98b78a009611ed90e7d0ab"
+            },
+            {
+                "$oid": "dac53e6c009611edb3e3d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "I mixed the three layers together and will try my best to describe the amazing flavour of this drink.",
+            "My friend and I came here for a drink and it was a fantastic experience from beginning to end.",
+            "The molasses alone is sweet as can be and did not contribute a wow factor to the drink."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.6358543417,
+        "surprisedScore": 0.3641456583,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "acquired",
+            "carefully",
+            "adhering",
+            "honestly",
+            "finest"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "daeeed60009611eda901d0ab"
+            }
+        },
+        "drinkName": "Deerioca Fever",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/VR8ajdwrQa1NfyLwWy4ERg\/o.jpg",
+        "avgRating": 4.5454545455,
+        "reviews": [
+            {
+                "$oid": "db84b92e009611ed942ed0ab"
+            },
+            {
+                "$oid": "dbb78904009611eda17fd0ab"
+            },
+            {
+                "$oid": "dbe88137009611ed87acd0ab"
+            },
+            {
+                "$oid": "dc1c5613009611ed8be0d0ab"
+            },
+            {
+                "$oid": "dc4c0e88009611ed9e2fd0ab"
+            },
+            {
+                "$oid": "dc7cbce4009611edabd1d0ab"
+            },
+            {
+                "$oid": "dcaa5cba009611ed8947d0ab"
+            },
+            {
+                "$oid": "dcd9d7bf009611ed9960d0ab"
+            },
+            {
+                "$oid": "dd06d6a7009611eda2edd0ab"
+            },
+            {
+                "$oid": "dd367246009611ed86dcd0ab"
+            },
+            {
+                "$oid": "dd6c7644009611ed87dfd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "2) Deerioca fever with soy - Not much taste of the soy and tasted watery.",
+            "3) Deerioca fever with fresh milk - taste of the milk a little too overpowering.",
+            "Every drink gets you a point."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.6153136531,
+        "surprisedScore": 0.3846863469,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "adhering",
+            "overpowering",
+            "r",
+            "tasted",
+            "makes"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "dda798ff009611edb2bad0ab"
+            }
+        },
+        "drinkName": "Jasmine Green Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/ioWe18BTC4ZCHLDpkpCsZA\/o.jpg",
+        "avgRating": 4.5714285714,
+        "reviews": [
+            {
+                "$oid": "de85a4ee009611edb13ed0ab"
+            },
+            {
+                "$oid": "df341564009611edbb42d0ab"
+            },
+            {
+                "$oid": "df87daba009611ed9e93d0ab"
+            },
+            {
+                "$oid": "dfba0e43009611eda902d0ab"
+            },
+            {
+                "$oid": "e0022812009611edb81ad0ab"
+            },
+            {
+                "$oid": "e05d52ad009611edab38d0ab"
+            },
+            {
+                "$oid": "e087a8b7009611ed9d58d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "Deerioca is also an amazing drink here, and Royal No. 9.",
+            "I also LOVE the Jasmine Green Milk Tea with boba.",
+            "The Royal No 9 is a classic the Alley drink, but it's not my favourite."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.608490566,
+        "surprisedScore": 0.391509434,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "acquired",
+            "fav",
+            "bits",
+            "think",
+            "soy"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "e0b7209f009611edb4e5d0ab"
+            }
+        },
+        "drinkName": "Garden Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/QRoTaCrp9ndVaR1L5oNz3Q\/o.jpg",
+        "avgRating": 4.4444444444,
+        "reviews": [
+            {
+                "$oid": "e142db49009611ed8a0bd0ab"
+            },
+            {
+                "$oid": "e173d743009611ed96f9d0ab"
+            },
+            {
+                "$oid": "e1a59682009611edba5cd0ab"
+            },
+            {
+                "$oid": "e1dfb963009611ed8975d0ab"
+            },
+            {
+                "$oid": "e21bd7e1009611ed8da2d0ab"
+            },
+            {
+                "$oid": "e24c3f1d009611ed895ad0ab"
+            },
+            {
+                "$oid": "e27a3258009611edac52d0ab"
+            },
+            {
+                "$oid": "e2aae041009611ed9febd0ab"
+            },
+            {
+                "$oid": "e2d7bcae009611edafbed0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "I thought the royal no. 9 tasted okay, but preferred chatime's milk tea better.",
+            "I'm also keen on trying the Garden Milk Tea since the presentation is cool.",
+            "The milk tea is very light in my opinion, not really enjoy it when mixing with oreo :("
+        ],
+        "negativeSents": [],
+        "happyScore": 0.7661290323,
+        "surprisedScore": 0.2338709677,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "light",
+            "come",
+            "darn",
+            "half",
+            "tasted"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "e3015bdf009611edbd3cd0ab"
+            }
+        },
+        "drinkName": "Morning Dawn",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/jg2iwEMjzCRsUtTftDBcBQ\/o.jpg",
+        "avgRating": 4.2,
+        "reviews": [
+            {
+                "$oid": "e3899848009611ed8ec0d0ab"
+            },
+            {
+                "$oid": "e3b9fbcd009611edb220d0ab"
+            },
+            {
+                "$oid": "e3e86401009611ed9168d0ab"
+            },
+            {
+                "$oid": "e4187a16009611ed931ad0ab"
+            },
+            {
+                "$oid": "e4486e52009611edb5a0d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "\"Apple of my eye\" & \"Morning Dawn\" are our favorites.",
+            "The tapioca was overly sweet compared to the overall drink and is the chewy kind with semihard centers.",
+            "The slushee drinks (Northern Lights and Morning Dawn) were quite attractive and came with their own bottle, but we opted for the teas."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "staff",
+            "light",
+            "recommended",
+            "soy",
+            "bottle"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "e47e86e6009611eda8edd0ab"
+            }
+        },
+        "drinkName": "Deerioca Matcha",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/vU96Vgnadjp6p38xu3Nplg\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "e5214250009611edac31d0ab"
+            },
+            {
+                "$oid": "e5571f5f009611ed86dbd0ab"
+            },
+            {
+                "$oid": "e58a16a3009611edbae6d0ab"
+            },
+            {
+                "$oid": "e5b9d8b0009611ed938fd0ab"
+            },
+            {
+                "$oid": "e5e6aa26009611ed8a12d0ab"
+            },
+            {
+                "$oid": "e611f2ec009611ed921bd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "Got the iron goddess milk tea, deerioca matcha and jasmine milk tea.",
+            "The tapioca was overly sweet compared to the overall drink and is the chewy kind with semihard centers.",
+            "Taste 2\/5 (reviews written by each drinker): 1) Deerioca matcha - matcha flavor on its own was quite strong, with it's usual bitter taste."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.7253521127,
+        "surprisedScore": 0.2746478873,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "categorized",
+            "think",
+            "2\/5",
+            "soy",
+            "preferred"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "e642c6ec009611ed9c07d0ab"
+            }
+        },
+        "drinkName": "Passion Fruit Green Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/6jhlXq0A1dOdFzFkYN0ZNA\/o.jpg",
+        "avgRating": 4.75,
+        "reviews": [
+            {
+                "$oid": "e6c9c732009611ed82bed0ab"
+            },
+            {
+                "$oid": "e6fcbf4a009611edb112d0ab"
+            },
+            {
+                "$oid": "e72b02bb009611edbdffd0ab"
+            },
+            {
+                "$oid": "e7582cdd009611edaaa3d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "Their top drink is their Royal No.9 milk tea which is a blueberry milk tea.",
+            "They usually give out free samples of this drink near the cash register because it's so popular (I always take a sample even though I know how it tastes already, haha).",
+            "The passion fruit green tea isn't as great as other tea shops I've been to"
+        ],
+        "negativeSents": [],
+        "happyScore": 0.4382022472,
+        "surprisedScore": 0.5617977528,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "near",
+            "currently",
+            "bad",
+            "blueberry",
+            "popular"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "e7852d5e009611ed8280d0ab"
+            }
+        },
+        "drinkName": "Classic Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/zibU4N2tUSaCST0cgasu4Q\/o.jpg",
+        "avgRating": 4.1666666667,
+        "reviews": [
+            {
+                "$oid": "e8054456009611ed86aad0ab"
+            },
+            {
+                "$oid": "e834abff009611ed91c4d0ab"
+            },
+            {
+                "$oid": "e862c0d2009611ed99efd0ab"
+            },
+            {
+                "$oid": "e88d5e31009611ed9874d0ab"
+            },
+            {
+                "$oid": "e8bb8231009611edae8bd0ab"
+            },
+            {
+                "$oid": "e8e8f0bb009611ed8b19d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "-ROYAL NO.9 (ordered with 'little' sweetness): I'm always surprised that this milk tea has such a distinct authentic blueberry flavour!",
+            "I first ordered the Iron Goddess milk tea with tapioca, which was a stronger black tea than the classic milk tea.",
+            "Unfortunately, the classic milk tea was also on the more watery side, and to be honest I think the \"pearl milk teas\" at Chatime and Coco taste better, and cost less."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.3860759494,
+        "surprisedScore": 0.6139240506,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "counter",
+            "toppings",
+            "recalled",
+            "watery",
+            "think"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "e914bbab009611eda13ed0ab"
+            }
+        },
+        "drinkName": "Hojicha",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/Rsx4zIN--SVdUXEFhsnHjA\/o.jpg",
+        "avgRating": 4.6666666667,
+        "reviews": [
+            {
+                "$oid": "e9b0314b009611edb2fed0ab"
+            },
+            {
+                "$oid": "e9e1ef8e009611edbcadd0ab"
+            },
+            {
+                "$oid": "ea1020c7009611edbcdad0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "Had the hojicha soy latte and I loved loved loved it.",
+            "Hojicha - I love hojicha, my favourite tea of all teas",
+            "The hojicha soy milk (roasted rice tea, infused in soy milk!) is lightly sweetened, and a great combo."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.75,
+        "surprisedScore": 0.25,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "soy",
+            "loved",
+            "super",
+            "love",
+            "concentrated"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "ea3d512f009611eda200d0ab"
+            }
+        },
+        "drinkName": "Sweet Dew Fresh Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/fE_nATBLeOHVUjQKo5M9Qw\/o.jpg",
+        "avgRating": 4.25,
+        "reviews": [
+            {
+                "$oid": "eac9641f009611ed9f87d0ab"
+            },
+            {
+                "$oid": "eaf79cab009611ed9dbbd0ab"
+            },
+            {
+                "$oid": "eb2a4579009611ed9a63d0ab"
+            },
+            {
+                "$oid": "eb59a426009611ed96bdd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "This place is so cute and they have a huge drink selection.",
+            "Furthermore, like any other bubble tea locations, you can adjust the sugar and ice content of your drink.",
+            "Deerioca: warm drink with soft, warm boba and brown sugar."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "categorized",
+            "selection",
+            "series",
+            "rule",
+            "pick"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "eb85793d009611ed9e01d0ab"
+            }
+        },
+        "drinkName": "Brown Sugar Bubble Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/UAYQkX6zN2V7FwlW52jBPQ\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "ec19ec19009611eda75ed0ab"
+            },
+            {
+                "$oid": "ec478bd7009611ed8364d0ab"
+            },
+            {
+                "$oid": "ec799859009611ed93a0d0ab"
+            },
+            {
+                "$oid": "ecaa0513009611ed8fa5d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "I've been wanting to try this place because I loveeee bubble tea and more importantly fell in love with the brown sugar bubble tea from Taiwan."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "importantly",
+            "loveeee",
+            "love",
+            "try",
+            "wanting"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "ecda3985009611edb18ed0ab"
+            }
+        },
+        "drinkName": "Able Bubble Tea Cup Holder",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/yZY2jCzKHXXfWxBzHB6agQ\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "ed56cbf7009611edbb3dd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "My first impression was that this cafe was super cute and had so many drink options!",
+            "I would be lying if I said I didn't order the hot drink just for the cup holder (haha).",
+            "If you opt to get a hot drink, you get a cute cup with a deer shaped cup holder."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "opt",
+            "haha",
+            "cafe",
+            "shaped",
+            "super"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "ed80b9e5009611edb4aed0ab"
+            }
+        },
+        "drinkName": "Deerioca Puff",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/M7wiQSl3TjTHHvOHWRGJNg\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "edfba269009611edb18fd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "They have a rewards app program and they do a FREE Birthday drink (but there's a 5 days limit).",
+            "The sweeter tapioca pearls balanced out the matcha bitterness -DEERIOCA PUFF: their classic milk deerioca with a DELICIOUS rich cream cheese layer on top -COCONUT MANGO LULU: seasonal special with mango slushy on top, coconut milk with crystal jelly-type balls in the middle, and mango pur\u00e9e at the bottom."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.41875,
+        "surprisedScore": 0.58125,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "delicious",
+            "days",
+            "program",
+            "layer",
+            "app"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "ee27e26d009611ed8eafd0ab"
+            }
+        },
+        "drinkName": "Hot Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/CKblrT5whEQiSvoCouD1ZQ\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "eea235ca009611ed9ec6d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "c75c2ba7009611ed8cd7d0ab"
+        },
+        "shopName": "The Alley",
+        "positiveSents": [
+            "My boyfriend got their hot milk tea, and enjoyed it, also stating that it wasn't overly sweet."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "stating",
+            "overly",
+            "boyfriend",
+            "enjoyed",
+            "got"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "f2535988009611ed87d2d0ab"
+            }
+        },
+        "drinkName": "Matcha Latte",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/OxEyuB0UC3iPVYxhtOKjuw\/o.jpg",
+        "avgRating": 4.4,
+        "reviews": [
+            {
+                "$oid": "f32fde8a009611edb2e9d0ab"
+            },
+            {
+                "$oid": "f37adffc009611ed808ad0ab"
+            },
+            {
+                "$oid": "f3b6403f009611eda15ad0ab"
+            },
+            {
+                "$oid": "f3ec2f43009611ed9ff9d0ab"
+            },
+            {
+                "$oid": "f41e07e8009611ed93f6d0ab"
+            },
+            {
+                "$oid": "f44f7820009611eda21bd0ab"
+            },
+            {
+                "$oid": "f47f13a0009611eda572d0ab"
+            },
+            {
+                "$oid": "f4ac93f3009611ed899bd0ab"
+            },
+            {
+                "$oid": "f4dac728009611edbb8ed0ab"
+            },
+            {
+                "$oid": "f509470e009611ed83d4d0ab"
+            },
+            {
+                "$oid": "f535ca71009611eda606d0ab"
+            },
+            {
+                "$oid": "f564ac89009611ed920ad0ab"
+            },
+            {
+                "$oid": "f59818c7009611ed9f6cd0ab"
+            },
+            {
+                "$oid": "f5c93a9f009611ed9feed0ab"
+            },
+            {
+                "$oid": "f601eedd009611eda924d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "I got the matcha latte, which was pretty good.",
+            "My favorites include the matcha latte and the rose jasmine tea.",
+            "Love their green tea matcha latte!"
+        ],
+        "negativeSents": [],
+        "happyScore": 0.7267759563,
+        "surprisedScore": 0.2732240437,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "4.6\/5",
+            "needed",
+            "drinking",
+            "come",
+            "employee"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "f63cd502009611ed91acd0ab"
+            }
+        },
+        "drinkName": "Rose Jasmine Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/T9nrg2uaSJyxNDz8aGrXjg\/o.jpg",
+        "avgRating": 3.7333333333,
+        "reviews": [
+            {
+                "$oid": "f740fe55009611ed8b54d0ab"
+            },
+            {
+                "$oid": "f7c49849009611ed8cced0ab"
+            },
+            {
+                "$oid": "f80a7c89009611ed99f0d0ab"
+            },
+            {
+                "$oid": "f83d7312009611edb06cd0ab"
+            },
+            {
+                "$oid": "f86fcde7009611edba1ad0ab"
+            },
+            {
+                "$oid": "f89e09e2009611eda4f3d0ab"
+            },
+            {
+                "$oid": "f8cb3410009611edbbd0d0ab"
+            },
+            {
+                "$oid": "f8f6b0cd009611ed8e06d0ab"
+            },
+            {
+                "$oid": "f930ac94009611edbe85d0ab"
+            },
+            {
+                "$oid": "f964dbf4009611edb464d0ab"
+            },
+            {
+                "$oid": "f9995973009611eda9e0d0ab"
+            },
+            {
+                "$oid": "f9cfd2ba009611edbc7bd0ab"
+            },
+            {
+                "$oid": "fa0a43b6009611edb1a3d0ab"
+            },
+            {
+                "$oid": "fa3f3658009611eda9f5d0ab"
+            },
+            {
+                "$oid": "fa7624ee009611eda640d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "My favorite tea here is rose jasmine tea.",
+            "My favorites include the matcha latte and the rose jasmine tea.",
+            "I am definitely keen on coming back again to try the Rose Jasmine Tea with cheese foam, as I'm hoping if the milk isn't directly infused into the drink, it might make it the floral notes more noticible."
+        ],
+        "negativeSents": [
+            "Avoid this place if you wanna drink any type of milk bubble tea.",
+            "If I wanted to drink milk, I would just buy it at the supermarket for $4 not $7."
+        ],
+        "happyScore": 0.5915057915,
+        "surprisedScore": 0.0772200772,
+        "sadScore": 0.3312741313,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "notes",
+            "floral",
+            "high",
+            "drinking",
+            "brewing"
+        ],
+        "negativeWords": [
+            "type",
+            "wan",
+            "wanted",
+            "buy",
+            "na"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "fab05d1c009611edb20ed0ab"
+            }
+        },
+        "drinkName": "Roasted Oolong Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/4dfvITFo4zVne3XhpCUgQQ\/o.jpg",
+        "avgRating": 3.8,
+        "reviews": [
+            {
+                "$oid": "fb49817b009611ed8af1d0ab"
+            },
+            {
+                "$oid": "fb8456f0009611ed880bd0ab"
+            },
+            {
+                "$oid": "fbb467a3009611edbe8bd0ab"
+            },
+            {
+                "$oid": "fbe589a0009611eda2f5d0ab"
+            },
+            {
+                "$oid": "fc1494be009611edb8e6d0ab"
+            },
+            {
+                "$oid": "fc40375a009611edb73dd0ab"
+            },
+            {
+                "$oid": "fc6c1072009611ed8945d0ab"
+            },
+            {
+                "$oid": "fc978847009611ed969bd0ab"
+            },
+            {
+                "$oid": "fcc73e43009611eda4a0d0ab"
+            },
+            {
+                "$oid": "fd0c5c78009611edabf7d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "I got the osmanthus oolong milk tea at half sweet and it was nice and fragrant.",
+            "I instantly fell in love in my first sip and i will have to try out all their drink",
+            "My drink tasted really milky"
+        ],
+        "negativeSents": [
+            "Avoid this place if you wanna drink any type of milk bubble tea.",
+            "My friend and I ordered ice rose jasmine milk tea and iced osmanthus oolong milk tea.",
+            "If I wanted to drink milk, I would just buy it at the supermarket for $4 not $7."
+        ],
+        "happyScore": 0.6944444444,
+        "surprisedScore": 0.0509259259,
+        "sadScore": 0.2546296296,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "staff",
+            "wait",
+            "delicious",
+            "bad",
+            "drinking"
+        ],
+        "negativeWords": [
+            "ice",
+            "type",
+            "wan",
+            "wanted",
+            "buy"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "fd574866009611edbb8fd0ab"
+            }
+        },
+        "drinkName": "Classic Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/JM3TvoQJ3FTio2yecFhfjA\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "fe409bdc009611ed9c87d0ab"
+            },
+            {
+                "$oid": "fe979545009611eda94fd0ab"
+            },
+            {
+                "$oid": "fed33e06009611ed87f9d0ab"
+            },
+            {
+                "$oid": "ff257cc8009611ed9749d0ab"
+            },
+            {
+                "$oid": "ff6d340b009611ed8f9ad0ab"
+            },
+            {
+                "$oid": "ffad7155009611ed89ded0ab"
+            },
+            {
+                "$oid": "ffe91b44009611edb11ed0ab"
+            },
+            {
+                "$oid": "00207e90009711edb0c7d0ab"
+            },
+            {
+                "$oid": "0052fcb5009711eda591d0ab"
+            },
+            {
+                "$oid": "00862e3f009711eda911d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "It was a pretty good drink especially how the price was pretty cheap for a drink of it's quality.",
+            "The tea itself is great, especially in the milk tea.",
+            "I also did not know the Matcha Latte Milk Tea needed to be mixed up before drinking, but the barista afterward kindly told me the drink tastes much better when mixed."
+        ],
+        "negativeSents": [
+            "My friend and I ordered two classic milk tea and both were super watered down.",
+            "If you are charging around $5 per drink shouldn't you make sure that the drink is high quality and at least decent?"
+        ],
+        "happyScore": 0.4554455446,
+        "surprisedScore": 0.0396039604,
+        "sadScore": 0.504950495,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "counter",
+            "luckily",
+            "essentially",
+            "needed",
+            "drinking"
+        ],
+        "negativeWords": [
+            "sure",
+            "quality",
+            "super",
+            "high",
+            "watered"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "00b672a4009711edb617d0ab"
+            }
+        },
+        "drinkName": "Osmanthus Oolong Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/ju6659Oq2wrtC17z6Shk0Q\/o.jpg",
+        "avgRating": 4.3333333333,
+        "reviews": [
+            {
+                "$oid": "0158f620009711ed924fd0ab"
+            },
+            {
+                "$oid": "01862092009711eda2bfd0ab"
+            },
+            {
+                "$oid": "01b32422009711edbc33d0ab"
+            },
+            {
+                "$oid": "01e0c152009711edad57d0ab"
+            },
+            {
+                "$oid": "0210f906009711edbce6d0ab"
+            },
+            {
+                "$oid": "024d3f1a009711ed9609d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "I ordered the Osmanthus Oolong Tea and it tasted great.",
+            "I usually get the osmanthus Oolong tea, with or without milk, full sweetness--they understand Asian taste buds.",
+            "We tried the cold osmanthus oolong tea with cheese foam tea."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.6666666667,
+        "surprisedScore": 0.3333333333,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "usually",
+            "buds",
+            "owners",
+            "making",
+            "understand"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "027dc4dd009711edbc2cd0ab"
+            }
+        },
+        "drinkName": "Brown Sugar Ginger Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/fw-qRqD652sFQQ1ppER2og\/o.jpg",
+        "avgRating": 4.2,
+        "reviews": [
+            {
+                "$oid": "02fdcb7e009711ed9e08d0ab"
+            },
+            {
+                "$oid": "032a5ac8009711ed8090d0ab"
+            },
+            {
+                "$oid": "03572919009711edac59d0ab"
+            },
+            {
+                "$oid": "0386c5af009711ed8089d0ab"
+            },
+            {
+                "$oid": "03b2101c009711ed88cad0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "I really love this drink as the rose flavour complimented the Jasmine tea surprisingly well.",
+            "The drink was alright.",
+            "The brown sugar ginger tea was so spicy and delicious."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "flavour",
+            "love",
+            "delicious",
+            "5\/5",
+            "spicy"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "03da708b009711eda7c7d0ab"
+            }
+        },
+        "drinkName": "Taro Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/ezqiqvnXNeDZxk5cyBBZBA\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "04578b3f009711ed89e3d0ab"
+            },
+            {
+                "$oid": "04833c8e009711edbfd4d0ab"
+            },
+            {
+                "$oid": "04adf0fc009711edbc9dd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "I normally drink more westernized or fruity flavours so I wasn't sure whether the bubble tea flavours they offered were to my taste.",
+            "My favourite is brown sugar ginger milk tea and they make fresh taro milk tea as well.",
+            " The taro milk tea is decaffeinated and very creamy."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "sister",
+            "creamy",
+            "sure",
+            "fruity",
+            "offered"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "04da09d3009711ed956ed0ab"
+            }
+        },
+        "drinkName": "Chrysanthemum Tea W. Pearls",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/nS7PhLSdohucsWwuT7AJWQ\/o.jpg",
+        "avgRating": 4.5,
+        "reviews": [
+            {
+                "$oid": "0563656d009711ed9e42d0ab"
+            },
+            {
+                "$oid": "0592f037009711edb049d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "05bef900009711edad46d0ab"
+            }
+        },
+        "drinkName": "Iced Green Tea Latte",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/dv3rC22N1NCg9Q52DnNfYw\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "06380af6009711ed9a17d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            " Tried their iced green tea latte with grass jelly and their matcha roll yesterday and it was SO delicious!"
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "roll",
+            "tried",
+            "delicious",
+            "yesterday"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "06621f36009711ed8441d0ab"
+            }
+        },
+        "drinkName": "Petal Jasmine Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/fYWoepsaxPNYZJB0cP_itg\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "06dcf9aa009711ed8959d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "I got the rose petal jasmine tea without any sweetener or add-ins because I wanted to taste the real flavor of the tea."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "add-ins",
+            "wanted",
+            "flavor",
+            "got",
+            "sweetener"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "070c9421009711ed96a9d0ab"
+            }
+        },
+        "drinkName": "Chrysanthemum Pure Crafted Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/3-TqDfqoQgfNbSHmrAWLSw\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "0785e9b6009711ed98aed0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "I ordered the Chrysanthemum Pure Crafted Milk Tea with Lychee bits and regular sugar (I highly recommend that you get regular sugar because some of the teas may be darker than others)."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "bits",
+            "highly",
+            "regular",
+            "darker",
+            "recommend"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "07b8d62b009711ed8acfd0ab"
+            }
+        },
+        "drinkName": "Iced Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/squ7-DhuAD9nwL7_WOB8xA\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "083b2f5f009711ed85a6d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "The tea room is really pretty and you get to pick which type of tea you'd like to drink as well as the tea set you'd like to use.",
+            " I originally thought Icha Tea was solely a milk tea cafe but they also do traditional Chinese tea ceremony in the tea room, tucked in the back!",
+            "I've tried out their iced milk tea, which isn't anything fancy- just freshly brewed tea made in the style of drip coffee and mixed with milk."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "drip",
+            "pretty",
+            "solely",
+            "coffee",
+            "chinese"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "086a3a29009711ed9b28d0ab"
+            }
+        },
+        "drinkName": "Jasmine Green Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/9PDmAtg4yndJGfzsjdU2Sw\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "08fcf15c009711eda7efd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "I ordered the jasmine green tea from the menu, and the girl behind the bar proceeded to make my tea, starting with steeping the tea leaves."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 1.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "bar",
+            "starting",
+            "menu",
+            "girl",
+            "steeping"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "09294916009711edaf21d0ab"
+            }
+        },
+        "drinkName": "Matcha Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/CrrpJ5WlimkKdWN0rBh05A\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "09a544d7009711eda34dd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "Great matcha milk tea..."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "great"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "09de5796009711edb4bed0ab"
+            }
+        },
+        "drinkName": "White Peach Oolong",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/b1m7FuT9IwfZIdPQesJUqA\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "0a669c8d009711ed937bd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "(i had the peach oolong and the classic milk tea)"
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "0adb0955009711ed8826d0ab"
+            }
+        },
+        "drinkName": "Milk Bubble Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/oW2mExJjvkSeDgcbHtblSA\/o.jpg",
+        "avgRating": 3.0,
+        "reviews": [
+            {
+                "$oid": "0bf3b9d5009711ed85c0d0ab"
+            },
+            {
+                "$oid": "0c4ada8f009711ed9fadd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "Had the Rose Jasmine milk bubble tea and was surprised at how fragrant the tea was and subtly sweet - impressed that they brewed the tea right in front of me."
+        ],
+        "negativeSents": [
+            "Avoid this place if you wanna drink any type of milk bubble tea.",
+            "Compared to every other bubble tea place, Icha Tea is one of the more expensive bubble tea place (around $7 after tax).",
+            "If I wanted to drink milk, I would just buy it at the supermarket for $4 not $7."
+        ],
+        "happyScore": 0.4285714286,
+        "surprisedScore": 0.4285714286,
+        "sadScore": 0.1428571429,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "fragrant",
+            "impressed",
+            "surprised",
+            "subtly",
+            "brewed"
+        ],
+        "negativeWords": [
+            "type",
+            "expensive",
+            "wan",
+            "wanted",
+            "buy"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "0ca9c381009711edb0fed0ab"
+            }
+        },
+        "drinkName": "Black Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/aCSb1Sz6fHbhyHrZ8lOzVg\/o.jpg",
+        "avgRating": 2.5,
+        "reviews": [
+            {
+                "$oid": "0dad1bf1009711edb9add0ab"
+            },
+            {
+                "$oid": "0df189d3009711edbd59d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "eed07be4009611eda7a7d0ab"
+        },
+        "shopName": "Icha Tea",
+        "positiveSents": [
+            "I've tried the matcha tea and the black milk tea and I have to say the matcha does have a nice flavour",
+            "If you like tea and can actually discern the quality of your drink, then this is the place for you."
+        ],
+        "negativeSents": [
+            "Got the Rose Black Milk Tea with tapioca and half sweet."
+        ],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "flavour",
+            "actually",
+            "nice",
+            "like",
+            "tried"
+        ],
+        "negativeWords": [
+            "half",
+            "got",
+            "tapioca"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "12503f26009711edb2a0d0ab"
+            }
+        },
+        "drinkName": "Sago Taro Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/5bl0AehIIhpK6cWSGaol6w\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "1306225d009711ed9a92d0ab"
+            },
+            {
+                "$oid": "133f5b2f009711edb2a5d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            "3 GUYS: 3 Guys is my favorite drink here.",
+            "Will need to try the 3 guys as I heard that was their signature drink.",
+            "That's almost all taste sensations in one drink!"
+        ],
+        "negativeSents": [],
+        "happyScore": 0.6,
+        "surprisedScore": 0.4,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "lovers",
+            "try",
+            "guys",
+            "refreshing",
+            "favorite"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "136ba657009711ed9ff8d0ab"
+            }
+        },
+        "drinkName": "Bubble Gaga",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/zBj_E5Ji-PpDxfMbJ_0iGQ\/o.jpg",
+        "avgRating": 4.3333333333,
+        "reviews": [
+            {
+                "$oid": "13f4a09f009711ed9fb4d0ab"
+            },
+            {
+                "$oid": "142b2596009711edb6ecd0ab"
+            },
+            {
+                "$oid": "146129e9009711edbe27d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            "Anywho, I will not let one bad drink ruin my love for coco :)",
+            "My favourite bubble tea place is The Alley, but for only $4.20, given the size of this drink and the tapioca, this place is pretty worth it",
+            "Hence, get less sugar in your drink."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "bad",
+            "pretty",
+            "pros",
+            "let",
+            "4.20"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "148fce7c009711edb1e6d0ab"
+            }
+        },
+        "drinkName": "Lemon King",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/UU6KdM3t9duEtlLBkfeqiw\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "15a833f9009711ed876fd0ab"
+            },
+            {
+                "$oid": "15d5dc17009711ed84c9d0ab"
+            },
+            {
+                "$oid": "160f3b9f009711eda9add0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            "I like the strong black tea flavor in the drink and the pudding is smooth and velvety.",
+            "I love the lemon king!",
+            "My favorite drinks are 3 Guys cuz it's a drink with the best value!"
+        ],
+        "negativeSents": [],
+        "happyScore": 0.875,
+        "surprisedScore": 0.125,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "fav",
+            "velvety",
+            "asian",
+            "time",
+            "love"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "163caf4b009711ed8493d0ab"
+            }
+        },
+        "drinkName": "Black Tea Macchiato",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/W4IOnnJg4IWbI7DLhOMGOw\/o.jpg",
+        "avgRating": 4.6666666667,
+        "reviews": [
+            {
+                "$oid": "16ca0426009711edb184d0ab"
+            },
+            {
+                "$oid": "16fd1404009711ed9311d0ab"
+            },
+            {
+                "$oid": "172b5140009711ed93e9d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            "3 GUYS: 3 Guys is my favorite drink here.",
+            "That's almost all taste sensations in one drink!",
+            "This location is close to Yonge and Wellesley which is perfect if you're looking to grab a drink nearby after dinner or just to hang out."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "wait",
+            "location",
+            "looking",
+            "close",
+            "hang"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "177b6c0b009711edafe1d0ab"
+            }
+        },
+        "drinkName": "Matcha Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/20PkGFZzEGaFw7tJkPocvw\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "187fd189009711ed9ae2d0ab"
+            },
+            {
+                "$oid": "18d45a35009711ed9f2fd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            "Order one top 10 drink and receive a medium bubble tea for free.",
+            "My favourite top 10 drink is always green tea matcha milk tea with red bean.",
+            "Drink: I ordered matcha milk tea with 50% sugar & tapioca."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.4375,
+        "surprisedScore": 0.5625,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "counter",
+            "free",
+            "bit",
+            "cashier",
+            "favourite"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "191f45d6009711ed969fd0ab"
+            }
+        },
+        "drinkName": "Roasted Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/fNkNYS7WRa9IMlOBpo66Vg\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "1a2480c4009711edb9cfd0ab"
+            },
+            {
+                "$oid": "1a63d3cb009711edb1edd0ab"
+            },
+            {
+                "$oid": "1ab37a42009711ed917ad0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            " Had the roasted milk tea here and wasn't that impressed, especially after reading all the positive reviews.",
+            "I loved the taste of the roasted milk tea and it wasn't overly sweet at all even with regular sugar.",
+            "Order one top 10 drink and receive a medium bubble tea for free."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.672489083,
+        "surprisedScore": 0.327510917,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "minutes",
+            "wait",
+            "line",
+            "especially",
+            "location"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "1b04326a009711edae70d0ab"
+            }
+        },
+        "drinkName": "Mixed Juice Macchiato",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/mvxNIEf3uXlS4iCH0ajB2A\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "1be802d0009711edaf3ed0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            "I ordered Mixed Juice Macchiato and my cousin ordered Green Tea Macchiato."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "cousin"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "1c3add94009711ed8051d0ab"
+            }
+        },
+        "drinkName": "Caramel Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/zArsMKaMx_NO3W5muOT3Kg\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "1cee2824009711edaa81d0ab"
+            },
+            {
+                "$oid": "1d2f9e06009711edb2d2d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            "Got some caramel milk tea with the pearls and also a slush.",
+            "I got 30% sugar in the milk tea and 50% sugar in the passion fruit.",
+            "so it's adding alot of sugar to the drink."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "adding",
+            "got",
+            "month",
+            "alot"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "1d775547009711ed9424d0ab"
+            }
+        },
+        "drinkName": "Grass Jelly Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/4Vkn7to7Rif7RZNhYIQoNQ\/o.jpg",
+        "avgRating": 3.0,
+        "reviews": [
+            {
+                "$oid": "1e312f61009711ed985ed0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            "I ordered a grass jelly milk tea, which turned out to be on sale for the month of December!",
+            "I think that Chatime's version of the grass jelly milk tea is far better."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 1.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "think",
+            "better",
+            "december",
+            "sale",
+            "far"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "1e658596009711ed91d1d0ab"
+            }
+        },
+        "drinkName": "Mango Slush",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/4Vkn7to7Rif7RZNhYIQoNQ\/o.jpg",
+        "avgRating": 3.0,
+        "reviews": [
+            {
+                "$oid": "1f001819009711eda32fd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "0e31ee99009711edb0bed0ab"
+        },
+        "shopName": "CoCo Fresh Juice & Tea",
+        "positiveSents": [
+            "It's unfortunate the mango slush I ordered was not made with any fresh fruits."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "fruits",
+            "unfortunate"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "22d61b21009711eda4e5d0ab"
+            }
+        },
+        "drinkName": "Mango Diamond Slush",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/-i49VF7DZAjs40Xr6TKz5w\/o.jpg",
+        "avgRating": 4.3333333333,
+        "reviews": [
+            {
+                "$oid": "23917dae009711ed9326d0ab"
+            },
+            {
+                "$oid": "23d8e707009711edb722d0ab"
+            },
+            {
+                "$oid": "240e2820009711edb2dfd0ab"
+            },
+            {
+                "$oid": "244934f7009711edbd14d0ab"
+            },
+            {
+                "$oid": "247882b4009711eda786d0ab"
+            },
+            {
+                "$oid": "24aba024009711ed998bd0ab"
+            },
+            {
+                "$oid": "24d71d08009711ed88a1d0ab"
+            },
+            {
+                "$oid": "2511dc22009711ed8f8bd0ab"
+            },
+            {
+                "$oid": "254dd42a009711edaa88d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "1f33d242009711eda103d0ab"
+        },
+        "shopName": "Real Fruit Bubble Tea",
+        "positiveSents": [
+            "I had the \"mango diamond slush\" with tapioca pearls and it was amazing!!!",
+            "I really love the mango diamond slush and strawberry banana smoothie!",
+            "I drink so much juice, I drive a white Bronco Yah."
+        ],
+        "negativeSents": [
+            "They are really starting to cheap out on the mango diamond slush smoothies."
+        ],
+        "happyScore": 0.6996996997,
+        "surprisedScore": 0.3003003003,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "chain",
+            "delicious",
+            "think",
+            "sour",
+            "advertised"
+        ],
+        "negativeWords": [
+            "starting",
+            "smoothies",
+            "cheap"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "257da2e9009711ed825ed0ab"
+            }
+        },
+        "drinkName": "Mango Smoothie",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/B16LwGRi4nf8_hHs7VHXzw\/o.jpg",
+        "avgRating": 4.25,
+        "reviews": [
+            {
+                "$oid": "261d8fb5009711ed8564d0ab"
+            },
+            {
+                "$oid": "264c8e9a009711eda65ad0ab"
+            },
+            {
+                "$oid": "267dd7de009711ed9112d0ab"
+            },
+            {
+                "$oid": "26b00b56009711edb2b0d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "1f33d242009711eda103d0ab"
+        },
+        "shopName": "Real Fruit Bubble Tea",
+        "positiveSents": [
+            "I had a large papaya-mango smoothie with tapioca, and it was really good, though kind of expensive (which is fair, I guess, as those two fruits aren't cheap).",
+            "The smell of fresh fruit was all around me, so it took me forever to make a decision on what to order, when I noticed my friend ordered the special, the Diamond Mango smoothie (or Mango Diamond, I don't know).",
+            "The Mango smoothie was good, but it was quite sugary."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.5,
+        "surprisedScore": 0.5,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "expensive",
+            "decision",
+            "cheap",
+            "forever",
+            "fair"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "26d9b1b9009711ed9169d0ab"
+            }
+        },
+        "drinkName": "Watermelon Slush",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/d1sKBJ-uMWJQOp4J2YagQQ\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "27603698009711ed8d19d0ab"
+            },
+            {
+                "$oid": "278c9f00009711ed8e6bd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "1f33d242009711eda103d0ab"
+        },
+        "shopName": "Real Fruit Bubble Tea",
+        "positiveSents": [
+            "Always nice to grab their durian and avocado shakes as well as the watermelon slush.",
+            "The mango diamond slush is usually good 90% of the time - sometimes the mangos used on the day aren't that sweet and can be a little sour as they may not be that ripe - either way, I think the drink is still very refreshing.",
+            "My go-to's are definitely the mango diamond slush and the watermelon slush - both are super refreshing and perfect for the summer."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "think",
+            "sour",
+            "especially",
+            "avocado",
+            "area"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "27bb00e0009711ed8a1dd0ab"
+            }
+        },
+        "drinkName": "Original Black Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/pKy96SDVi8KNLNDYVgjrfw\/o.jpg",
+        "avgRating": 3.3333333333,
+        "reviews": [
+            {
+                "$oid": "2841ccd9009711ed8911d0ab"
+            },
+            {
+                "$oid": "286ce509009711edb49ad0ab"
+            },
+            {
+                "$oid": "2899c160009711ed9550d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "1f33d242009711eda103d0ab"
+        },
+        "shopName": "Real Fruit Bubble Tea",
+        "positiveSents": [
+            "Love their bubble tea (I'm a fan of the basic black milk tea with tapioca), but prices have gone up a bit.",
+            "We ordered the Original black milk tea half sugar, but it was SOOOOO watered down.",
+            "2.10 for a small black milk tea, after tax."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "small",
+            "love",
+            "bit",
+            "gone",
+            "fan"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "28c0d16d009711ed90dcd0ab"
+            }
+        },
+        "drinkName": "Strawberry Banana Smoothie",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/5E7L-MtAOsRJYK9mGVHV-w\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "293261aa009711ed97b0d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "1f33d242009711eda103d0ab"
+        },
+        "shopName": "Real Fruit Bubble Tea",
+        "positiveSents": [
+            "I really love the mango diamond slush and strawberry banana smoothie!"
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "love"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "2c711a80009711ed9fa6d0ab"
+            }
+        },
+        "drinkName": "Purple Yam Bubble Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/HYE0tulwXetfrDMxe6jD-g\/o.jpg",
+        "avgRating": 4.8,
+        "reviews": [
+            {
+                "$oid": "2de71ab3009711eda0e3d0ab"
+            },
+            {
+                "$oid": "2e28906f009711ed930dd0ab"
+            },
+            {
+                "$oid": "2e5b1207009711eda9e9d0ab"
+            },
+            {
+                "$oid": "2e883da9009711edbd4ad0ab"
+            },
+            {
+                "$oid": "2ec2fb90009711edb7e8d0ab"
+            },
+            {
+                "$oid": "2ef81542009711eda184d0ab"
+            },
+            {
+                "$oid": "2f23b936009711edb28fd0ab"
+            },
+            {
+                "$oid": "2f529169009711edb55dd0ab"
+            },
+            {
+                "$oid": "2f8402ce009711ed8b35d0ab"
+            },
+            {
+                "$oid": "2fb1a1f5009711ed8200d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "295adb47009711edbe7ed0ab"
+        },
+        "shopName": "Baroness",
+        "positiveSents": [
+            "It is a special Taiwanese drink.",
+            "The staff were super kind and even remade my drink after I forgot to get pearls in mine, but omg they were SOOO SOFT!",
+            "This honestly is my new favourite because of its unique offering of drink combinations and quality."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.5283687943,
+        "surprisedScore": 0.4716312057,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "staff",
+            "uses",
+            "offering",
+            "bag",
+            "wanted"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "2fda7257009711ed9a7bd0ab"
+            }
+        },
+        "drinkName": "Lychee Paradise",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/O1k8wMFs6-FqY5S9KqM2kg\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "3071bb46009711edb1e2d0ab"
+            },
+            {
+                "$oid": "309bacce009711ed9894d0ab"
+            },
+            {
+                "$oid": "30c66558009711ed876ed0ab"
+            },
+            {
+                "$oid": "30eff57f009711eda568d0ab"
+            },
+            {
+                "$oid": "311f42ae009711edb081d0ab"
+            },
+            {
+                "$oid": "3149d55b009711ed8803d0ab"
+            },
+            {
+                "$oid": "31731ba1009711ed8cc1d0ab"
+            },
+            {
+                "$oid": "319c2761009711ed8d4fd0ab"
+            },
+            {
+                "$oid": "31c2e973009711ed963dd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "295adb47009711edbe7ed0ab"
+        },
+        "shopName": "Baroness",
+        "positiveSents": [
+            "If you are a fan of milk teas and chocolate, you will love this drink.",
+            "Their lychee paradise is pretty and tasty!",
+            "I'm hoping to try their purple yam drink next, it looks so interesting!"
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "ig",
+            "packed",
+            "floral",
+            "recommended",
+            "fan"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "31e6d272009711ed8e88d0ab"
+            }
+        },
+        "drinkName": "Thai Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/OdfwRMvt-mGQtMQkX9wOlw\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "326abccd009711eda886d0ab"
+            },
+            {
+                "$oid": "328ff471009711ed94d3d0ab"
+            },
+            {
+                "$oid": "32b86420009711edb6f8d0ab"
+            },
+            {
+                "$oid": "32e121de009711edba67d0ab"
+            },
+            {
+                "$oid": "3307bcaf009711ed8780d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "295adb47009711edbe7ed0ab"
+        },
+        "shopName": "Baroness",
+        "positiveSents": [
+            "If all bubble tea tasted like the bubble tea from Baroness, I would drink it all the time.",
+            "The Taro Milk Tea was amazing and had some really great taro.",
+            "The Thai Milk Tea was very tasty and had a great tea flavour."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.7929606625,
+        "surprisedScore": 0.2070393375,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "stores",
+            "option",
+            "minutes",
+            "form",
+            "offering"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "332dd2c1009711edb9a2d0ab"
+            }
+        },
+        "drinkName": "Grapefruit Aloe Citrus Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/tsb-TiVBPKkTsJb6EYJRJA\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "33d5b734009711edb63fd0ab"
+            },
+            {
+                "$oid": "33fbcc46009711ed85c8d0ab"
+            },
+            {
+                "$oid": "342398bb009711ed9511d0ab"
+            },
+            {
+                "$oid": "344958fe009711edbcfad0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "295adb47009711edbe7ed0ab"
+        },
+        "shopName": "Baroness",
+        "positiveSents": [
+            "The Grapefruit Aloe Citrus Tea is full of vitamin C and refreshing aloe topping with a strong natural grapefruit flavour too!",
+            "I tried the Grapefruit Aloe Citrus Tea and the Lychee Paradise.",
+            "I'm hoping to try their purple yam drink next, it looks so interesting!"
+        ],
+        "negativeSents": [],
+        "happyScore": 0.7643979058,
+        "surprisedScore": 0.2356020942,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "topping",
+            "vitamin",
+            "extremely",
+            "interesting",
+            "got"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "346e6dd5009711edaee7d0ab"
+            }
+        },
+        "drinkName": "Brown Sugar Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/pbSEqMkuY4-ge5Be-4ArQw\/o.jpg",
+        "avgRating": 4.75,
+        "reviews": [
+            {
+                "$oid": "34e9a244009711ed802ad0ab"
+            },
+            {
+                "$oid": "351592f3009711ed8067d0ab"
+            },
+            {
+                "$oid": "35427cdf009711ed803ad0ab"
+            },
+            {
+                "$oid": "356bafc7009711ed80fed0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "295adb47009711edbe7ed0ab"
+        },
+        "shopName": "Baroness",
+        "positiveSents": [
+            "If all bubble tea tasted like the bubble tea from Baroness, I would drink it all the time.",
+            "My favourite was the brown sugar milk tea, the brown sugar was not thick or textured like most places.",
+            "This honestly is my new favourite because of its unique offering of drink combinations and quality."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "option",
+            "textured",
+            "offering",
+            "honestly",
+            "extra"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "35970593009711ed8cacd0ab"
+            }
+        },
+        "drinkName": "Mango Cheese Foam",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/mRzgNfs2RQfWcjW-fUCfXQ\/o.jpg",
+        "avgRating": 4.5,
+        "reviews": [
+            {
+                "$oid": "3625e806009711ed9aebd0ab"
+            },
+            {
+                "$oid": "3654c161009711edb02cd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "295adb47009711edbe7ed0ab"
+        },
+        "shopName": "Baroness",
+        "positiveSents": [
+            "My wife and I got the purple yam with organic milk and brown sugar pearls, and the mango cheese foam with aloe.",
+            "The lychee paradise was ok and wasn't a fan of the mango cheese foam."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "organic",
+            "fan",
+            "wife",
+            "ok",
+            "got"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "367bd2aa009711edaba4d0ab"
+            }
+        },
+        "drinkName": "Peach Oolong Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/2efZWc07IECu02FNW74pzQ\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "36fdae21009711ed9f3cd0ab"
+            },
+            {
+                "$oid": "37234aa2009711ed97bfd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "295adb47009711edbe7ed0ab"
+        },
+        "shopName": "Baroness",
+        "positiveSents": [
+            "The black milk tea was very fragrant, I really enjoyed the unique flavour of oat milk with black milk tea and the brown sugar tapioca pearls, although the drink was still a tad sweet for me.",
+            "The tea-rista warned me that the peach oolong milk tea was hot and although I was warned, it was still the hottest drink I've ever gotten from a bubble tea shop.",
+            "I also ordered a hot peach oolong milk tea with 0% sugar to try as well."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "tea-rista",
+            "flavour",
+            "hottest",
+            "warned",
+            "gotten"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "37487205009711edb53dd0ab"
+            }
+        },
+        "drinkName": "Roasted Oolong Milk Teas",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/evv6RmhTb-pwDaaOx16NGA\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "37bf22b1009711edbc49d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "295adb47009711edbe7ed0ab"
+        },
+        "shopName": "Baroness",
+        "positiveSents": [
+            "The black milk tea was very fragrant, I really enjoyed the unique flavour of oat milk with black milk tea and the brown sugar tapioca pearls, although the drink was still a tad sweet for me.",
+            "The tea-rista warned me that the peach oolong milk tea was hot and although I was warned, it was still the hottest drink I've ever gotten from a bubble tea shop."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "tea-rista",
+            "flavour",
+            "hottest",
+            "warned",
+            "gotten"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "37e32e73009711edadb5d0ab"
+            }
+        },
+        "drinkName": "Black Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/E8fFGTrRlMZ-Hy7Bzw6UsA\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "38555bc1009711ed95a9d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "295adb47009711edbe7ed0ab"
+        },
+        "shopName": "Baroness",
+        "positiveSents": [
+            "The black milk tea was very fragrant, I really enjoyed the unique flavour of oat milk with black milk tea and the brown sugar tapioca pearls, although the drink was still a tad sweet for me.",
+            "As per her recommendation, I ordered the black milk tea with tapioca, with her recommendation of 50% sugar due to the already sweetened brown sugar tapioca pearls.",
+            "The tea-rista warned me that the peach oolong milk tea was hot and although I was warned, it was still the hottest drink I've ever gotten from a bubble tea shop."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "tea-rista",
+            "flavour",
+            "hottest",
+            "warned",
+            "recommendation"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "473e8854009711eda753d0ab"
+            }
+        },
+        "drinkName": "Cream Foam",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/jr7_94DhZIWnw1vEX7CaVw\/o.jpg",
+        "avgRating": 4.25,
+        "reviews": [
+            {
+                "$oid": "47fcf64c009711ed8b67d0ab"
+            },
+            {
+                "$oid": "483c704d009711ed9815d0ab"
+            },
+            {
+                "$oid": "4874703e009711ed9bd5d0ab"
+            },
+            {
+                "$oid": "48b1041f009711ed94c9d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "387b3375009711ed98a2d0ab"
+        },
+        "shopName": "Machi Machi",
+        "positiveSents": [
+            "I think we (my friend and I)waited in total for about 20-30 minutes including ordering and getting the drink.",
+            "The strawberry slush was actually really good - it tasted like real strawberry and the cream foam was milky with a very, very light cheese taste (I know I always emphasize \"real strawberry\", but some stores just don't do it right and their strawberry drinks end up tasting artificial). .",
+            "And when I got the drinks the staff patiently taught me how to drink the fresh strawberry Latte w\/ Panna Cotta using the straw."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.7267759563,
+        "surprisedScore": 0.2732240437,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "stores",
+            "minutes",
+            "staff",
+            "light",
+            "delicious"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "48e7a47d009711ed90bfd0ab"
+            }
+        },
+        "drinkName": "Fresh Strawberry Green Tea Slush",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/vRmIiARLowW001aN9-545g\/o.jpg",
+        "avgRating": 4.3333333333,
+        "reviews": [
+            {
+                "$oid": "4989b0d0009711ed966bd0ab"
+            },
+            {
+                "$oid": "49beca9a009711edb7fbd0ab"
+            },
+            {
+                "$oid": "49f8782a009711edb695d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "387b3375009711ed98a2d0ab"
+        },
+        "shopName": "Machi Machi",
+        "positiveSents": [
+            "I think we (my friend and I)waited in total for about 20-30 minutes including ordering and getting the drink.",
+            "And when I got the drinks the staff patiently taught me how to drink the fresh strawberry Latte w\/ Panna Cotta using the straw.",
+            " I love you so machi Fresh Strawberry Green Tea Slush with Cream Foam $5.90 4\/5 Machi Machi is steps from Wellesley station and offers lots of drinks that often show up on Jay Chou's Instagram ..."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.6240601504,
+        "surprisedScore": 0.3759398496,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "staff",
+            "minutes",
+            "think",
+            "panna",
+            "taught"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "4a2ef1c0009711ed9017d0ab"
+            }
+        },
+        "drinkName": "Black Tea Latte",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/xJfBpf8-IWTJ99jIYkqxfA\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "4ad2f9a9009711edb6cbd0ab"
+            },
+            {
+                "$oid": "4b0a849a009711edaff2d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "387b3375009711ed98a2d0ab"
+        },
+        "shopName": "Machi Machi",
+        "positiveSents": [
+            "But kind of overrated with the taste of their drinks, and drinks are really quite pricey Cream Br\u00fbl\u00e9e Black Tea Latte",
+            "My drink came with traditional black tea latte and pudding.",
+            "Came here a second time after I was not able to get the bottled drink the first time around."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.6,
+        "surprisedScore": 0.4,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "overrated",
+            "second",
+            "got",
+            "bottles",
+            "tasted"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "4b41255f009711edb8d0d0ab"
+            }
+        },
+        "drinkName": "Creme Brulee Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/goU4diEUApOwVz6rE5bimQ\/o.jpg",
+        "avgRating": 3.3333333333,
+        "reviews": [
+            {
+                "$oid": "4be2e329009711edb619d0ab"
+            },
+            {
+                "$oid": "4c1bf465009711edadb7d0ab"
+            },
+            {
+                "$oid": "4c5490d2009711ed8503d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "387b3375009711ed98a2d0ab"
+        },
+        "shopName": "Machi Machi",
+        "positiveSents": [
+            "From that one drink, I've concluded that Machi Machi is just another bbt joint for aesthetics and not for quality.",
+            "I really stirred up the drink before drinking it and loved it.",
+            " I don't even remember exactly what I had, but I think it was the creme brulee milk tea."
+        ],
+        "negativeSents": [
+            "Creme Brulee Milk Tea..walked away and didn't know what the hype is, perhaps for others it's the interesting mix and innovativeness in a bubble tea they can get."
+        ],
+        "happyScore": 0.3623188406,
+        "surprisedScore": 0.0,
+        "sadScore": 0.3188405797,
+        "angryScore": 0.3188405797,
+        "positiveWords": [
+            "exactly",
+            "enjoyment",
+            "bbt",
+            "think",
+            "sweeter"
+        ],
+        "negativeWords": [
+            "walked",
+            "innovativeness",
+            "hype",
+            "mix",
+            "away"
+        ]
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "54b63357009711ed8be2d0ab"
+            }
+        },
+        "drinkName": "Yi Fang Fruit Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/jGb0gpj019kA5Dv1Tgk9ww\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "55840a71009711eda19cd0ab"
+            },
+            {
+                "$oid": "55bb471a009711ed9177d0ab"
+            },
+            {
+                "$oid": "55feb8c1009711ed9795d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "51219717009711edbce7d0ab"
+        },
+        "shopName": "Yi Fang Taiwan Fruit Tea",
+        "positiveSents": [
+            "I got the yi fang fruit tea as well as a passion fruit one and they're both amazing.",
+            "it's worth the price for sure Their Yi Fang fruit tea was very delicious, and fun to eat all the fruit pieces left over when the drink was done.",
+            "the menu had plenty of drink options, you even get to pick how much ice and the sweetness of your drink."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.3975903614,
+        "surprisedScore": 0.6024096386,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "options",
+            "sure",
+            "ice",
+            "menu",
+            "delicious"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "563495c9009711ed8559d0ab"
+            }
+        },
+        "drinkName": "Signature Fruit Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/KucmWuB9dtVXuSdw8J1xPA\/o.jpg",
+        "avgRating": 4.75,
+        "reviews": [
+            {
+                "$oid": "56cca61d009711edb50ed0ab"
+            },
+            {
+                "$oid": "5701e6c6009711eda507d0ab"
+            },
+            {
+                "$oid": "573049e0009711edac23d0ab"
+            },
+            {
+                "$oid": "575bd601009711ed94cbd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "51219717009711edbce7d0ab"
+        },
+        "shopName": "Yi Fang Taiwan Fruit Tea",
+        "positiveSents": [
+            "I ordered their signature fruit tea with 50% sugar and absolutely loved it!",
+            " Best fruit tea ever!!",
+            "Their signature fruit tea and brown sugar milk tea are my favorites."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.2844827586,
+        "surprisedScore": 0.7155172414,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "u",
+            "apples",
+            "slices",
+            "delicious",
+            "drinking"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "577fd262009711edb599d0ab"
+            }
+        },
+        "drinkName": "Black Tea Latte",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/hXcUNZL41LZOkmUc9R4aHQ\/o.jpg",
+        "avgRating": 4.5,
+        "reviews": [
+            {
+                "$oid": "5803b2eb009711ed8fd7d0ab"
+            },
+            {
+                "$oid": "5835490a009711ed913fd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "51219717009711edbce7d0ab"
+        },
+        "shopName": "Yi Fang Taiwan Fruit Tea",
+        "positiveSents": [
+            "I really enjoyed the drink and haven't found better boba anywhere else in Toronto.",
+            "However, I did try their Pearl Black Tea Latte.",
+            "The best part of the drink was the boba pearls."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "known",
+            "best",
+            "fruity",
+            "time",
+            "better"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "5859e92d009711edbf62d0ab"
+            }
+        },
+        "drinkName": "Winter Melon Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/iIbwxGpa-ayEFhQA28TVeA\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "58d07795009711ed8968d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "51219717009711edbce7d0ab"
+        },
+        "shopName": "Yi Fang Taiwan Fruit Tea",
+        "positiveSents": [
+            "It taste as good as the winter melon milk tea at gong cha without the milk foam.",
+            "This winter melon milk tea was surprisingly really good!",
+            "But I got the winter melon milk tea with tapioca."
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "good",
+            "gong",
+            "cha",
+            "surprisingly",
+            "got"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "5c6a543c009711edbf0fd0ab"
+            }
+        },
+        "drinkName": "Pearl Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/KB-NtAvMh4MQvbRcyOB0kg\/o.jpg",
+        "avgRating": 5.0,
+        "reviews": [
+            {
+                "$oid": "5d3c7111009711edbfecd0ab"
+            },
+            {
+                "$oid": "5d819192009711ed977dd0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "58f50263009711ed8c68d0ab"
+        },
+        "shopName": "Bubble Lee",
+        "positiveSents": [
+            "Just like their name suggests, Bubble Lee: Authentic Brown Sugar Pearl Milk Tea, the sugar pearls are made with brown sugar.",
+            "Other places use regular tapioca and when they mix the brown sugar, it immediately separates when you drink it due to the cold tea and hot pearls.",
+            "Their speciality is the brown sugar Pearl milk tea"
+        ],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 1.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "authentic",
+            "separates",
+            "mix",
+            "immediately",
+            "like"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "5db6834a009711edba9ad0ab"
+            }
+        },
+        "drinkName": "Iced Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/isZkXcNy_XFLTz5MjQtp3Q\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "5e37288c009711edb699d0ab"
+            },
+            {
+                "$oid": "5e5de603009711edbbb9d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "58f50263009711ed8c68d0ab"
+        },
+        "shopName": "Bubble Lee",
+        "positiveSents": [
+            "Their signature bubble tea with the stewed tapioca balls.",
+            "Cold tea w\/ milk then when you suck up some tapioca balls they are nice and warm.",
+            "2. It was like an iced tea with lemon."
+        ],
+        "negativeSents": [],
+        "happyScore": 0.1987951807,
+        "surprisedScore": 0.8012048193,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "weeks",
+            "customize",
+            "find",
+            "selection",
+            "spending"
+        ],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "5e846380009711edaa62d0ab"
+            }
+        },
+        "drinkName": "Brown Sugar Boba Milk Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/25Hh4aXussbhQMqJJTSBsg\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "5f075fe0009711eda19ed0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "58f50263009711ed8c68d0ab"
+        },
+        "shopName": "Bubble Lee",
+        "positiveSents": [],
+        "negativeSents": [],
+        "happyScore": 0.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [],
+        "negativeWords": []
+    },
+    {
+        "_id": {
+            "$oid": {
+                "$oid": "5f29a293009711edb3c1d0ab"
+            }
+        },
+        "drinkName": "Lemon Jasmine Tea",
+        "drinkImage": "https:\/\/s3-media0.fl.yelpcdn.com\/bphoto\/kO-tej8L7ifDt-2gzv8uvw\/o.jpg",
+        "avgRating": 4.0,
+        "reviews": [
+            {
+                "$oid": "5fae25c9009711ed8618d0ab"
+            }
+        ],
+        "shopId": {
+            "$oid": "58f50263009711ed8c68d0ab"
+        },
+        "shopName": "Bubble Lee",
+        "positiveSents": [
+            "I love jasmine tea",
+            "so I got a iced lemon jasmine tea and let me tell you it was super refreshing and worth the price compared to a $6 lemon king at cocos!"
+        ],
+        "negativeSents": [],
+        "happyScore": 1.0,
+        "surprisedScore": 0.0,
+        "sadScore": 0.0,
+        "angryScore": 0.0,
+        "positiveWords": [
+            "tell",
+            "super",
+            "love",
+            "worth",
+            "refreshing"
+        ],
+        "negativeWords": []
+    }
+]

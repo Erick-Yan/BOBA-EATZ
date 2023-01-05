@@ -1,6 +1,7 @@
 import React from 'react';
 import Carousel from '../Shared/Carousel';
-import {SocialMediaIconsReact} from 'social-media-icons-react';
+//import {SocialMediaIconsReact} from 'social-media-icons-react';
+import { SocialIcon } from 'react-social-icons';
 import David from '../../assets/david-chang-profile.jpg';
 import Erick from '../../assets/erick-yan-profile.jpg';
 
@@ -39,13 +40,13 @@ const LandingPage = props => {
                             <p>Co-Founder, Software Engineer</p>
                             <div className='contactButtons'>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="mail" iconColor="black" size="35" url="https://www.youtube.com/channel/UCHR57pt-a6vkwON3vTROsWw/"/>
+                                <SocialIcon url="https://www.youtube.com/channel/UCHR57pt-a6vkwON3vTROsWw/" />
                                 </div>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="github" iconColor="black" size="35" url="https://github.com/changoug"/>
+                                <SocialIcon url="https://github.com/changoug" />
                                 </div>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="linkedin" iconColor="black" size="35" url="https://www.linkedin.com/in/changoug/"/>
+                                <SocialIcon url="https://www.linkedin.com/in/changoug/" />
                                 </div>
                             </div>
                         </div>
@@ -80,13 +81,13 @@ const LandingPage = props => {
                             <p>Co-Founder, Software Engineer</p>
                             <div className='contactButtons'>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="mail" iconColor="black" size="35" url="mailto:e5yan@uwaterloo.ca"/>
+                                <SocialIcon url="mailto:e5yan@uwaterloo.ca" />
                                 </div>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="github" iconColor="black" size="35" url="https://github.com/Erick-Yan"/>
+                                <SocialIcon url="https://github.com/Erick-Yan" />
                                 </div>
                                 <div className="contactButton" >
-                                <SocialMediaIconsReact {...buttonStyle} roundness={50} icon="linkedin" iconColor="black" size="35" url="https://www.linkedin.com/in/erick-yan/"/>
+                                <SocialIcon url="https://www.linkedin.com/in/erick-yan/" />
                                 </div>
                             </div>
                         </div>

@@ -4,10 +4,11 @@ import StarRatings from 'react-star-ratings';
 import {useHttpClient} from '../../hooks/http-hook';
 import PageHeader from '../Shared/PageHeader';
 import './Overview.css';
-import boba from '../../assets/boba-eats.png';
+import "./DrinkOverview.css";
 
 const DrinkOverview = ({ drinkId }) => {
   const [loadedDrink, setLoadedDrink] = useState();
+  const [loadedReviews, setLoadedReviews] = useState();
   const {sendRequest} = useHttpClient();
   
   useEffect(() => {
@@ -15,20 +16,57 @@ const DrinkOverview = ({ drinkId }) => {
       try {
         const responseData = await sendRequest(`${process.env.REACT_APP_BACKEND}/api/drinks/${drinkId}`);
         setLoadedDrink(responseData.drink);
+        setLoadedReviews(responseData.drink.reviews);
       } catch (err) {}
     }
     fetchDrinks();
   }, [sendRequest]);
-  
+
+  const handleReviews = (e) => {
+    const filterString = e.target.value;
+    if (filterString === "All") {
+      setLoadedReviews(loadedDrink.reviews);
+      return;
+    }
+    let filteredReviews = loadedDrink.reviews.filter((review) => review.reviewMessage.toLowerCase().includes(filterString.toLowerCase()));
+    setLoadedReviews(filteredReviews);
+    return;
+  }
+    
   return (
     <React.Fragment>
       {loadedDrink && (
         <Box>
-          <PageHeader header={loadedDrink.drinkName} image={loadedDrink.drinkImage} rating={loadedDrink.avgRating} />
-          <Container style={styles.container}>
+          <PageHeader 
+            header={loadedDrink.drinkName} 
+            image={loadedDrink.drinkImage} 
+            rating={loadedDrink.avgRating} 
+            isDrink={true}
+            happyScore={loadedDrink.happyScore}
+            surprisedScore={loadedDrink.surprisedScore}
+            sadScore={loadedDrink.sadScore}
+            angryScore={loadedDrink.angryScore}
+          />
+          <Container style={styles.container1}>
+            <Typography variant='h4' sx={{paddinLeft: 10, paddingTop: 2}}>Filters</Typography>
+            <button className="Filter-Button All-Button" value={"All"} onClick={handleReviews}>All</button>
+            {loadedDrink.positiveSents.map((item, index) => (
+              <button className="Filter-Button Positive-Sent" key={index} value={item} onClick={handleReviews}>{item}</button>
+            ))}
+            {loadedDrink.negativeSents.map((item, index) => (
+              <button className="Filter-Button Negative-Sent" key={index} value={item} onClick={handleReviews}>{item}</button>
+            ))}
+            {loadedDrink.positiveWords.map((item, index) => (
+              <button className="Filter-Button Positive-Word" key={index} value={item} onClick={handleReviews}>{item}</button>
+            ))}
+            {loadedDrink.negativeWords.map((item, index) => (
+              <button className="Filter-Button Negative-Word" key={index} value={item} onClick={handleReviews}>{item}</button>
+            ))}
+          </Container>
+          <Container style={styles.container2}>
             <Typography variant='h4' sx={{paddinLeft: 10, paddingTop: 2}}>Reviews</Typography>
-            <List style={styles.list} className='scrollbar-hidden'>
-              {loadedDrink.reviews.map((item, index) => (
+            {loadedReviews && (<List style={styles.list} className='scrollbar-hidden'>
+              {loadedReviews.map((item, index) => (
                 <ListItemButton key={index} style={styles.itemButton}>
                   <Box style={styles.textBox}>
                     <Typography style={styles.reviewMessage} className='scrollbar-hidden' variant='h6'>"{item.reviewMessage}"</Typography>
@@ -40,7 +78,7 @@ const DrinkOverview = ({ drinkId }) => {
                   </Box>
                 </ListItemButton>
               ))}
-            </List>
+            </List>)}
         </Container>
         </Box>
       )}
@@ -51,8 +89,13 @@ const DrinkOverview = ({ drinkId }) => {
 export default DrinkOverview;
 
 const styles = {
-  container: {
+  container1: {
     marginTop: 150,
+    borderRadius: '2rem',
+    maxWidth: '90%',
+  },
+  container2: {
+    marginTop: 50,
     borderRadius: '2rem',
     backgroundColor: 'aliceblue',
     maxWidth: '90%',
