@@ -1,31 +1,53 @@
 const puppeteer = require('puppeteer-extra');
+const bluebird = require("bluebird");
 const StealthPlugin = require('puppeteer-extra-plugin-stealth');
 const locateChrome = require("locate-chrome");
-const AsyncLock = require("./asyncLock");
 
 puppeteer.use(StealthPlugin());
 
-const getShopDict = async (url, shops) => {
+const browserFn = async (fn) => {
   const executablePath = await new Promise(resolve => locateChrome(arg => resolve(arg)));
   const browser = await puppeteer.launch({
     headless: false, 
     args: ['--disable-setuid-sandbox', 
             '--no-sandbox', 
-            '--window-size=1200,900'
+            '--window-size=1920,1080'
           ],
     executablePath: executablePath
     }
   );
+  try {
+    return await fn(browser);
+  } finally {
+    await browser.close();
+  }
+}
+
+const pageFn = (browser) => async (fn) => {
   const page = await browser.newPage();
-  await page.goto(url);
+	try {
+		return await fn(page);
+	} finally {
+		await page.close();
+  }
+}
+
+const getShopDict = async (url, shops) => {
   let shopDict = {}
-  await Promise.all(
-    shops.map( async (shop) => {
-      shopDict[shop.name] = {};
-      await searchShop(page, shop, shopDict);
-    })
-  );
-  // await browser.close();
+  await bluebird.map(shops, async (shop) => {
+    return browserFn(async (browser) => {
+      return pageFn(browser)(async (page) => {
+        try {
+          await page.setDefaultNavigationTimeout(60000);
+          await page.goto(url);
+          shopDict[shop.name] = {};
+          await searchShop(page, shop, shopDict);
+        } catch (error) {
+          console.log(`{Failed: ${shop.name}, Reason: ${error}}`);
+        }
+      });
+    });
+  }, {concurrency: 3});
   return shopDict;
 };
 
@@ -33,7 +55,8 @@ const searchShop = async (page, shop, shopDict) => {
   await page.waitForSelector('#searchboxinput');
   await page.click('#searchboxinput');
   await page.$eval('#searchboxinput', (el, shop) => { el.value = shop.name }, shop);
-  await page.keyboard.press('Enter');
+  // await page.keyboard.press('Enter');
+  await nativeClick(page, '.pzfvzf > button');
   await page.waitForSelector('.hfpxzc');
   // await scrollPage(page, '.ecceSd');
   const numberOfBranches = await page.evaluate( () => {
@@ -47,38 +70,37 @@ const searchShop = async (page, shop, shopDict) => {
 };
 
 const searchBranch = async (page, shop,  branchIndex, shopDict) => {
-  await page.waitForSelector(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
-  await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
+  try {
+    await scrollPage(page, 'div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(1)');
+    // Flaky: div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a
+    // Doesn't always click on the next branch...
+    await page.waitForSelector(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
+    await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
+    console.log("Clicked Once...");
+    await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
+    console.log("Clicked Twice...");
+    await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
+    console.log(`Clicked Thrice...${shop.name}`);
+  } catch (error) {
+    return shopDict;
+  }
   //click on search button
   await page.waitForSelector('.Io6YTe');
   await scrollPage(page, '.Io6YTe');
-  // await page.waitForSelector('.pV4rW.q8YqMd > div > button');
-  // await nativeClick(page, '.pV4rW.q8YqMd > div > button');
   for (let i = 0; i < shop.drinks.length; i++) {
     if (!(shop.drinks[i] in shopDict[shop.name])) {
       shopDict[shop.name][shop.drinks[i]] = []
     }
+    //console.log(shop.name);
     const retrieved_reviews = await getDrinkReviews(page, shop.drinks[i]);
     Array.prototype.push.apply(shopDict[shop.name][shop.drinks[i]], retrieved_reviews);
-    console.log(shopDict[shop.name][shop.drinks[i]].length);
+    //console.log(shopDict[shop.name][shop.drinks[i]].length);
   }
-  // await Promise.all(
-  //   shop.drinks.map( async (drink) => {
-  //     if (!(drink in shopDict[shop.name])) {
-  //       shopDict[shop.name][drink] = []
-  //     }
-  //     const retrieved_reviews = await getDrinkReviews(page, drink);
-  //     console.log(drink);
-  //     console.log(shopDict[shop.name][drink].length);
-  //     Array.prototype.push.apply(shopDict[shop.name][drink], retrieved_reviews);
-  //     console.log(shopDict[shop.name][drink].length);
-  //   })
-  // );
   return shopDict;
 };
 
 const getDrinkReviews = async (page, drink) => {
-  console.log(drink);
+  //console.log(drink);
   await page.waitForSelector('.pV4rW.q8YqMd > div > button');
   await nativeClick(page, '.pV4rW.q8YqMd > div > button');
   await page.waitForSelector('div.MrFZRe.g8q29e > div > input');
@@ -97,7 +119,7 @@ const getDrinkReviews = async (page, drink) => {
       };
     });
   });
-  console.log(reviews.length);
+  //console.log(reviews.length);
   return reviews;
 };
 

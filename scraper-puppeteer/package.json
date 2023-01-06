@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/Erick-Yan/BOBA-EATZ#readme",
   "dependencies": {
+    "bluebird": "^3.7.2",
     "locate-chrome": "^0.1.1",
     "puppeteer": "^15.5.0",
     "puppeteer-core": "^19.4.1",

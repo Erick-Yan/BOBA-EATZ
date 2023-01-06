@@ -1,15 +1,20 @@
-const getShopDict = require('./getShopDict');
+const getShopDict = require('./scrapeGMaps');
+const retrieveStores = require('./retrieveStores');
+const fs = require('fs');
 
 async function main() {
-  const shops = [
-    {
-      name: 'CoCo Fresh Tea & Juice',
-      drinks: ['3 Guys', 'Pearl Milk Tea', '2 Ladies', 'Red Bean Matcha Milk Tea', 'Sago Taro Milk Tea']
-    }
-  ];
   try {
+      const shops = await retrieveStores();
+      console.log(shops.length);
       const data = await getShopDict('https://www.google.com/maps/@43.6764672,-79.3935872,12z', shops);
-      console.log(JSON.stringify(data));
+      var dataJSON = JSON.stringify(data);
+      console.log(dataJSON);
+      console.log("Arrived");
+      fs.readFile('data.json', 'utf8', function (err, data) {
+        fs.writeFile('data.json', dataJSON, function(err, result) {
+          if(err) console.log('error', err);
+        });
+      });
   } catch(e) {
       console.log(e);
   }
