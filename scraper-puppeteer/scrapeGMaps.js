@@ -43,7 +43,7 @@ const getShopDict = async (url, shops) => {
           shopDict[shop.name] = {};
           await searchShop(page, shop, shopDict);
         } catch (error) {
-          console.log(`{Failed: ${shop.name}, Reason: ${error}}`);
+          console.log(`----> {Failed: ${shop.name}, Reason: ${error}} <----`);
         }
       });
     });
@@ -70,20 +70,16 @@ const searchShop = async (page, shop, shopDict) => {
 };
 
 const searchBranch = async (page, shop,  branchIndex, shopDict) => {
-  try {
-    await scrollPage(page, 'div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(1)');
-    // Flaky: div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a
-    // Doesn't always click on the next branch...
-    await page.waitForSelector(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
-    await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
-    console.log("Clicked Once...");
-    await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
-    console.log("Clicked Twice...");
-    await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
-    console.log(`Clicked Thrice...${shop.name}`);
-  } catch (error) {
-    return shopDict;
-  }
+  await scrollPage(page, 'div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(1)');
+  // Flaky: div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a
+  // Doesn't always click on the next branch...
+  await page.waitForSelector(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
+  await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
+  console.log("Clicked Once...");
+  await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
+  console.log("Clicked Twice...");
+  await page.click(`div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(${branchIndex}) > div > a`);
+  console.log(`Clicked Thrice...${shop.name}`);
   //click on search button
   await page.waitForSelector('.Io6YTe');
   await scrollPage(page, '.Io6YTe');
