@@ -38,7 +38,7 @@ const getShopDict = async (url, shops) => {
     return browserFn(async (browser) => {
       return pageFn(browser)(async (page) => {
           await page.setDefaultNavigationTimeout(60000);
-          await page.setDefaultTimeout(0);
+          await page.setDefaultTimeout(4000);
           await page.goto(url);
           shopDict[shop.name] = {};
           await searchShop(page, shop, shopDict);
@@ -58,13 +58,16 @@ const searchShop = async (page, shop, shopDict) => {
   await scrollPage(page, 'div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(1)');
   await page.waitForSelector('.hfpxzc');
 
-  const numberOfBranches = await page.evaluate( () => {
-    return Array.from(document.querySelectorAll('.hfpxzc')).length;
+  const branchNameList = await page.evaluate( () => {
+    return Array.from(document.querySelectorAll('.hfpxzc')).map((branch) => branch.getAttribute('aria-label'));
   });
-  console.log('number of branches:', numberOfBranches);
 
-  for (let i = 0; i < numberOfBranches; i++) {
-    await searchBranch(page, shop, i * 2 + 1, shopDict);
+  console.log('number of branches:', branchNameList.length);
+
+  for (let i = 0; i < branchNameList.length; i++) {
+    if (branchNameList[i].includes(shop.name)) {
+      await searchBranch(page, shop, i * 2 + 1, shopDict);
+    }
   }
   return shopDict;
 };
@@ -77,8 +80,8 @@ const searchBranch = async (page, shop,  branchIndex, shopDict) => {
       shopDict[shop.name][shop.drinks[i]] = []
     }
     console.log('branch:', (branchIndex - 1)/2, 'drink:', shop.drinks[i]);
-    const retrieved_reviews = await getDrinkReviews(page, shop.drinks[i]);
-    Array.prototype.push.apply(shopDict[shop.name][shop.drinks[i]], retrieved_reviews);
+    const retrievedReviews = await getDrinkReviews(page, shop.drinks[i]);
+    Array.prototype.push.apply(shopDict[shop.name][shop.drinks[i]], retrievedReviews);
   }
   return shopDict;
 };
