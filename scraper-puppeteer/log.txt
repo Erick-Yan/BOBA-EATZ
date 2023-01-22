@@ -1,0 +1,1322 @@
+number of drinks: 10
+number of drinks: 17
+number of drinks: 17
+number of drinks: 10
+number of drinks: 5
+number of drinks: 9
+number of drinks: 4
+number of drinks: 4
+number of drinks: 4
+[
+  {
+    name: 'Chatime',
+    drinks: [
+      'Roasted Milk Tea',
+      'Brown Sugar Pearl Milk Tea',
+      'Matcha Tea Latte',
+      'Hazelnut Chocolate Milk Tea',
+      'Caramel Milk Tea',
+      'Peach Green Tea',
+      'Mango Green Tea',
+      'Matcha Green Tea Mousse',
+      'Coconut Milk Tea',
+      'Crass Jelly Milk Tea'
+    ]
+  },
+  {
+    name: 'The Alley',
+    drinks: [
+      'Iron Goddess Milk Tea',
+      'Royal No.9 Milk Tea',
+      'Alley Trio Milk Tea',
+      'Brown Sugar Deerioca',
+      'Deerioca Fever',
+      'Jasmine Green Milk Tea',
+      'Garden Milk Tea',
+      'Morning Dawn',
+      'Deerioca Matcha',
+      'Passion Fruit Green Tea',
+      'Classic Milk Tea',
+      'Hojicha',
+      'Sweet Dew Fresh Milk Tea',
+      'Brown Sugar Bubble Tea',
+      'Able Bubble Tea Cup Holder',
+      'Deerioca Puff',
+      'Hot Milk Tea'
+    ]
+  },
+  {
+    name: 'Icha Tea',
+    drinks: [
+      'Matcha Latte',
+      'Rose Jasmine Tea',
+      'Roasted Oolong Milk Tea',
+      'Classic Milk Tea',
+      'Osmanthus Oolong Tea',
+      'Brown Sugar Ginger Tea',
+      'Taro Milk Tea',
+      'Chrysanthemum Tea W. Pearls',
+      'Iced Green Tea Latte',
+      'Petal Jasmine Tea',
+      'Chrysanthemum Pure Crafted Milk Tea',
+      'Iced Milk Tea',
+      'Jasmine Green Tea',
+      'Matcha Milk Tea',
+      'White Peach Oolong',
+      'Milk Bubble Tea',
+      'Black Milk Tea'
+    ]
+  },
+  {
+    name: 'CoCo Fresh Juice & Tea',
+    drinks: [
+      'Sago Taro Milk Tea',
+      'Bubble Gaga',
+      'Lemon King',
+      'Black Tea Macchiato',
+      'Matcha Milk Tea',
+      'Roasted Milk Tea',
+      'Mixed Juice Macchiato',
+      'Caramel Milk Tea',
+      'Grass Jelly Milk Tea',
+      'Mango Slush'
+    ]
+  },
+  {
+    name: 'Real Fruit Bubble Tea',
+    drinks: [
+      'Mango Diamond Slush',
+      'Mango Smoothie',
+      'Watermelon Slush',
+      'Original Black Milk Tea',
+      'Strawberry Banana Smoothie'
+    ]
+  },
+  {
+    name: 'Baroness',
+    drinks: [
+      'Purple Yam Bubble Tea',
+      'Lychee Paradise',
+      'Thai Milk Tea',
+      'Grapefruit Aloe Citrus Tea',
+      'Brown Sugar Milk Tea',
+      'Mango Cheese Foam',
+      'Peach Oolong Milk Tea',
+      'Roasted Oolong Milk Teas',
+      'Black Milk Tea'
+    ]
+  },
+  {
+    name: 'Machi Machi',
+    drinks: [
+      'Cream Foam',
+      'Fresh Strawberry Green Tea Slush',
+      'Black Tea Latte',
+      'Creme Brulee Milk Tea'
+    ]
+  },
+  {
+    name: 'Yi Fang Taiwan Fruit Tea',
+    drinks: [
+      'Yi Fang Fruit Tea',
+      'Signature Fruit Tea',
+      'Black Tea Latte',
+      'Winter Melon Milk Tea'
+    ]
+  },
+  {
+    name: 'Bubble Lee',
+    drinks: [
+      'Pearl Milk Tea',
+      'Iced Tea',
+      'Brown Sugar Boba Milk Tea',
+      'Lemon Jasmine Tea'
+    ]
+  }
+]
+Current Shop: Icha Tea
+Current Shop: The Alley
+Current Shop: Chatime
+documentHeight 23040
+documentHeight 19680
+documentHeight 8440
+Number of Branches: 2
+Number of Branches: 20
+Number of Branches: 20
+-> Current Branch: 235 Spadina Ave. Unit 4, Toronto, ON M5T 2E2
+-> Current Branch: 5 St Joseph St, Toronto, ON M4Y 0B6
+-> Current Branch: 163 King St E, Toronto, ON M5A 1J4
+----> Matcha Latte: 10
+----> Iron Goddess Milk Tea: 10
+----> Rose Jasmine Tea: 10
+----> Roasted Milk Tea: 4
+----> Royal No.9 Milk Tea: 10
+----> Roasted Oolong Milk Tea: 4
+----> Brown Sugar Pearl Milk Tea: 1
+----> Alley Trio Milk Tea: 6
+----> Classic Milk Tea: 4
+----> Matcha Tea Latte: 1
+----> Brown Sugar Deerioca: 6
+----> Osmanthus Oolong Tea: 4
+----> Hazelnut Chocolate Milk Tea: 0
+----> Deerioca Fever: 10
+----> Brown Sugar Ginger Tea: 5
+----> Caramel Milk Tea: 0
+----> Jasmine Green Milk Tea: 3
+----> Taro Milk Tea: 7
+----> Peach Green Tea: 0
+----> Garden Milk Tea: 3
+----> Chrysanthemum Tea W. Pearls: 0
+----> Mango Green Tea: 0
+----> Morning Dawn: 2
+----> Iced Green Tea Latte: 0
+----> Matcha Green Tea Mousse: 0
+----> Deerioca Matcha: 2
+----> Petal Jasmine Tea: 1
+----> Coconut Milk Tea: 1
+----> Passion Fruit Green Tea: 2
+----> Chrysanthemum Pure Crafted Milk Tea: 0
+----> Crass Jelly Milk Tea: 0
+----> Classic Milk Tea: 2
+-> Current Branch: 132 Dundas St W, Toronto, ON M5G 1C3
+----> Iced Milk Tea: 3
+----> Hojicha: 3
+----> Jasmine Green Tea: 3
+----> Sweet Dew Fresh Milk Tea: 1
+----> Matcha Milk Tea: 10
+----> Roasted Milk Tea: 10
+----> Brown Sugar Bubble Tea: 10
+----> White Peach Oolong: 1
+----> Brown Sugar Pearl Milk Tea: 1
+----> Able Bubble Tea Cup Holder: 0
+----> Milk Bubble Tea: 10
+----> Matcha Tea Latte: 2
+----> Deerioca Puff: 3
+----> Black Milk Tea: 3
+----> Hazelnut Chocolate Milk Tea: 0
+----> Hot Milk Tea: 5
+-> Current Branch: 996 Queen St W, Toronto, ON M6J 1H1
+----> Caramel Milk Tea: 0
+-> Current Branch: 382 Yonge St Unit 1, Toronto, ON M5B 1S9
+----> Peach Green Tea: 1
+----> Mango Green Tea: 3
+----> Matcha Latte: 2
+----> Iron Goddess Milk Tea: 0
+----> Matcha Green Tea Mousse: 0
+----> Rose Jasmine Tea: 1
+----> Royal No.9 Milk Tea: 5
+----> Coconut Milk Tea: 1
+----> Roasted Oolong Milk Tea: 0
+----> Alley Trio Milk Tea: 0
+----> Crass Jelly Milk Tea: 0
+----> Classic Milk Tea: 0
+----> Brown Sugar Deerioca: 3
+-> Current Branch: 2354 Yonge St, Toronto, ON M4P 2E6
+----> Osmanthus Oolong Tea: 0
+----> Deerioca Fever: 3
+----> Brown Sugar Ginger Tea: 0
+----> Jasmine Green Milk Tea: 2
+----> Taro Milk Tea: 2
+----> Roasted Milk Tea: 3
+----> Garden Milk Tea: 0
+----> Chrysanthemum Tea W. Pearls: 0
+----> Brown Sugar Pearl Milk Tea: 0
+----> Morning Dawn: 0
+----> Iced Green Tea Latte: 0
+----> Matcha Tea Latte: 0
+----> Deerioca Matcha: 2
+----> Petal Jasmine Tea: 0
+----> Hazelnut Chocolate Milk Tea: 1
+----> Passion Fruit Green Tea: 0
+----> Chrysanthemum Pure Crafted Milk Tea: 0
+----> Caramel Milk Tea: 0
+----> Classic Milk Tea: 0
+----> Iced Milk Tea: 1
+----> Peach Green Tea: 0
+----> Hojicha: 0
+----> Jasmine Green Tea: 0
+----> Mango Green Tea: 0
+----> Sweet Dew Fresh Milk Tea: 0
+----> Matcha Milk Tea: 2
+----> Matcha Green Tea Mousse: 0
+----> Brown Sugar Bubble Tea: 1
+----> White Peach Oolong: 0
+----> Coconut Milk Tea: 1
+----> Able Bubble Tea Cup Holder: 0
+----> Milk Bubble Tea: 0
+----> Crass Jelly Milk Tea: 0
+----> Deerioca Puff: 2
+----> Black Milk Tea: 0
+-> Current Branch: 171 E Liberty St #143, Toronto, ON M6K 3P6
+----> Hot Milk Tea: 2
+-> Current Branch: 621 Bloor St W, Toronto, ON M6G 1K8
+Current Shop: Bubble Lee
+----> Roasted Milk Tea: 3
+----> Brown Sugar Pearl Milk Tea: 0
+----> Iron Goddess Milk Tea: 4
+documentHeight 8440
+----> Matcha Tea Latte: 1
+Number of Branches: 2
+----> Royal No.9 Milk Tea: 3
+----> Hazelnut Chocolate Milk Tea: 0
+-> Current Branch: 469 Queen St W, Toronto, ON M5V 2A9
+----> Alley Trio Milk Tea: 0
+----> Caramel Milk Tea: 0
+----> Brown Sugar Deerioca: 1
+----> Peach Green Tea: 0
+----> Deerioca Fever: 4
+----> Pearl Milk Tea: 1
+----> Mango Green Tea: 0
+----> Jasmine Green Milk Tea: 0
+----> Iced Tea: 2
+----> Matcha Green Tea Mousse: 0
+----> Garden Milk Tea: 2
+----> Brown Sugar Boba Milk Tea: 1
+----> Coconut Milk Tea: 0
+----> Morning Dawn: 0
+----> Lemon Jasmine Tea: 0
+----> Crass Jelly Milk Tea: 0
+----> Deerioca Matcha: 2
+-> Current Branch: 337 Bloor St W, Toronto, ON M5S 1W7
+----> Passion Fruit Green Tea: 1
+----> Classic Milk Tea: 3
+----> Roasted Milk Tea: 5
+----> Hojicha: 0
+----> Brown Sugar Pearl Milk Tea: 0
+----> Sweet Dew Fresh Milk Tea: 0
+----> Matcha Tea Latte: 0
+----> Brown Sugar Bubble Tea: 5
+----> Hazelnut Chocolate Milk Tea: 1
+----> Able Bubble Tea Cup Holder: 0
+----> Caramel Milk Tea: 1
+----> Deerioca Puff: 7
+----> Peach Green Tea: 1
+----> Hot Milk Tea: 1
+----> Mango Green Tea: 2
+-> Current Branch: 5431 Yonge St, North York, ON M2N 5R6
+----> Matcha Green Tea Mousse: 0
+----> Coconut Milk Tea: 3
+----> Iron Goddess Milk Tea: 2
+----> Crass Jelly Milk Tea: 0
+-> Current Branch: 677 Bloor St W Unit #2, Toronto, ON M6G 1L3
+----> Royal No.9 Milk Tea: 4
+----> Alley Trio Milk Tea: 1
+*** {Failed: Bubble Lee, Reason: TimeoutError: Waiting for selector `div.m6QErb.DxyBCb.kA9KIf.dS8AEf.ecceSd > div:nth-child(5) > div > a` failed: Waiting failed: 30000ms exceeded} ***
+----> Brown Sugar Deerioca: 6
+----> Roasted Milk Tea: 1
+----> Deerioca Fever: 2
+Current Shop: Yi Fang Taiwan Fruit Tea
+----> Brown Sugar Pearl Milk Tea: 0
+----> Jasmine Green Milk Tea: 0
+----> Matcha Tea Latte: 0
+----> Garden Milk Tea: 0
+----> Hazelnut Chocolate Milk Tea: 0
+documentHeight 15600
+----> Morning Dawn: 0
+----> Caramel Milk Tea: 0
+Number of Branches: 9
+----> Deerioca Matcha: 2
+----> Peach Green Tea: 0
+----> Passion Fruit Green Tea: 0
+----> Mango Green Tea: 1
+-> Current Branch: 5425 Yonge St, North York, ON M2N 5R6
+----> Classic Milk Tea: 1
+----> Matcha Green Tea Mousse: 0
+----> Hojicha: 0
+----> Coconut Milk Tea: 0
+----> Yi Fang Fruit Tea: 1
+----> Sweet Dew Fresh Milk Tea: 0
+----> Crass Jelly Milk Tea: 0
+----> Signature Fruit Tea: 0
+----> Brown Sugar Bubble Tea: 6
+-> Current Branch: 754 Broadview Ave, Toronto, ON M4K 2P1
+----> Black Tea Latte: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Winter Melon Milk Tea: 0
+----> Deerioca Puff: 6
+-> Current Branch: 672 Yonge St, Toronto, ON M4Y 2A6
+----> Roasted Milk Tea: 3
+----> Hot Milk Tea: 2
+----> Brown Sugar Pearl Milk Tea: 1
+-> Current Branch: 300 Borough Dr, Scarborough, ON M1P 4P5
+----> Matcha Tea Latte: 1
+----> Yi Fang Fruit Tea: 2
+----> Hazelnut Chocolate Milk Tea: 0
+----> Signature Fruit Tea: 0
+----> Iron Goddess Milk Tea: 0
+----> Caramel Milk Tea: 0
+----> Black Tea Latte: 2
+----> Royal No.9 Milk Tea: 4
+----> Peach Green Tea: 0
+----> Winter Melon Milk Tea: 0
+----> Alley Trio Milk Tea: 3
+----> Mango Green Tea: 0
+-> Current Branch: 4002 Sheppard Ave E Unit 107, Scarborough, ON M1S 4R5
+----> Brown Sugar Deerioca: 2
+----> Matcha Green Tea Mousse: 0
+----> Deerioca Fever: 2
+----> Coconut Milk Tea: 0
+----> Yi Fang Fruit Tea: 0
+----> Jasmine Green Milk Tea: 2
+----> Crass Jelly Milk Tea: 0
+----> Signature Fruit Tea: 0
+-> Current Branch: 461 Queen St W, Toronto, ON M5V 2A9
+----> Garden Milk Tea: 0
+----> Black Tea Latte: 0
+----> Morning Dawn: 0
+----> Winter Melon Milk Tea: 0
+----> Deerioca Matcha: 1
+----> Roasted Milk Tea: 1
+-> Current Branch: 3272 Midland Ave Unit B122, Scarborough, ON M1V 0C7
+----> Passion Fruit Green Tea: 1
+----> Brown Sugar Pearl Milk Tea: 2
+----> Classic Milk Tea: 4
+----> Matcha Tea Latte: 0
+----> Hojicha: 1
+----> Yi Fang Fruit Tea: 1
+----> Hazelnut Chocolate Milk Tea: 0
+----> Sweet Dew Fresh Milk Tea: 0
+----> Signature Fruit Tea: 2
+----> Caramel Milk Tea: 0
+----> Brown Sugar Bubble Tea: 1
+----> Black Tea Latte: 0
+----> Peach Green Tea: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Winter Melon Milk Tea: 0
+----> Mango Green Tea: 3
+----> Deerioca Puff: 1
+-> Current Branch: 28 South Unionville Ave Unit 1032, Markham, ON L3R 1J5
+----> Matcha Green Tea Mousse: 0
+----> Hot Milk Tea: 3
+----> Coconut Milk Tea: 0
+-> Current Branch: R3-120 Adelaide Street W Richmond - Adelaide Centre, Toronto, ON M5H 1T1
+----> Crass Jelly Milk Tea: 0
+----> Yi Fang Fruit Tea: 0
+-> Current Branch: 80 Weston Rd, Toronto, ON M6N 3P4
+----> Signature Fruit Tea: 0
+----> Black Tea Latte: 1
+----> Iron Goddess Milk Tea: 0
+----> Winter Melon Milk Tea: 0
+----> Roasted Milk Tea: 4
+----> Royal No.9 Milk Tea: 1
+-> Current Branch: 315 Spadina Ave. b, Toronto, ON M5T 2E9
+----> Alley Trio Milk Tea: 0
+----> Brown Sugar Pearl Milk Tea: 0
+----> Brown Sugar Deerioca: 1
+----> Matcha Tea Latte: 0
+----> Deerioca Fever: 1
+----> Hazelnut Chocolate Milk Tea: 0
+----> Yi Fang Fruit Tea: 3
+----> Jasmine Green Milk Tea: 0
+----> Caramel Milk Tea: 1
+----> Signature Fruit Tea: 4
+----> Garden Milk Tea: 0
+----> Peach Green Tea: 0
+----> Black Tea Latte: 6
+----> Morning Dawn: 0
+----> Mango Green Tea: 0
+----> Winter Melon Milk Tea: 0
+----> Deerioca Matcha: 0
+----> Matcha Green Tea Mousse: 0
+-> Current Branch: 633 Silver Star Blvd #115, Scarborough, ON M1V 5N1
+----> Passion Fruit Green Tea: 0
+----> Coconut Milk Tea: 2
+----> Classic Milk Tea: 0
+----> Crass Jelly Milk Tea: 0
+----> Yi Fang Fruit Tea: 1
+----> Hojicha: 0
+-> Current Branch: 199 College St, Toronto, ON M5T 1P9
+----> Signature Fruit Tea: 2
+----> Sweet Dew Fresh Milk Tea: 0
+----> Black Tea Latte: 1
+----> Brown Sugar Bubble Tea: 1
+----> Winter Melon Milk Tea: 0
+----> Roasted Milk Tea: 0
+----> Able Bubble Tea Cup Holder: 0
+-> Current Branch: 3235 Hwy 7 unit27, Markham, ON L3R 3P9
+----> Brown Sugar Pearl Milk Tea: 1
+----> Deerioca Puff: 1
+----> Matcha Tea Latte: 0
+----> Hot Milk Tea: 0
+----> Hazelnut Chocolate Milk Tea: 0
+----> Yi Fang Fruit Tea: 6
+-> Current Branch: 325 Central Pkwy W, Mississauga, ON L5B 3X9
+----> Caramel Milk Tea: 0
+----> Signature Fruit Tea: 1
+----> Peach Green Tea: 0
+----> Black Tea Latte: 1
+----> Mango Green Tea: 0
+----> Winter Melon Milk Tea: 0
+----> Iron Goddess Milk Tea: 3
+----> Matcha Green Tea Mousse: 0
+-> Current Branch: 100 Main St E Unit 102, Hamilton, ON L8N 3W7
+----> Royal No.9 Milk Tea: 6
+----> Coconut Milk Tea: 0
+----> Alley Trio Milk Tea: 2
+----> Crass Jelly Milk Tea: 0
+----> Brown Sugar Deerioca: 10
+----> Yi Fang Fruit Tea: 0
+-> Current Branch: 5494 Yonge St, North York, ON M2N 7L3
+----> Deerioca Fever: 10
+----> Signature Fruit Tea: 0
+----> Jasmine Green Milk Tea: 0
+----> Black Tea Latte: 0
+----> Garden Milk Tea: 0
+----> Roasted Milk Tea: 6
+----> Winter Melon Milk Tea: 0
+----> Morning Dawn: 1
+----> Brown Sugar Pearl Milk Tea: 0
+Current Shop: Machi Machi
+----> Deerioca Matcha: 4
+----> Matcha Tea Latte: 0
+----> Passion Fruit Green Tea: 3
+----> Hazelnut Chocolate Milk Tea: 0
+----> Classic Milk Tea: 4
+documentHeight 11510
+----> Caramel Milk Tea: 0
+----> Hojicha: 3
+Number of Branches: 7
+----> Peach Green Tea: 1
+----> Sweet Dew Fresh Milk Tea: 0
+-> Current Branch: 575 Yonge St, Toronto, ON M4Y 1Z2
+----> Mango Green Tea: 2
+----> Brown Sugar Bubble Tea: 10
+----> Matcha Green Tea Mousse: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Coconut Milk Tea: 0
+----> Deerioca Puff: 10
+----> Cream Foam: 5
+----> Crass Jelly Milk Tea: 0
+----> Hot Milk Tea: 2
+-> Current Branch: 3401 Dufferin St Unit 405B, North York, ON M6A 2T9
+----> Fresh Strawberry Green Tea Slush: 0
+-> Current Branch: 100 City Centre Dr 1 - 213, Mississauga, ON L5B 2C9
+----> Black Tea Latte: 3
+----> Creme Brulee Milk Tea: 2
+----> Roasted Milk Tea: 2
+-> Current Branch: 5317 Yonge St, North York, ON M2N 5R4
+----> Brown Sugar Pearl Milk Tea: 0
+----> Iron Goddess Milk Tea: 1
+----> Matcha Tea Latte: 3
+----> Royal No.9 Milk Tea: 0
+----> Hazelnut Chocolate Milk Tea: 0
+----> Alley Trio Milk Tea: 3
+----> Cream Foam: 1
+----> Caramel Milk Tea: 0
+----> Brown Sugar Deerioca: 1
+----> Fresh Strawberry Green Tea Slush: 0
+----> Peach Green Tea: 0
+----> Deerioca Fever: 1
+----> Black Tea Latte: 2
+----> Mango Green Tea: 3
+----> Jasmine Green Milk Tea: 1
+----> Creme Brulee Milk Tea: 2
+----> Matcha Green Tea Mousse: 0
+----> Garden Milk Tea: 0
+-> Current Branch: H021B, 220 Yonge St, Toronto, ON M5B 2H1
+----> Coconut Milk Tea: 0
+----> Morning Dawn: 0
+----> Crass Jelly Milk Tea: 0
+----> Deerioca Matcha: 1
+----> Cream Foam: 1
+----> Passion Fruit Green Tea: 1
+-> Current Branch: 895 Lawrence Ave E Unit #15, North York, ON M3C 3L2
+----> Fresh Strawberry Green Tea Slush: 0
+----> Classic Milk Tea: 0
+----> Black Tea Latte: 1
+----> Hojicha: 1
+----> Creme Brulee Milk Tea: 0
+----> Roasted Milk Tea: 2
+----> Sweet Dew Fresh Milk Tea: 0
+-> Current Branch: 3278 Midland Ave D108, Scarborough, ON M1V 0C9
+----> Brown Sugar Pearl Milk Tea: 0
+----> Brown Sugar Bubble Tea: 1
+----> Matcha Tea Latte: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Hazelnut Chocolate Milk Tea: 1
+----> Cream Foam: 2
+----> Deerioca Puff: 1
+----> Caramel Milk Tea: 0
+----> Fresh Strawberry Green Tea Slush: 0
+----> Hot Milk Tea: 0
+----> Peach Green Tea: 0
+----> Black Tea Latte: 3
+-> Current Branch: 3260 Midland Ave Unit F107, Scarborough, ON M1V 0C5
+----> Mango Green Tea: 2
+----> Creme Brulee Milk Tea: 5
+-> Current Branch: 3985 Hwy 7 suite 105, Markham, ON L3R 2A2
+----> Matcha Green Tea Mousse: 0
+----> Coconut Milk Tea: 0
+----> Iron Goddess Milk Tea: 2
+----> Crass Jelly Milk Tea: 0
+----> Royal No.9 Milk Tea: 8
+----> Cream Foam: 5
+-> Current Branch: 2101 Brimley Rd #108, Scarborough, ON M1S 2B4
+----> Alley Trio Milk Tea: 1
+----> Fresh Strawberry Green Tea Slush: 0
+----> Brown Sugar Deerioca: 10
+----> Black Tea Latte: 3
+----> Deerioca Fever: 4
+----> Creme Brulee Milk Tea: 2
+----> Roasted Milk Tea: 2
+----> Jasmine Green Milk Tea: 3
+-> Current Branch: 280 West Beaver Creek Rd #3, Richmond Hill, ON L4B 3B1
+----> Brown Sugar Pearl Milk Tea: 1
+----> Garden Milk Tea: 3
+----> Matcha Tea Latte: 0
+----> Morning Dawn: 2
+----> Hazelnut Chocolate Milk Tea: 0
+----> Cream Foam: 2
+----> Deerioca Matcha: 3
+----> Caramel Milk Tea: 0
+----> Fresh Strawberry Green Tea Slush: 0
+----> Passion Fruit Green Tea: 1
+----> Peach Green Tea: 0
+----> Black Tea Latte: 0
+----> Classic Milk Tea: 2
+----> Mango Green Tea: 1
+----> Creme Brulee Milk Tea: 1
+----> Hojicha: 1
+----> Matcha Green Tea Mousse: 0
+-> Current Branch: 140 University Ave W, Waterloo, ON N2L 6J3
+----> Sweet Dew Fresh Milk Tea: 0
+----> Coconut Milk Tea: 0
+----> Brown Sugar Bubble Tea: 5
+----> Crass Jelly Milk Tea: 0
+----> Able Bubble Tea Cup Holder: 0
+-> Current Branch: 175 Ravel Rd, North York, ON M2H 1T1
+----> Cream Foam: 1
+----> Deerioca Puff: 3
+----> Fresh Strawberry Green Tea Slush: 0
+----> Hot Milk Tea: 1
+----> Black Tea Latte: 3
+----> Roasted Milk Tea: 4
+-> Current Branch: 9100 Jane St unit 53, Vaughan, ON L4K 0A4
+----> Creme Brulee Milk Tea: 1
+----> Brown Sugar Pearl Milk Tea: 0
+----> Matcha Tea Latte: 0
+Current Shop: Baroness
+----> Iron Goddess Milk Tea: 0
+----> Hazelnut Chocolate Milk Tea: 0
+----> Royal No.9 Milk Tea: 0
+----> Caramel Milk Tea: 0
+documentHeight 8020
+----> Alley Trio Milk Tea: 0
+----> Peach Green Tea: 2
+Number of Branches: 2
+----> Brown Sugar Deerioca: 0
+----> Mango Green Tea: 1
+-> Current Branch: 421 Yonge St, Toronto, ON M5B 1T1
+----> Deerioca Fever: 2
+----> Matcha Green Tea Mousse: 0
+----> Jasmine Green Milk Tea: 0
+----> Coconut Milk Tea: 1
+----> Garden Milk Tea: 2
+----> Purple Yam Bubble Tea: 10
+----> Crass Jelly Milk Tea: 0
+----> Morning Dawn: 0
+----> Lychee Paradise: 10
+-> Current Branch: 2030 Ellesmere Rd Unit 4, Scarborough, ON M1H 2V6
+----> Deerioca Matcha: 0
+----> Thai Milk Tea: 10
+----> Passion Fruit Green Tea: 0
+----> Grapefruit Aloe Citrus Tea: 5
+----> Classic Milk Tea: 0
+----> Roasted Milk Tea: 2
+----> Brown Sugar Milk Tea: 10
+----> Hojicha: 0
+----> Brown Sugar Pearl Milk Tea: 1
+----> Mango Cheese Foam: 4
+----> Sweet Dew Fresh Milk Tea: 0
+----> Matcha Tea Latte: 0
+----> Peach Oolong Milk Tea: 1
+----> Brown Sugar Bubble Tea: 0
+----> Hazelnut Chocolate Milk Tea: 0
+----> Roasted Oolong Milk Teas: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Caramel Milk Tea: 0
+----> Black Milk Tea: 0
+----> Deerioca Puff: 1
+----> Peach Green Tea: 0
+-> Current Branch: 8001 Weston Rd, Woodbridge, ON L4L 9C8
+----> Hot Milk Tea: 0
+----> Mango Green Tea: 1
+-> Current Branch: 8750 Bayview Ave Unit 1, Richmond Hill, ON L4B 4V9
+----> Matcha Green Tea Mousse: 0
+----> Purple Yam Bubble Tea: 0
+----> Coconut Milk Tea: 0
+----> Lychee Paradise: 0
+----> Crass Jelly Milk Tea: 0
+----> Iron Goddess Milk Tea: 0
+----> Thai Milk Tea: 0
+----> Royal No.9 Milk Tea: 1
+-> Current Branch: 3812 Bloor St W, Etobicoke, ON M9B 1K7
+----> Grapefruit Aloe Citrus Tea: 0
+----> Alley Trio Milk Tea: 0
+----> Brown Sugar Milk Tea: 0
+----> Brown Sugar Deerioca: 1
+----> Mango Cheese Foam: 0
+----> Roasted Milk Tea: 2
+----> Deerioca Fever: 1
+----> Peach Oolong Milk Tea: 0
+----> Brown Sugar Pearl Milk Tea: 0
+----> Jasmine Green Milk Tea: 0
+----> Roasted Oolong Milk Teas: 0
+----> Matcha Tea Latte: 0
+----> Garden Milk Tea: 0
+----> Black Milk Tea: 0
+----> Morning Dawn: 0
+----> Hazelnut Chocolate Milk Tea: 0
+Current Shop: Real Fruit Bubble Tea
+----> Deerioca Matcha: 0
+----> Caramel Milk Tea: 0
+----> Passion Fruit Green Tea: 0
+----> Peach Green Tea: 0
+----> Classic Milk Tea: 0
+----> Mango Green Tea: 0
+documentHeight 22920
+----> Hojicha: 1
+----> Matcha Green Tea Mousse: 0
+----> Sweet Dew Fresh Milk Tea: 0
+----> Coconut Milk Tea: 0
+Number of Branches: 40
+----> Brown Sugar Bubble Tea: 0
+----> Crass Jelly Milk Tea: 0
+----> Able Bubble Tea Cup Holder: 0
+-> Current Branch: 4910 Yonge St, North York, ON M2N 5N5
+-> Current Branch: 1250 S Service Rd, Mississauga, ON L5E 2N6
+----> Deerioca Puff: 1
+----> Hot Milk Tea: 0
+-> Current Branch: 505 Hwy 7 #16, Thornhill, ON L3T 7T1
+----> Roasted Milk Tea: 1
+----> Brown Sugar Pearl Milk Tea: 0
+----> Mango Diamond Slush: 5
+----> Matcha Tea Latte: 0
+----> Mango Smoothie: 1
+----> Iron Goddess Milk Tea: 7
+----> Hazelnut Chocolate Milk Tea: 0
+----> Watermelon Slush: 0
+----> Royal No.9 Milk Tea: 10
+----> Caramel Milk Tea: 0
+----> Original Black Milk Tea: 0
+----> Alley Trio Milk Tea: 6
+----> Peach Green Tea: 0
+----> Strawberry Banana Smoothie: 0
+----> Brown Sugar Deerioca: 10
+----> Mango Green Tea: 0
+-> Current Branch: 4141 Dixie Rd, Mississauga, ON L4W 1V5
+----> Deerioca Fever: 9
+----> Matcha Green Tea Mousse: 0
+----> Jasmine Green Milk Tea: 3
+----> Coconut Milk Tea: 0
+----> Garden Milk Tea: 7
+----> Mango Diamond Slush: 3
+----> Crass Jelly Milk Tea: 0
+----> Morning Dawn: 2
+----> Mango Smoothie: 1
+-> Current Branch: 662 Dundas St E, Toronto, ON M5A 2C1
+----> Deerioca Matcha: 2
+----> Watermelon Slush: 0
+----> Passion Fruit Green Tea: 2
+----> Original Black Milk Tea: 1
+----> Roasted Milk Tea: 3
+----> Classic Milk Tea: 2
+----> Strawberry Banana Smoothie: 0
+----> Brown Sugar Pearl Milk Tea: 0
+----> Hojicha: 2
+-> Current Branch: 900 Dufferin St Unit 129, Toronto, ON M6H 4A9
+----> Matcha Tea Latte: 0
+----> Sweet Dew Fresh Milk Tea: 0
+----> Hazelnut Chocolate Milk Tea: 0
+----> Brown Sugar Bubble Tea: 6
+----> Caramel Milk Tea: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Mango Diamond Slush: 3
+----> Peach Green Tea: 0
+----> Deerioca Puff: 2
+----> Mango Smoothie: 1
+----> Mango Green Tea: 1
+----> Hot Milk Tea: 0
+----> Watermelon Slush: 0
+----> Matcha Green Tea Mousse: 0
+-> Current Branch: 142 Main St Unionville, Unionville, ON L3R 2G5
+----> Original Black Milk Tea: 0
+----> Coconut Milk Tea: 1
+----> Strawberry Banana Smoothie: 0
+----> Crass Jelly Milk Tea: 0
+----> Iron Goddess Milk Tea: 0
+-> Current Branch: 660 1/2 Bloor St W, Toronto, ON M6G 1K9
+-> Current Branch: 300 Borough Dr, Scarborough, ON M1P 4P5
+----> Royal No.9 Milk Tea: 2
+----> Alley Trio Milk Tea: 3
+----> Mango Diamond Slush: 10
+----> Roasted Milk Tea: 2
+----> Brown Sugar Deerioca: 8
+----> Mango Smoothie: 5
+----> Brown Sugar Pearl Milk Tea: 2
+----> Deerioca Fever: 4
+----> Watermelon Slush: 0
+----> Matcha Tea Latte: 0
+----> Jasmine Green Milk Tea: 1
+----> Original Black Milk Tea: 1
+----> Hazelnut Chocolate Milk Tea: 0
+----> Garden Milk Tea: 0
+----> Strawberry Banana Smoothie: 0
+----> Caramel Milk Tea: 0
+-> Current Branch: 223 Queen St W, Toronto, ON M5V 1Z4
+----> Morning Dawn: 2
+----> Peach Green Tea: 0
+----> Deerioca Matcha: 1
+----> Mango Green Tea: 1
+----> Passion Fruit Green Tea: 0
+----> Matcha Green Tea Mousse: 0
+----> Mango Diamond Slush: 10
+----> Classic Milk Tea: 1
+----> Coconut Milk Tea: 0
+----> Mango Smoothie: 8
+----> Hojicha: 3
+----> Crass Jelly Milk Tea: 0
+----> Watermelon Slush: 1
+----> Sweet Dew Fresh Milk Tea: 0
+----> Original Black Milk Tea: 0
+----> Brown Sugar Bubble Tea: 4
+----> Strawberry Banana Smoothie: 0
+Current Shop: CoCo Fresh Juice & Tea
+----> Able Bubble Tea Cup Holder: 0
+-> Current Branch: Eaton Centre, 220 Yonge Street D201A CF Toronto, Toronto, ON M5B 2H1
+----> Deerioca Puff: 1
+documentHeight 23320
+----> Hot Milk Tea: 3
+-> Current Branch: 20 Bur Oak Ave b12, Markham, ON L6C 0A2
+Number of Branches: 30
+----> Mango Diamond Slush: 10
+-> Current Branch: 648A Yonge St, Toronto, ON M4Y 2A6
+----> Mango Smoothie: 0
+----> Iron Goddess Milk Tea: 1
+----> Watermelon Slush: 5
+----> Royal No.9 Milk Tea: 4
+----> Original Black Milk Tea: 2
+----> Alley Trio Milk Tea: 1
+----> Strawberry Banana Smoothie: 2
+----> Sago Taro Milk Tea: 2
+----> Brown Sugar Deerioca: 4
+----> Bubble Gaga: 0
+----> Deerioca Fever: 2
+-> Current Branch: West Tower, 3300 Bloor St W #108, Etobicoke, ON M8X 2W8
+----> Lemon King: 0
+----> Jasmine Green Milk Tea: 1
+----> Black Tea Macchiato: 3
+----> Garden Milk Tea: 1
+----> Matcha Milk Tea: 5
+----> Morning Dawn: 0
+----> Mango Diamond Slush: 4
+----> Roasted Milk Tea: 5
+----> Deerioca Matcha: 1
+----> Mango Smoothie: 3
+----> Mixed Juice Macchiato: 0
+----> Passion Fruit Green Tea: 0
+----> Watermelon Slush: 3
+----> Caramel Milk Tea: 3
+----> Classic Milk Tea: 0
+----> Original Black Milk Tea: 0
+----> Grass Jelly Milk Tea: 5
+----> Hojicha: 1
+----> Strawberry Banana Smoothie: 0
+----> Mango Slush: 2
+----> Sweet Dew Fresh Milk Tea: 0
+-> Current Branch: 444 Yonge St, Toronto, ON M5G 2B3
+-> Current Branch: 352 Queen St W, Toronto, ON M5V 2A2
+----> Brown Sugar Bubble Tea: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Deerioca Puff: 2
+----> Sago Taro Milk Tea: 1
+----> Mango Diamond Slush: 10
+----> Hot Milk Tea: 1
+----> Bubble Gaga: 2
+----> Mango Smoothie: 0
+-> Current Branch: 2901 Eglinton Ave W Unit 8B, Mississauga, ON L5M 6J3
+----> Lemon King: 0
+----> Watermelon Slush: 3
+----> Black Tea Macchiato: 0
+----> Original Black Milk Tea: 0
+----> Matcha Milk Tea: 0
+----> Strawberry Banana Smoothie: 0
+----> Iron Goddess Milk Tea: 0
+----> Roasted Milk Tea: 1
+-> Current Branch: Lawrence Square, Toronto, ON M6A 3B4
+----> Royal No.9 Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Alley Trio Milk Tea: 1
+----> Caramel Milk Tea: 0
+----> Brown Sugar Deerioca: 0
+----> Mango Diamond Slush: 3
+----> Grass Jelly Milk Tea: 0
+----> Deerioca Fever: 0
+----> Mango Smoothie: 1
+----> Mango Slush: 3
+----> Jasmine Green Milk Tea: 0
+----> Watermelon Slush: 0
+-> Current Branch: 2352 Yonge St, Toronto, ON M4P 2E6
+----> Garden Milk Tea: 0
+----> Original Black Milk Tea: 0
+----> Morning Dawn: 0
+----> Strawberry Banana Smoothie: 0
+----> Sago Taro Milk Tea: 0
+----> Deerioca Matcha: 0
+-> Current Branch: 3401 Dufferin St Unit 128, North York, ON M6A 2T9
+----> Bubble Gaga: 1
+----> Passion Fruit Green Tea: 1
+----> Lemon King: 0
+----> Classic Milk Tea: 1
+----> Mango Diamond Slush: 1
+----> Black Tea Macchiato: 1
+----> Hojicha: 0
+----> Mango Smoothie: 1
+----> Matcha Milk Tea: 1
+----> Sweet Dew Fresh Milk Tea: 0
+----> Watermelon Slush: 1
+----> Roasted Milk Tea: 1
+----> Brown Sugar Bubble Tea: 1
+----> Original Black Milk Tea: 1
+----> Mixed Juice Macchiato: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Strawberry Banana Smoothie: 0
+----> Caramel Milk Tea: 1
+----> Deerioca Puff: 1
+----> Grass Jelly Milk Tea: 0
+----> Hot Milk Tea: 0
+-> Current Branch: 5H4 The Albion Center, 1530 Albion Rd, Etobicoke, ON M9V 1B4
+----> Mango Slush: 0
+-> Current Branch: 30 Gibson Dr Unit 118, Markham, ON L3R 8B5
+-> Current Branch: 630 Bloor St W, Toronto, ON M6G 1K7
+----> Mango Diamond Slush: 10
+----> Iron Goddess Milk Tea: 1
+----> Mango Smoothie: 6
+----> Sago Taro Milk Tea: 0
+----> Royal No.9 Milk Tea: 5
+----> Watermelon Slush: 2
+----> Bubble Gaga: 4
+----> Alley Trio Milk Tea: 1
+----> Original Black Milk Tea: 0
+----> Lemon King: 2
+----> Brown Sugar Deerioca: 2
+----> Strawberry Banana Smoothie: 0
+----> Black Tea Macchiato: 2
+----> Deerioca Fever: 4
+----> Matcha Milk Tea: 0
+-> Current Branch: Woodbine Center 500 Rexdale Boulevard L011B L011B, Etobicoke, ON M9W 6K5
+----> Jasmine Green Milk Tea: 2
+----> Roasted Milk Tea: 0
+----> Garden Milk Tea: 1
+----> Mixed Juice Macchiato: 0
+----> Morning Dawn: 0
+----> Mango Diamond Slush: 9
+----> Caramel Milk Tea: 1
+----> Deerioca Matcha: 2
+----> Mango Smoothie: 0
+----> Grass Jelly Milk Tea: 4
+----> Passion Fruit Green Tea: 0
+----> Watermelon Slush: 8
+----> Mango Slush: 3
+----> Classic Milk Tea: 1
+----> Original Black Milk Tea: 0
+-> Current Branch: 4868 Dundas St W, Etobicoke, ON M9A 1B5
+----> Hojicha: 1
+----> Strawberry Banana Smoothie: 0
+----> Sweet Dew Fresh Milk Tea: 0
+-> Current Branch: 55 Avenue Rd, Toronto, ON M5R 3L2
+----> Brown Sugar Bubble Tea: 1
+----> Sago Taro Milk Tea: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Bubble Gaga: 1
+----> Deerioca Puff: 3
+----> Mango Diamond Slush: 1
+----> Lemon King: 0
+----> Hot Milk Tea: 1
+----> Mango Smoothie: 0
+----> Black Tea Macchiato: 0
+-> Current Branch: 10025 Hurontario St Unit 3, Brampton, ON L6Z 0E6
+----> Watermelon Slush: 0
+----> Matcha Milk Tea: 0
+----> Original Black Milk Tea: 0
+----> Roasted Milk Tea: 0
+----> Strawberry Banana Smoothie: 0
+----> Mixed Juice Macchiato: 0
+----> Iron Goddess Milk Tea: 1
+-> Current Branch: 45 Overlea Blvd Unit#167, Toronto, ON M4H 1C2
+----> Caramel Milk Tea: 0
+----> Royal No.9 Milk Tea: 2
+----> Grass Jelly Milk Tea: 0
+----> Alley Trio Milk Tea: 1
+----> Mango Slush: 0
+----> Brown Sugar Deerioca: 2
+----> Mango Diamond Slush: 2
+-> Current Branch: 372 Yonge St, Toronto, ON M5B 1S6
+----> Deerioca Fever: 2
+----> Mango Smoothie: 1
+----> Jasmine Green Milk Tea: 0
+----> Watermelon Slush: 1
+----> Garden Milk Tea: 0
+----> Original Black Milk Tea: 0
+----> Sago Taro Milk Tea: 0
+----> Morning Dawn: 0
+----> Strawberry Banana Smoothie: 0
+----> Bubble Gaga: 4
+----> Deerioca Matcha: 2
+-> Current Branch: 5095 Yonge St 1st Floor, North York, ON M2N 6Z4
+----> Lemon King: 2
+----> Passion Fruit Green Tea: 0
+----> Black Tea Macchiato: 0
+----> Classic Milk Tea: 1
+----> Matcha Milk Tea: 0
+----> Hojicha: 1
+----> Mango Diamond Slush: 6
+----> Roasted Milk Tea: 0
+----> Sweet Dew Fresh Milk Tea: 0
+----> Mango Smoothie: 3
+----> Mixed Juice Macchiato: 0
+----> Brown Sugar Bubble Tea: 1
+----> Watermelon Slush: 3
+----> Caramel Milk Tea: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Original Black Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Deerioca Puff: 0
+----> Strawberry Banana Smoothie: 0
+----> Mango Slush: 0
+----> Hot Milk Tea: 2
+Doesnt match: The Burger Alley vs The Alley
+-> Current Branch: 371 Spadina Ave., Toronto, ON M5T 2G3
+-> Current Branch: 47 Clock Tower Rd, Toronto, ON M3C 0G1
+-> Current Branch: 15975 Bayview Ave, Aurora, ON L4G 7Y3
+----> Iron Goddess Milk Tea: 4
+----> Sago Taro Milk Tea: 2
+----> Mango Diamond Slush: 0
+----> Royal No.9 Milk Tea: 2
+----> Bubble Gaga: 10
+----> Mango Smoothie: 3
+----> Alley Trio Milk Tea: 1
+----> Lemon King: 3
+----> Watermelon Slush: 0
+----> Brown Sugar Deerioca: 1
+----> Black Tea Macchiato: 1
+----> Original Black Milk Tea: 0
+----> Deerioca Fever: 1
+----> Matcha Milk Tea: 3
+----> Strawberry Banana Smoothie: 2
+----> Jasmine Green Milk Tea: 0
+----> Roasted Milk Tea: 2
+----> Garden Milk Tea: 0
+-> Current Branch: 1 Eglinton Square, Scarborough, ON M1L 2K1
+----> Mixed Juice Macchiato: 0
+----> Morning Dawn: 0
+----> Caramel Milk Tea: 0
+----> Deerioca Matcha: 2
+----> Grass Jelly Milk Tea: 3
+----> Mango Diamond Slush: 4
+----> Passion Fruit Green Tea: 0
+----> Mango Slush: 4
+----> Mango Smoothie: 0
+----> Classic Milk Tea: 2
+-> Current Branch: 17B Finch Ave W, North York, ON M2N 7K4
+----> Watermelon Slush: 0
+----> Hojicha: 0
+----> Original Black Milk Tea: 0
+----> Sweet Dew Fresh Milk Tea: 0
+----> Strawberry Banana Smoothie: 0
+----> Brown Sugar Bubble Tea: 3
+----> Sago Taro Milk Tea: 1
+-> Current Branch: 3003 Danforth Ave Unit D5, East York, ON M4C 1M9
+----> Able Bubble Tea Cup Holder: 0
+----> Bubble Gaga: 2
+----> Deerioca Puff: 1
+----> Lemon King: 0
+----> Hot Milk Tea: 3
+----> Mango Diamond Slush: 6
+----> Black Tea Macchiato: 0
+-> Current Branch: 17600 Yonge St, Newmarket, ON L3Y 4Z1
+----> Matcha Milk Tea: 1
+----> Mango Smoothie: 3
+----> Roasted Milk Tea: 1
+----> Watermelon Slush: 2
+----> Iron Goddess Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Original Black Milk Tea: 0
+----> Royal No.9 Milk Tea: 0
+----> Caramel Milk Tea: 2
+----> Strawberry Banana Smoothie: 1
+----> Alley Trio Milk Tea: 0
+----> Grass Jelly Milk Tea: 1
+-> Current Branch: 2181 Steeles Ave W, North York, ON M3J 3N2
+----> Brown Sugar Deerioca: 0
+----> Mango Slush: 2
+-> Current Branch: 1021 Gerrard St E, Toronto, ON M4M 1Z4
+----> Deerioca Fever: 0
+----> Jasmine Green Milk Tea: 0
+----> Mango Diamond Slush: 2
+----> Garden Milk Tea: 1
+----> Sago Taro Milk Tea: 1
+----> Mango Smoothie: 0
+----> Morning Dawn: 0
+----> Bubble Gaga: 3
+----> Watermelon Slush: 0
+----> Deerioca Matcha: 0
+----> Lemon King: 0
+----> Original Black Milk Tea: 0
+----> Passion Fruit Green Tea: 0
+----> Black Tea Macchiato: 0
+----> Strawberry Banana Smoothie: 0
+----> Classic Milk Tea: 1
+----> Matcha Milk Tea: 0
+-> Current Branch: 4841 Yonge St, North York, ON M2N 5X2
+----> Hojicha: 0
+----> Roasted Milk Tea: 2
+----> Sweet Dew Fresh Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Brown Sugar Bubble Tea: 0
+----> Mango Diamond Slush: 5
+----> Caramel Milk Tea: 0
+----> Able Bubble Tea Cup Holder: 0
+----> Mango Smoothie: 3
+----> Grass Jelly Milk Tea: 0
+----> Deerioca Puff: 0
+----> Watermelon Slush: 0
+----> Mango Slush: 1
+----> Hot Milk Tea: 0
+-> Current Branch: 4205 Keele St Unit 12, North York, ON M3J 3T8
+----> Original Black Milk Tea: 0
+----> Strawberry Banana Smoothie: 0
+-> Current Branch: Victoria Terrace Plaza, 1448 Lawrence Ave E #18, North York, ON M4A 2S8
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 4
+----> Lemon King: 0
+----> Mango Diamond Slush: 10
+----> Black Tea Macchiato: 0
+----> Mango Smoothie: 3
+----> Matcha Milk Tea: 1
+----> Watermelon Slush: 1
+----> Roasted Milk Tea: 1
+----> Original Black Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Strawberry Banana Smoothie: 2
+-> Current Branch: 300 Borough Dr K02, Scarborough, ON M1P 4P5
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 0
+----> Mango Diamond Slush: 10
+-> Current Branch: 888 Dundas St E Unit K3A, Mississauga, ON L4Y 4G6
+----> Mango Smoothie: 3
+----> Watermelon Slush: 0
+----> Original Black Milk Tea: 0
+----> Sago Taro Milk Tea: 0
+----> Strawberry Banana Smoothie: 0
+----> Bubble Gaga: 1
+----> Lemon King: 0
+----> Black Tea Macchiato: 1
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 0
+-> Current Branch: 890 Don Mills Rd. 130 & 132, North York, ON M3C 1V6
+----> Sago Taro Milk Tea: 1
+----> Bubble Gaga: 5
+----> Lemon King: 0
+*** {Failed: Real Fruit Bubble Tea, Reason: TimeoutError: Waiting for selector `.AeaXub > div:nth-child(2) > div:nth-child(1)` failed: Waiting failed: 30000ms exceeded} ***
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 1
+----> Roasted Milk Tea: 1
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 3
+-> Current Branch: 3180 Lake Shore Blvd W Unit 6, Etobicoke, ON M8V 1L7
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 1
+----> Lemon King: 0
+----> Black Tea Macchiato: 1
+----> Matcha Milk Tea: 1
+----> Roasted Milk Tea: 2
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 1
+----> Mango Slush: 1
+-> Current Branch: 41 Lebovic Ave Unit A111, Toronto, ON M1L 0H2
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 0
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 2
+-> Current Branch: 808 York Mills Rd unit 31, North York, ON M3B 1X8
+----> Sago Taro Milk Tea: 1
+----> Bubble Gaga: 0
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 1
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 1
+----> Mango Slush: 0
+-> Current Branch: 85 Ellesmere Rd #6, Scarborough, ON M1R 4B8
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 0
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 0
+Doesnt match: Coco Fresh Tea & Juice vs CoCo Fresh Juice & Tea
+-> Current Branch: 60 Brian Harrison Way Unit 4, Scarborough, ON M1P 5J5
+----> Sago Taro Milk Tea: 1
+----> Bubble Gaga: 0
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 1
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 3
+-> Current Branch: 8 William Kitchen Rd, Scarborough, ON M1P 5B7
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 1
+----> Lemon King: 1
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 1
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 1
+----> Grass Jelly Milk Tea: 2
+----> Mango Slush: 4
+-> Current Branch: 3300 Midland Ave #36, Scarborough, ON M1V 4A1
+----> Sago Taro Milk Tea: 1
+----> Bubble Gaga: 10
+----> Lemon King: 4
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 2
+----> Roasted Milk Tea: 3
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 1
+----> Grass Jelly Milk Tea: 2
+----> Mango Slush: 2
+-> Current Branch: 790 Military Trail unit 5, Scarborough, ON M1E 5K4
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 0
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 0
+-> Current Branch: 30 Eglinton Ave W #6, Mississauga, ON L5R 3E7
+----> Sago Taro Milk Tea: 5
+----> Bubble Gaga: 8
+----> Lemon King: 3
+----> Black Tea Macchiato: 1
+----> Matcha Milk Tea: 6
+----> Roasted Milk Tea: 6
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 6
+----> Mango Slush: 4
+-> Current Branch: 7398 Yonge St Unit 17D, Thornhill, ON L4J 8J2
+----> Sago Taro Milk Tea: 1
+----> Bubble Gaga: 1
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 1
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 1
+-> Current Branch: 1571 Sandhurst Cir #105A, Scarborough, ON M1V 1V2
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 1
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 4
+----> Roasted Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 0
+-> Current Branch: 224 Lakeshore Rd W, Mississauga, ON L5H 1G6
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 0
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 0
+-> Current Branch: 11 Disera Dr Unit 260, Thornhill, ON L4J 0A7
+----> Sago Taro Milk Tea: 1
+----> Bubble Gaga: 0
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 0
+-> Current Branch: 3636 Steeles Ave E #103a, Markham, ON L3R 1K9
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 2
+----> Lemon King: 2
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 3
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 2
+-> Current Branch: 3175 Rutherford Rd Unit 60, Concord, ON L4K 5Y6
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 3
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 1
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 1
+----> Grass Jelly Milk Tea: 1
+----> Mango Slush: 0
+-> Current Branch: 5651 Steeles Ave E Unit 9, Scarborough, ON M1V 5P6
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 2
+----> Lemon King: 1
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 0
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 0
+----> Mango Slush: 0
+-> Current Branch: Inside B Trust Supermarket, 1177 Central Pkwy W Unit 30, Mississauga, ON L5C 4P3
+----> Sago Taro Milk Tea: 0
+----> Bubble Gaga: 2
+----> Lemon King: 0
+----> Black Tea Macchiato: 0
+----> Matcha Milk Tea: 0
+----> Roasted Milk Tea: 2
+----> Mixed Juice Macchiato: 0
+----> Caramel Milk Tea: 0
+----> Grass Jelly Milk Tea: 2
+----> Mango Slush: 2
+Arrived

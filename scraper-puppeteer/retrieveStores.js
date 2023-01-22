@@ -7,15 +7,13 @@ const retrieveStoresDict = () => {
 
     var storesDict = {};
     for(let i = 0; i < drinkDataList.length; i++) {
-        if (drinkDataList[i]["shopName"].includes("The Alley")) {
-            if (!(drinkDataList[i]["shopName"] in storesDict)) {
-                storesDict[drinkDataList[i]["shopName"]] = {
-                    name: drinkDataList[i]["shopName"].split(" - ")[0],
-                    drinks: []
-                }
+        if (!(drinkDataList[i]["shopName"] in storesDict)) {
+            storesDict[drinkDataList[i]["shopName"]] = {
+                name: drinkDataList[i]["shopName"].split(" - ")[0],
+                drinks: []
             }
-            storesDict[drinkDataList[i]["shopName"]].drinks.push(drinkDataList[i]["drinkName"]);
         }
+        storesDict[drinkDataList[i]["shopName"]].drinks.push(drinkDataList[i]["drinkName"]);
     }
 
     var ret = [];
